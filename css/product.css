@@ -496,10 +496,6 @@ section.main div.buttons button {
   font-weight: 600;
   letter-spacing: 0.28px;
   text-transform: uppercase;
-  color: white;
-}
-section.main div.buttons button.buy {
-  color: #4E5154;
 }
 section.main div.tinkoff {
   display: grid;

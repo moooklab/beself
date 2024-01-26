@@ -256,15 +256,17 @@ button, a.button
         background-color: #4E5154
         color: white
         &:hover
-            background-color: #241D13
+            background-color: #75777A
+        &:active
+            background-color: #4E5154
     &.border
         border: 1px solid #4E5154
         background-color: transparent
         color: #4E5154
         &:hover
-            background-color: #C6D6E7
-            border: 1px solid #C6D6E7
-            color: #241D13
+            background-color: #75777A
+            border: 1px solid #75777A
+            color: white
 
 a.link
     font-size: 14px
@@ -286,6 +288,7 @@ a.link
         transform: translateX(-50%)
         transition: all .2s
     &:hover
+        color: #75777A
         &::after
             width: 0
 
@@ -424,11 +427,14 @@ div.product
 
         div.swiper
             width: 100%
-            aspect-ratio: 337 / 480
+            aspect-ratio:  5 / 7
+            // aspect-ratio: 337 / 480
             +screen(m)
-                aspect-ratio: 229 / 332
+                aspect-ratio:  5 / 7
+                // aspect-ratio: 229 / 332
             +screen(s)
-                aspect-ratio: 154 / 258
+                aspect-ratio:  5 / 7
+                // aspect-ratio: 154 / 258
 
             div.swiper-slide
                 width: 100%
@@ -554,6 +560,14 @@ div.product
         +screen(s)
             padding: 10px
             width: auto
+
+        &:hover
+            background-color: #75777A
+            color: white
+        
+        &:active
+            background-color: #4E5154
+            color: white
 
     div.sizes
         position: absolute

@@ -27,12 +27,20 @@ section.subscribe
             font-weight: 600
             letter-spacing: .28px
             color: #49B5E5
+            transition: color .2s
             +screen(s)
                 font-size: 12px
             svg
                 width: 24px
                 path
+                    transition: fill .2s
                     fill: #49B5E5
+
+            &:hover
+                color: #73C6EB
+                svg
+                    path
+                        fill: #73C6EB
 
     div.text
         color: #A1A1A1

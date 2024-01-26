@@ -13,6 +13,7 @@ let closeAttribute = 'data-modal-close'
 let videoAttribute = 'data-video-src'
 
 let data
+var prevDialog
 var buttons = document.querySelectorAll('[' + buttonAttribute + ']')
 let filePath = 'modals.html'
 
@@ -73,21 +74,40 @@ const createDialog = (target, video = null) => {
         
     })
 
-    // При клике по ссылкам удаляем диалоговое окно
-    // При клике по бэкдропу удаляем диалоговое окно
-    links.forEach(link => {
-        link.addEventListener('click', event => {
-            dialog.remove()
-        })
-    })
+    
 
-    dialog.addEventListener('click', element => {
-        if(element.target === dialog) {
-            dialog.remove()
-        }
-    })
+    if ( prevDialog == 'product' ) {
+        links.forEach(link => {
+            link.addEventListener('click', event => {
+                dialog.remove()
+                createDialog('product')
+            })
+        })
+    
+        dialog.addEventListener('click', element => {
+            if(element.target === dialog) {
+                dialog.remove()
+                createDialog('product')
+            }
+        })
+    } else {
+        links.forEach(link => {
+            link.addEventListener('click', event => {
+                dialog.remove()
+            })
+        })
+    
+        dialog.addEventListener('click', element => {
+            if(element.target === dialog) {
+                dialog.remove()
+            }
+        })
+    }
+
+    target == 'product' ? prevDialog = 'product' : prevDialog = ''
 
 }
+
 
 // Добавляем в CSS переменную значение ширины скроллбара
 document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px")

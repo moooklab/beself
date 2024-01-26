@@ -89,11 +89,21 @@ section.main div.container div.text a.button {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.28px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 640px) {
   section.main div.container div.text a.button {
     font-size: 12px;
   }
+}
+section.main div.container div.text a.button:hover {
+  background: rgba(255, 255, 255, 0.63);
+  color: #4E5154;
+}
+section.main div.container div.text a.button:active {
+  background: rgb(255, 255, 255);
+  color: #4E5154;
 }
 section.main div.swiper-navigation {
   display: grid;
@@ -1182,6 +1192,8 @@ section.subscribe div.title button {
   font-weight: 600;
   letter-spacing: 0.28px;
   color: #49B5E5;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 @media (max-width: 640px) {
   section.subscribe div.title button {
@@ -1192,7 +1204,15 @@ section.subscribe div.title button svg {
   width: 24px;
 }
 section.subscribe div.title button svg path {
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
   fill: #49B5E5;
+}
+section.subscribe div.title button:hover {
+  color: #73C6EB;
+}
+section.subscribe div.title button:hover svg path {
+  fill: #73C6EB;
 }
 section.subscribe div.text {
   color: #A1A1A1;

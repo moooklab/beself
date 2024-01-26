@@ -51,8 +51,17 @@ section.main
                 font-size: 14px
                 font-weight: 600
                 letter-spacing: .28px
+                transition: all .3s
                 +screen(s)
                     font-size: 12px
+
+                &:hover
+                    background: rgba(255, 255, 255, 0.63)
+                    color: #4E5154
+
+                &:active
+                    background: rgba(255, 255, 255, 1)
+                    color: #4E5154
 
 
     div.swiper-navigation

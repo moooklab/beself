@@ -101,10 +101,10 @@ dialog(data-modal-name="product")
                             span 3XL
 
                 div.buttons
-                    button.incart
+                    button(onclick="dialog.remove()").incart.gray
                         include ../../../images/product/cart.svg
                         span В корзину
-                    button.buy Быстрый заказ
+                    button.buy(onclick="createDialog('buy')").border Быстрый заказ
 
                 div.descriptions
                     div.description

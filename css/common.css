@@ -495,7 +495,10 @@ button.gray, a.button.gray {
   color: white;
 }
 button.gray:hover, a.button.gray:hover {
-  background-color: #241D13;
+  background-color: #75777A;
+}
+button.gray:active, a.button.gray:active {
+  background-color: #4E5154;
 }
 button.border, a.button.border {
   border: 1px solid #4E5154;
@@ -503,9 +506,9 @@ button.border, a.button.border {
   color: #4E5154;
 }
 button.border:hover, a.button.border:hover {
-  background-color: #C6D6E7;
-  border: 1px solid #C6D6E7;
-  color: #241D13;
+  background-color: #75777A;
+  border: 1px solid #75777A;
+  color: white;
 }
 
 a.link {
@@ -534,6 +537,9 @@ a.link::after {
           transform: translateX(-50%);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+a.link:hover {
+  color: #75777A;
 }
 a.link:hover::after {
   width: 0;
@@ -707,16 +713,16 @@ div.product a.slider {
 }
 div.product a.slider div.swiper {
   width: 100%;
-  aspect-ratio: 337/480;
+  aspect-ratio: 5/7;
 }
 @media (max-width: 960px) {
   div.product a.slider div.swiper {
-    aspect-ratio: 229/332;
+    aspect-ratio: 5/7;
   }
 }
 @media (max-width: 640px) {
   div.product a.slider div.swiper {
-    aspect-ratio: 154/258;
+    aspect-ratio: 5/7;
   }
 }
 div.product a.slider div.swiper div.swiper-slide {
@@ -888,6 +894,14 @@ div.product button {
     padding: 10px;
     width: auto;
   }
+}
+div.product button:hover {
+  background-color: #75777A;
+  color: white;
+}
+div.product button:active {
+  background-color: #4E5154;
+  color: white;
 }
 div.product div.sizes {
   position: absolute;
@@ -4074,15 +4088,6 @@ dialog::-webkit-scrollbar {
   font-weight: 600;
   letter-spacing: 0.28px;
   text-transform: uppercase;
-  color: white;
-}
-[data-modal-name=product] div.buttons button.incart {
-  background-color: #4E5154;
-}
-[data-modal-name=product] div.buttons button.buy {
-  border: 1px solid #4E5154;
-  background-color: transparent;
-  color: #4E5154;
 }
 [data-modal-name=product] div.descriptions {
   font-size: 14px;
