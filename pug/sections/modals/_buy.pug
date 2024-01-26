@@ -1,0 +1,22 @@
+dialog(data-modal-name="buy")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            h3 Купить в 1 клик
+
+            include ../../elements/products/_small.pug
+
+            hr
+
+            form(action="") 
+                fieldset.text
+                    label Имя #[span.required *]
+                    input(type="text", placeholder="Имя", required)
+                fieldset.text
+                    label Телефон #[span.required *]
+                    input(type="text", placeholder="+7 (___) ___ __ __", data-phone-pattern="", required)
+                button.gray Купить
+                a(href="index.html").tocart Посмотреть корзину

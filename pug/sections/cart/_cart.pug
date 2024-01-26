@@ -1,0 +1,99 @@
+section.cart
+    div.container
+        h2 Корзина
+
+        div.cart_products
+            table
+                thead
+                    tr
+                        td Товар
+                        td Описание
+                        td Размер
+                        td Кол-во
+                        td Цена
+                        td
+                tbody
+                    - for( x=1; x<=4; x++)
+                        tr.cart_product
+                            td.image
+                                a(href="product.html"): img(src="images/products/1.webp", alt="")
+                            td.description
+                                a(href="product.html"): strong Лосины PUSH-UP #[br]малиновые PARADISO
+                                span.article Арт: 04400210
+                                div.color
+                                    div(style="background-color: #241D13")
+                                    span Черный
+                            td.size
+                                fieldset.select
+                                    div(tabindex="0").current
+                                        input(type="radio", id="select" + x + "_0", value="1", name="Size" + x, checked="checked")
+                                        span 2XS
+                                        input(type="radio", id="select" + x + "_1", value="2", name="Size" + x)
+                                        span XS
+                                        input(type="radio", id="select" + x + "_2", value="3", name="Size" + x)
+                                        span S
+                                        input(type="radio", id="select" + x + "_3", value="4", name="Size" + x)
+                                        span M
+                                        input(type="radio", id="select" + x + "_4", value="5", name="Size" + x)
+                                        span L
+                                        input(type="radio", id="select" + x + "_5", value="6", name="Size" + x)
+                                        span XL
+                                        input(type="radio", id="select" + x + "_6", value="7", name="Size" + x)
+                                        span 2XL
+                                        input(type="radio", id="select" + x + "_7", value="8", name="Size" + x)
+                                        span 3XL
+                                        img(src="images/filter_arrow.svg", alt="")
+                                    div.list
+                                        label(for="select" + x + "_0") 2XS
+                                        label(for="select" + x + "_1") XS
+                                        label(for="select" + x + "_2") S
+                                        label(for="select" + x + "_3") M
+                                        label(for="select" + x + "_4") L
+                                        label(for="select" + x + "_5") XL
+                                        label(for="select" + x + "_6") 2XL
+                                        label(for="select" + x + "_7") 3XL
+                            td.count
+                                div.quantity
+                                    div.minus
+                                        include ../../../images/quantity_minus.svg
+                                    input(type="number" value="1" min="1" max="100")
+                                    div.plus
+                                        include ../../../images/quantity_plus.svg
+                                span 1 145 ₽ / 1 шт
+                            td.price 2 290 ₽
+                            td.actions
+                                a(onclick="this.classList.toggle('active')").favourite
+                                    include ../../../images/favourite.svg
+                                include ../../../images/trash.svg
+
+
+
+        div.total
+        
+            div.result
+                div.table
+                    span Товары
+                    span 10 000 ₽
+                    span Доставка
+                    span 10 000 ₽
+                    span Применённые баллы
+                    span -500 ₽
+                    span Промокод
+                    span -1 000 ₽
+                    strong Итого
+                    strong 10 000 ₽
+                button.gray оформить заказ
+                span.agreement Соглашаюсь с условиями политики конфиденциальности и правилами продажи.
+
+            div.promocode
+                h4 Промокод
+                form
+                    input(type="text", placeholder="Промокод")
+                    button
+                        include ../../../images/subscribe_arrow.svg
+
+            div.loyalty
+                h4 Программа лояльности
+                span Авторизуйтесь, чтобы участвовать в накопительной программе лояльности и оплачивайте частично бонусами
+                a.link(href="###") Войти на сайт
+

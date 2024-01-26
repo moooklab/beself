@@ -1,0 +1,143 @@
+[data-modal-name=review]
+
+    div.container
+        display: grid
+        position: relative
+        padding: 20px
+        background-color: white
+        width: 100%
+        max-width: 929px
+        +screen(s)
+            font-size: 14px
+
+    form
+        display: grid
+
+    div.title
+        display: grid
+        grid-gap: 10px
+        margin-bottom: 20px
+        +screen(s)
+            margin-bottom: 16px
+        h3
+            +screen(s)
+                font-size: 16px
+        span
+            color: #A1A1A1
+            
+
+    hr
+        display: block
+        width: 100%
+        height: 1px
+        background-color: #E4E5E5
+        width: calc(100% + 40px)
+        margin-left: -20px
+
+    fieldset.stars
+        display: grid
+        align-items: center
+        justify-content: center
+        grid-template-columns: repeat(3, max-content)
+        grid-gap: 10px
+        margin-top: 30px
+        +screen(s)
+            margin-top: 20px
+            grid-template-columns: repeat(2, max-content)
+            justify-content: center
+
+
+        strong
+            font-weight: 400
+            +screen(s)
+                grid-column: 2 span
+                text-align: center
+
+        div.list
+            width: max-content
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            direction: rtl
+            grid-gap: 5px
+            label
+                cursor: pointer
+                line-height: 0
+            input
+                display: none
+            svg
+                width: 26px
+                height: 26px
+                padding: 3px
+                path
+                    fill: transparent
+                    stroke: #A1A1A1
+            input:checked + label,
+            input:checked ~ label
+                svg
+                    path
+                        fill: #FFD43A
+                        stroke: #FFD43A
+                    
+        span
+            color: #A1A1A1
+            opacity: .8
+
+    fieldset.textarea
+        margin-top: 50px
+        textarea
+            height: 80px
+            border-bottom-left-radius: unset
+            border-bottom-right-radius: unset
+            border-bottom-style: dashed
+        +screen(s)
+            margin-top: 30px
+
+    fieldset.images
+        margin-bottom: 50px
+        +screen(s)
+            margin-bottom: 40px
+
+        label[for=file]
+            display: grid
+            align-items: center
+            grid-template-columns: max-content auto
+            grid-gap: 16px
+            width: 100%
+            padding: 36px 14px
+            border: 1px solid #E4E5E5
+            border-top: unset
+            border-radius: 5px
+            border-top-left-radius: unset
+            border-top-right-radius: unset
+            span
+                max-width: 267px
+                font-size: 12px
+                color: #A1A1A1
+
+        div.list
+            margin-top: 10px
+
+    div.row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px 
+        +screen(s)
+            grid-template-columns: 1fr
+
+
+    span.policy
+        display: block
+        margin-top: 10px
+        font-size: 14px
+        color: #A1A1A1
+        margin-bottom: 20px
+
+    button
+        margin-top: 20px
+        justify-self: end
+        min-width: 300px
+        +screen(s)
+            justify-self: unset
+
+    

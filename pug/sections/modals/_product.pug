@@ -1,0 +1,204 @@
+dialog(data-modal-name="product")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+
+            h2.modal_title Быстрый просмотр
+
+            div.swiper.gallery
+                div.swiper-wrapper
+                    div.swiper-slide: img(src="images/products/1.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/2.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/3.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/4.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/5.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/6.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/1.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/2.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/3.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/4.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/5.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/6.webp", alt="", lightbox="product")
+
+            form(action="cart.html")
+
+                div.tags
+                    div.tag
+                        img(src="images/product/tag_1.png", alt="")
+                        span Сертифицировано
+                    div.tag
+                        img(src="images/product/tag_2.png", alt="")
+                        span Сделано в России
+                    div.tag
+                        img(src="images/product/tag_3.png", alt="")
+                        span Supplex Sport Hit
+                    div.tag
+                        img(src="images/product/tag_4.svg", alt="")
+                        span Для занятий йогой
+
+                h2.product_title Лосины PUSH-UP малиновые PARADISO
+
+                div.additional
+                    span Арт: 04400210
+                    a(onclick="this.classList.toggle('active')").favourite.active
+                        include ../../../images/favourite.svg
+                        span В избранное
+
+                div.price
+                    strong 1 145 ₽
+
+                    div.dolyame(onclick="createDialog('dolyame')")
+                        img(src="images/dolyame.svg", alt="").logo
+                        span 4 платежа по 300 ₽ *
+                        div.arrow
+                            img(src="images/product/dolyame_arrow.svg", alt="")
+
+                div.colors
+                    strong Цвет
+                    div.list
+                        a(href="product.html", style="background-color: #241D13")
+                        a(href="product.html", style="background-color: #FFB2F7").active
+                        a(href="product.html", style="background-color: #FFED47")
+                        a(href="product.html", style="background-color: #C6FFCD")
+                        a(href="product.html", style="background-color: #C6D6E7")
+                        a(href="product.html", style="background-color: #ff0000")
+                        a(href="product.html", style="background-color: #800080")
+                        a(href="product.html", style="background-color: #808000")
+                        a(href="product.html", style="background-color: #A52A2A")
+                        a(href="product.html", style="background-color: #FFA500")
+
+                div.sizes
+                    div.title
+                        strong Размер
+                        span(onclick="createDialog('sizes')") Таблица размеров
+                    div.list
+                        label
+                            input(type="radio", name="productSize", value="2XS", required)
+                            span 2XS
+                        label
+                            input(type="radio", name="productSize", value="XS")
+                            span XS
+                        label
+                            input(type="radio", name="productSize", value="S")
+                            span S
+                        label
+                            input(type="radio", name="productSize", value="M")
+                            span M
+                        label
+                            input(type="radio", name="productSize", value="L")
+                            span L
+                        label
+                            input(type="radio", name="productSize", value="XL")
+                            span XL
+                        label
+                            input(type="radio", name="productSize", value="2XL")
+                            span 2XL
+                        label
+                            input(type="radio", name="productSize", value="3XL")
+                            span 3XL
+
+                div.buttons
+                    button.incart
+                        include ../../../images/product/cart.svg
+                        span В корзину
+                    button.buy Быстрый заказ
+
+                div.descriptions
+                    div.description
+                        div.accordion
+                            div.accordion_caption
+                                span Описание
+                                img(src="images/filter_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    div.accordion_block.row
+                                        div.left
+                                            p Спортивный топик VELVET:
+                                            br
+                                            ul.disc
+                                                li Средняя поддержка груди;
+                                                li Вставные поролоновые чашки;
+                                                li Плотная резинка под грудью;
+                                                li Красивая спинка;
+                                                li Подойдёт на чашку А‑С;
+                                                li Лучше всего подходит для спокойных видов спорта, «мягкого» фитнеса: йога, пилатес, растяжка, калланетика и т.д.
+                                            br
+                                            p Ткань сертифицирована по международному стандарту OEKO-TEX® Standart 100 (в составе отсутствуют вредные вещества).
+                                        div.right
+                                            p Состав: 68% полиэстер, 32% спандекс.
+                                            br
+                                            p VELVET - и этим многое сказано. Невероятно мягкая бархатистая ткань с высокой степенью эластичности создана для ещё большего комфорта во время тренировок. В костюме из этой ткани вы можете принимать любые позы — вам будет легко и удобно, ведь ткань коллекции VELVET создаёт ощущение невесомости на коже и обеспечивает неограниченную свободу движений.
+                                            p VELVET - это подтверждение того, что с каждой новой коллекцией BeSelf совершенствуется и создаёт все более уникальные продукты международного уровня.
+                    div.delivery
+                        div.accordion
+                            div.accordion_caption
+                                span Доставка
+                                img(src="images/filter_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    div.accordion_block
+                                        div.title
+                                            span Доставка в г. Москва
+                                            a(onclick="createDialog('city')") Изменить
+                                        table
+                                            thead
+                                                tr
+                                                    td Вид доставки
+                                                    td Сроки
+                                                    td Стоимость
+                                            tbody
+                                                tr
+                                                    td Самовывоз со склада*
+                                                    td(data-text="Сроки") Сегодня #[span В рабочие часы]
+                                                    td(data-text="Стоимость") Бесплатно
+                                                tr
+                                                    td В пункт выдачи CДЭК
+                                                    td 1–3 дня
+                                                    td 150 ₽ #[span Бесплатно при заказе от 4 000 ₽]
+                                                tr
+                                                    td Курьером CДЭК
+                                                    td 1–3 дня
+                                                    td 300 ₽ #[span Бесплатно при заказе от 7 000 ₽]
+                                                tr
+                                                    td Экспресс доставка**
+                                                    td Сегодня #[span При заказе до 12]
+                                                    td 550 ₽ #[span Бесплатно при заказе от 10 000 ₽]
+                                        div.notes
+                                            div.note
+                                                span.stars *
+                                                span Находится на метро Строгино, улица Кулакова 20с1А, Технопарк Орбита. Работаем по будням с 9:30 до 17. По выходным и праздничным дням офис не работает. Забрать заказ возможно только после предварительного согласования с менеджером. В точке самовывоза нет услуги примерки товара.
+                                            div.note
+                                                span.stars **
+                                                span Доставка пешими курьерами осуществляется только в будние рабочие дни. Доставка в пределах МКАД. При отказе от получения заказа после отправки с нашего склада, стоимость доставки не возвращается. Если доставка была 0 ₽, денежные средства будут возвращены за вычетом доставки (стоимость по запросу у менеджеров).
+                    div.stock
+                        div.accordion
+                            div.accordion_caption
+                                span Наличие в магазинах
+                                img(src="images/filter_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    div.accordion_block
+                                        div.table
+                                            div.column
+                                                div.title Магазин
+                                                div.text
+                                                    span.black Магазин Beself Арена Плаза
+                                                    span.gray.small Москва, ТЦ Арена Плаза, м. Динамо, Ленинградский проспект 36, 1 этаж
+                                                    span.gray.small Пн-Вс: 10:00–22:00
+                                                    a(href="tel:79918561858").phone
+                                                        img(src="images/phone2.svg", alt="")
+                                                        span +7 (991) 856-18-58
+                                            div.column
+                                                div.title Размеры в наличии
+                                                div.text
+                                                    span.black XS - Есть в наличии
+                                                    span.gray S - нет в наличии
+                                                    span.black M – 2
+                                                    span.black L – 2
+                                                    h3.red Внимание!
+                                                    span.gray Фактическое количество товара в магазине может отличаться.Обязательно звоните нам, чтобы уточнить наличие.
+
+

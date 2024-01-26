@@ -1,0 +1,16 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/category.css")
+
+block content
+
+    include sections/category/_breadcrumbs.pug
+    include sections/category/_soft_cover_collection.pug
+    include sections/category/_catalog.pug
+
+    - var arrows = true
+    - var products_slider_title = 'Ранее смотрели'
+    include elements/_products_slider.pug
+    
+    include sections/_seo.pug

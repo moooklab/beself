@@ -1,0 +1,686 @@
+:root {
+  --gap: 30px;
+}
+
+section.main div.menu {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 26px;
+}
+@media (max-width: 960px) {
+  section.main div.menu {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 640px) {
+  section.main div.menu {
+    gap: 12px 20px;
+  }
+}
+section.main div.menu a.link {
+  text-transform: unset;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #C7C7C7;
+}
+@media (max-width: 640px) {
+  section.main div.menu a.link {
+    font-size: 14px;
+  }
+}
+section.main div.menu a.link:after {
+  width: 0;
+}
+section.main div.menu a.link:hover {
+  color: #4E5154;
+}
+section.main div.menu a.link:hover::after {
+  width: 100%;
+}
+section.main div.menu a.link.active {
+  color: #4E5154;
+}
+section.main div.menu a.link.active::after {
+  width: 100%;
+}
+section.main div.menu + div.accordion {
+  margin-top: 30px;
+}
+section.main div.wrap {
+  max-width: 960px;
+}
+section.main div.accordion {
+  margin-top: 100px;
+}
+@media (max-width: 960px) {
+  section.main div.accordion {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 640px) {
+  section.main div.accordion {
+    margin-top: unset;
+    border-bottom: 1px solid #C6C6C6;
+  }
+}
+section.main div.accordion div.accordion_caption {
+  cursor: pointer;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: 1fr -webkit-max-content;
+  grid-template-columns: 1fr max-content;
+  grid-gap: 16px;
+}
+@media (max-width: 640px) {
+  section.main div.accordion div.accordion_caption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 640px) {
+  section.main div.accordion div.accordion_caption h3 {
+    font-size: 14px;
+  }
+}
+section.main div.accordion div.accordion_caption img {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  display: none;
+}
+@media (max-width: 640px) {
+  section.main div.accordion div.accordion_caption img {
+    display: block;
+  }
+}
+section.main div.accordion div.accordion_overflow {
+  overflow: visible !important;
+}
+@media (max-width: 640px) {
+  section.main div.accordion div.accordion_overflow {
+    overflow: hidden !important;
+  }
+}
+section.main div.accordion div.accordion_wrap {
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 16px;
+}
+@media (max-width: 640px) {
+  section.main div.accordion div.accordion_wrap {
+    margin-bottom: 16px;
+  }
+}
+section.main div.accordion.open div.accordion_caption img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section.main table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 16px;
+  line-height: 1.2em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  section.main table {
+    font-size: 14px;
+  }
+}
+section.main table thead {
+  background-color: #C6D6E7;
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  section.main table thead {
+    display: none;
+  }
+}
+section.main table thead td {
+  padding: 27px 20px;
+  border: 1px solid #E4E5E5;
+  border-bottom: unset;
+}
+@media (max-width: 640px) {
+  section.main table tbody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-size: 12px;
+  }
+  section.main table tbody tr {
+    display: contents;
+  }
+  section.main table tbody td:first-child {
+    grid-column: 2 span;
+    background-color: #C6D6E7;
+    border: 1px solid #C6D6E7;
+    padding: 13px 15px;
+    text-align: left;
+  }
+  section.main table tbody td:nth-child(3) {
+    margin-left: -1px;
+  }
+  section.main table tbody td[data-text]:before {
+    content: attr(data-text);
+    position: relative;
+    display: block;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2em;
+    border-bottom: 1px solid #C6D6E7;
+    width: calc(100% + 16px);
+    left: -20px;
+    top: -20px;
+  }
+}
+section.main table tbody td {
+  padding: 20px;
+  border: 1px solid #E4E5E5;
+  border-top: unset;
+  vertical-align: top;
+}
+section.main table tbody td.onlymobile {
+  display: none;
+}
+@media (max-width: 640px) {
+  section.main table tbody td.onlymobile {
+    display: block;
+  }
+}
+section.main table strong {
+  font-weight: 600;
+}
+section.main table span {
+  display: block;
+  color: #A1A1A1;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin-top: 5px;
+}
+@media (max-width: 640px) {
+  section.main table span {
+    font-size: 12px;
+  }
+}
+section.main table button {
+  margin-top: 20px;
+}
+@media (max-width: 640px) {
+  section.main table button {
+    margin-top: 16px;
+    padding: 12px 32px;
+  }
+}
+section.main div.notes {
+  display: grid;
+  grid-gap: 16px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+@media (max-width: 640px) {
+  section.main div.notes {
+    font-size: 12px;
+    grid-gap: 10px;
+  }
+}
+section.main div.notes div.note {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}
+section.main div.text {
+  display: grid;
+  grid-gap: 16px;
+  margin-top: 100px;
+}
+@media (max-width: 960px) {
+  section.main div.text {
+    font-size: 14px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 640px) {
+  section.main div.text {
+    font-size: 12px;
+    grid-gap: 10px;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 640px) {
+  section.main div.text h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  section.main div.text + div.text {
+    margin-top: 40px;
+  }
+}
+
+section.instruction {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+@media (max-width: 960px) {
+  section.instruction {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+section.instruction div.container {
+  display: grid;
+  grid-gap: 24px;
+}
+@media (max-width: 960px) {
+  section.instruction div.container {
+    grid-gap: 16px;
+  }
+}
+@media (max-width: 640px) {
+  section.instruction div.container {
+    grid-gap: 24px;
+  }
+}
+section.instruction div.list {
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  grid-template-columns: repeat(3, 1fr) -webkit-max-content;
+  grid-template-columns: repeat(3, 1fr) max-content;
+  counter-reset: list;
+  gap: 32px;
+}
+@media (max-width: 960px) {
+  section.instruction div.list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+@media (max-width: 640px) {
+  section.instruction div.list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 12px;
+  }
+}
+section.instruction div.step {
+  counter-increment: list;
+  max-width: 280px;
+  display: grid;
+  grid-gap: 10px;
+}
+@media (max-width: 960px) {
+  section.instruction div.step {
+    text-align: center;
+    justify-items: center;
+  }
+}
+section.instruction div.step::before {
+  content: counter(list);
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 36px;
+  width: 73px;
+  aspect-ratio: 1/1;
+  background-color: rgba(198, 214, 231, 0.5607843137);
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+@media (max-width: 960px) {
+  section.instruction div.step::before {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 960px) {
+  section.instruction div.step h4 {
+    font-size: 14px;
+  }
+}
+section.instruction div.step span {
+  font-size: 14px;
+  color: #A1A1A1;
+}
+@media (max-width: 960px) {
+  section.instruction div.step span {
+    font-size: 12px;
+  }
+}
+
+section.additional {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+@media (max-width: 960px) {
+  section.additional {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+section.additional div.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+@media (max-width: 960px) {
+  section.additional div.container {
+    grid-template-columns: 1fr;
+    grid-gap: 69px;
+  }
+}
+@media (max-width: 640px) {
+  section.additional div.container {
+    grid-gap: 51px;
+  }
+}
+section.additional div.item {
+  position: relative;
+  border: 1px solid #94BADF;
+  padding: 32px 30px;
+  padding-top: 81px;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+@media (max-width: 640px) {
+  section.additional div.item {
+    padding: 24px 15px;
+    padding-top: 55px;
+    font-size: 12px;
+  }
+}
+section.additional div.item div.icon {
+  width: 98px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: -49px;
+  left: 30px;
+  border: 1px solid #94BADF;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+@media (max-width: 640px) {
+  section.additional div.item div.icon {
+    width: 62px;
+    top: -31px;
+    left: 15px;
+  }
+  section.additional div.item div.icon img {
+    width: 38px;
+  }
+}
+section.additional div.item h3 {
+  margin-bottom: 16px;
+}
+@media (max-width: 640px) {
+  section.additional div.item h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+section.additional div.item strong {
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #241D13;
+}
+@media (max-width: 640px) {
+  section.additional div.item strong {
+    margin-bottom: 5px;
+  }
+}
+section.additional div.item div.note {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 10px;
+  font-size: 14px;
+  font-style: italic;
+}
+@media (max-width: 640px) {
+  section.additional div.item div.note {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+}
+
+section.return {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+@media (max-width: 960px) {
+  section.return {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+section.return div.container div.wrap {
+  border-radius: 5px;
+  border: 4px solid #FFF1D8;
+  background: rgba(249, 234, 207, 0.53);
+  padding: 20px;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  grid-template-columns: 1fr -webkit-max-content;
+  grid-template-columns: 1fr max-content;
+  grid-gap: 32px;
+  padding-right: 150px;
+  background-image: url(../images/service/return_background.webp);
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 960px) {
+  section.return div.container div.wrap {
+    padding: 20px 16px;
+    padding-right: 38px;
+  }
+}
+@media (max-width: 640px) {
+  section.return div.container div.wrap {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    padding: 20px 16px;
+  }
+}
+section.return div.container div.text {
+  display: grid;
+  justify-items: start;
+  grid-gap: 10px;
+}
+@media (max-width: 640px) {
+  section.return div.container div.text {
+    justify-items: center;
+    font-size: 14px;
+  }
+}
+section.return div.container div.text h3 {
+  font-size: 24px;
+  text-transform: unset;
+}
+section.return div.container div.text button {
+  margin-top: 14px;
+}
+section.return div.container div.image {
+  width: 295px;
+}
+section.return div.container div.image img {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  section.return div.container div.image {
+    width: 226px;
+  }
+}
+
+section.order {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+@media (max-width: 960px) {
+  section.order {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 640px) {
+  section.order {
+    text-align: center;
+  }
+}
+section.order div.container {
+  display: grid;
+  grid-gap: 24px;
+}
+section.order div.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+@media (max-width: 960px) {
+  section.order div.buttons {
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 640px) {
+  section.order div.buttons {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+section.order div.buttons button {
+  text-transform: unset;
+  border: 1px solid #D4E4F5;
+  background-color: transparent;
+  padding: 38px;
+  font-size: 16px;
+}
+@media (max-width: 640px) {
+  section.order div.buttons button {
+    padding: 24px;
+    font-size: 14px;
+  }
+}
+section.order div.buttons button:hover {
+  background-color: #4E5154;
+  color: white;
+}
+
+section.seo {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+@media (max-width: 960px) {
+  section.seo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 640px) {
+  section.seo {
+    margin-top: 50px;
+  }
+}
+section.seo div.container {
+  display: grid;
+  grid-gap: 80px;
+}
+section.seo div.question {
+  display: grid;
+  justify-items: center;
+  grid-gap: 20px;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  section.seo div.question {
+    font-size: 12px;
+  }
+}
+section.seo div.question div.socials {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  grid-gap: 24px;
+}
+section.seo div.question div.socials svg {
+  width: 27px;
+  height: 27px;
+}
+section.seo div.question div.socials svg path {
+  fill: #4E5154;
+}
+section.seo div.text {
+  color: #A1A1A1;
+}
+section.seo div.text.full p {
+  line-clamp: unset;
+  -webkit-line-clamp: unset;
+}
+section.seo div.text.full a span:first-child {
+  display: none;
+}
+section.seo div.text.full a span:last-child {
+  display: inline;
+}
+@media (max-width: 640px) {
+  section.seo div.text p {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+section.seo div.text a {
+  display: none;
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(78, 81, 84, 0.43);
+  text-decoration: underline;
+}
+section.seo div.text a:hover {
+  text-decoration: none;
+  color: #4E5154;
+}
+section.seo div.text a span:first-child {
+  display: inline;
+}
+section.seo div.text a span:last-child {
+  display: none;
+}
+@media (max-width: 640px) {
+  section.seo div.text a {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=delivery.css.map */

@@ -1,0 +1,31 @@
+section.empty
+    +screen(s)
+        font-size: 12px
+
+    div.products
+        margin-top: 40px
+        display: grid
+        justify-items: center
+
+        img
+            margin-bottom: 24px
+
+        span
+            margin-bottom: 32px
+            +screen(s)
+                margin-bottom: 27px
+
+        div.buttons
+            display: grid
+            grid-template-columns: max-content max-content
+            grid-gap: 10px
+            +screen(s)
+                grid-template-columns: 1fr
+
+            a.button
+                min-width: 180px
+                +screen(s)
+                    font-size: 12px
+                    min-width: 240px
+
+        

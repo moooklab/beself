@@ -1,0 +1,35 @@
+div.product
+
+    span.tag Новинка
+    a(onclick="this.classList.toggle('active')").favourite
+        include ../../../images/favourite.svg
+
+    a.slider(href="product.html") 
+        div.swiper.product_gallery
+            div.swiper-wrapper
+                div.swiper-slide: img(src="images/products/4.webp", alt="")
+                div.swiper-slide: img(src="images/products/5.webp", alt="")
+                div.swiper-slide: img(src="images/products/6.webp", alt="")
+            div.swiper-pagination
+
+    div.description
+
+        div.colors
+            span.green
+            span.blue
+
+        a.title(href="product.html") Укороченная майка с сеткой оранжевая ACTIVE
+
+        div.price
+            span.current 2 590 ₽
+            //- span.old 3 890 ₽
+
+        button(data-modal-target="product") Быстрый просмотр
+
+        div.sizes
+            span XS
+            span S
+            span M
+            span L
+            span XL
+            span 2XL

@@ -1,0 +1,90 @@
+footer
+
+    div.top
+        div.container
+
+            div.contacts
+
+                a.logotype(href="index.html")
+                    img(src="images/logotype_footer.svg", alt="", loading="lazy")
+                
+                a.phone(href="tel:88002011463") 
+                    img(src="images/footer_phone.svg", alt="", loading="lazy")
+                    span 8 800 201-14-63
+
+                a.email(href="mailto:info@beselfwear.ru") 
+                    img(src="images/email.svg", alt="", loading="lazy")
+                    span info@beselfwear.ru
+
+                div.adress
+                    span Розничный магазин:
+                    p г. Москва, Ленинградский #[br]проспект 36, ТЦ Арена Плаза
+
+            div.accordions
+                div.accordion
+                    div.accordion_caption
+                        span Клиентам
+                        img(src="images/footer_accordion_arrow.svg", alt="", loading="lazy")
+                    div.accordion_content
+                        div.accordion_wrap
+                            menu
+                                li: a(href="delivery.html") Доставка
+                                li: a(href="return.html") Возврат и обмен
+                                li: a(href="payment.html") Оплата
+                                li: a(href="faq.html") Вопросы и ответы
+                                li: a(href="loyalty.html") Программа лояльности
+                                li: a(href="gifts.html") Подарочные сертификаты
+                                li: a(href="wholesale.html") Оптовым клиентам
+                                li: a(href="shops.html") Где купить
+
+                div.accordion
+                    div.accordion_caption
+                        span Информация
+                        img(src="images/footer_accordion_arrow.svg", alt="", loading="lazy")
+                    div.accordion_content
+                        div.accordion_wrap
+                            menu
+                                li: a(href="offer.html") Оферта
+                                li: a(href="pages.html") Карта сайта
+                                li: a(href="contacts.html") Контакты
+
+                div.accordion
+                    div.accordion_caption
+                        span О компании
+                        img(src="images/footer_accordion_arrow.svg", alt="", loading="lazy")
+                    div.accordion_content
+                        div.accordion_wrap
+                            menu
+                                li: a(href="about.html") О нас
+                                li: a(href="cloth.html") Ткани BeSelf
+                                li: a(href="partners.html") Партнёры
+                                li: a(href="lookbook.html") Lookbook
+
+            div.subscribe
+                h3 Подпишись на новости и акции
+                form
+                    input(type="text", placeholder="examle@gmail.com")
+                    button
+                        include ../../images/subscribe_arrow.svg
+                small Отправляя данные,вы соглашаетесь #[br]с #[a(href="policy.html") Правилами обработки персональных данных]
+
+    div.bottom
+        div.container
+            div.socials
+                li: a(href="###")
+                    include ../../images/telegram.svg
+                li: a(href="###")
+                    include ../../images/vkontakte.svg
+                li: a(href="###")
+                    include ../../images/instagram.svg
+                li: a(href="###")
+                    include ../../images/dzen.svg
+                li: a(href="###")
+                    include ../../images/youtube.svg
+            span.copyright © beself 2023
+            div.links
+                a(href="policy.html") Политика конфиденциальности
+                a(href="conditions.html") Условия использования
+            a.production(href="https://mwi.me/")
+                img(src="images/mwi.svg", alt="", loading="lazy")
+

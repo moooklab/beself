@@ -1,0 +1,106 @@
+section.shops
+    margin-top: 30px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 20px
+        margin-bottom: 80px
+
+    div.container
+        display: grid
+        align-items: start
+        align-content: start
+        grid-template-columns: 600px 1fr
+        grid-template-rows: max-content max-content 1fr
+        grid-template-areas: 'Title Title' 'Image Content' 'Image Links'
+        grid-gap: 0 30px
+        +screen(m)
+            grid-template-areas: 'Image Content' 'Links Content'
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: max-content max-content
+            grid-gap: 0 20px
+        +screen(s)
+            grid-template-areas: 'Image' 'Content' 'Links'
+            grid-template-columns: 1fr
+            grid-gap: 20px
+
+    h2
+        grid-area: Title
+        margin-bottom: 16px
+        +screen(m)
+            display: none
+
+
+    div.image
+        grid-area: Image
+        +background
+        width: 100%
+        height: auto
+        aspect-ratio: 1 / 1
+        +screen(m)
+            aspect-ratio: 354 / 268
+        +screen(s)
+            aspect-ratio: 335 / 254
+
+    div.content
+        grid-area: Content
+        display: grid
+        grid-gap: 15px
+        +screen(s)
+            grid-gap: 10px
+            font-size: 12px
+
+        div.undergrounds
+            display: flex
+            flex-wrap: wrap
+            gap: 15px
+            div.underground
+                display: grid
+                align-items: center
+                grid-template-columns: max-content auto
+                grid-gap: 5px
+                div
+                    width: 12px
+                    height: 12px
+                    border-radius: 6px
+
+        div.phone, div.adress, div.schedule
+            display: grid
+            grid-gap: 5px
+            strong
+                font-weight: 600
+            a
+                text-decoration: underline
+                &:hover
+                    text-decoration: none
+
+        div.phone
+            +screen(s)
+                margin-top: 13px
+                    
+        div.dolyame
+            cursor: pointer
+            margin-top: 5px
+            display: grid
+            grid-gap: 10px
+            +screen(s)
+                margin-top: -5px
+            img
+                width: 92px
+        
+    div.links
+        grid-area: Links
+        display: grid
+        grid-gap: 15px
+        margin-top: 25px
+        +screen(m)
+            margin-top: 10px
+            grid-gap: 10px
+        a
+            font-weight: 600
+            color: #241D13
+            text-decoration: underline
+            +screen(s)
+                font-size: 12px
+
+            &:hover
+                text-decoration: none

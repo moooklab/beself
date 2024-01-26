@@ -1,0 +1,14 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/success.css")
+
+block content
+    include sections/success/_breadcrumbs.pug
+    include sections/success/_main.pug
+
+    - var arrows = true
+    - var products_slider_title = 'Вам может понравится'
+    include elements/_products_slider.pug
+
+    include sections/_seo.pug

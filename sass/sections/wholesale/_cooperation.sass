@@ -1,0 +1,63 @@
+section.cooperation
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    h2
+        margin-bottom: 78px
+        +screen(m)
+            margin-bottom: 68px
+        +screen(s)
+            margin-bottom: 48px
+            br
+                display: none
+
+    div.stages
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 30px
+        counter-reset: list
+        +screen(m)
+            grid-template-columns: 1fr
+            grid-gap: 58px
+
+        div.stage
+            position: relative
+            counter-increment: list
+            border: 1px solid #C6D6E7
+            padding: 34px 26px
+            padding-top: 68px
+            text-align: center
+            display: grid
+            align-content: start
+            grid-gap: 10px
+            +screen(s)
+                padding-top: 44px
+                padding-bottom: 19px
+            &::before
+                content: counter(list)
+                position: absolute
+                top: 0
+                left: 50%
+                font-family: 'Tenor Sans', sans-serif
+                font-size: 36px
+                line-height: 0em
+                width: 56px
+                height: 56px
+                background-color: #C6D6E7
+                display: grid
+                align-items: center
+                justify-items: center
+                border-radius: 999px
+                transform: translate(-50%, -50%)
+
+            h3
+                +screen(s)
+                    font-size: 14px
+                    letter-spacing: .28px
+
+            span
+                +screen(s)
+                    font-size: 12px

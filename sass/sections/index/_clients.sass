@@ -1,0 +1,108 @@
+section.clients
+    padding-top: 150px
+    padding-bottom: 150px
+    margin-top: 150px
+    margin-bottom: 150px
+    background-color: #C6D6E7
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+        padding-top: 80px
+        padding-bottom: 80px
+    +screen(s)
+        padding-top: 40px
+        padding-bottom: 40px
+
+    div.container
+        display: grid
+        grid-gap: 24px
+
+    div.title
+        display: grid
+        grid-gap: 24px
+        +screen(m)
+            grid-gap: 16px
+        +screen(s)
+            grid-gap: 5px
+        span
+            +screen(s)
+                font-size: 14px
+
+    div.swiper
+        width: 100%
+        min-width: 0
+
+    div.swiper-wrapper
+        height: auto !important
+
+    div.client
+        width: 100%
+        aspect-ratio: 1 / 1
+        position: relative
+        +screen(m)
+            width: 280px
+        div.image
+            +background
+            position: absolute
+            top: 0
+            left: 0
+        div.description
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            z-index: 2
+            width: 100%
+            color: white
+            justify-items: center
+            grid-gap: 10px
+            padding: 24px
+            display: none
+            +screen(s)
+                font-size: 12px
+                grid-gap: 4px
+            div.info
+                display: grid
+                align-items: center 
+                grid-template-columns: repeat(2, max-content)
+                grid-gap: 24px
+                div.likes, div.comments
+                    display: grid
+                    align-items: center
+                    grid-template-columns: max-content max-content
+                    grid-gap: 5px
+                    svg
+                        width: 18px
+                        height: 18px
+                        path
+                            stroke: white
+                            stroke-width: 1
+            a.shop
+                margin-top: 6px
+                width: 70px
+                height: 70px
+                svg
+                    width: 100%
+                    height: 100%
+                +screen(m)
+                    width: 54px
+                    height: 54px
+                +screen(s)
+                    margin-top: 12px
+                    width: 38px
+                    height: 38px
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(78, 81, 84, 0.54)
+            z-index: 1
+            display: none
+        &:hover
+            div.description
+                display: grid
+            &::before
+                display: block

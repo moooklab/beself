@@ -1,0 +1,33 @@
+dialog(data-modal-name="authorise")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            h3 Авторизация
+
+            form(action="") 
+                fieldset.text
+                    label Email #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Пароль #[span.required *]
+                    input(type="password", placeholder=" ", required)
+                    div.eye(onclick="showPassword(this)")
+                        div.show_password
+                            include ../../../images/show_password.svg
+                        div.hide_password
+                            include ../../../images/hide_password.svg
+
+                div.remember
+                    fieldset.switch
+                        label.checkbox
+                            input(type="checkbox", name="")
+                            span
+                        span Запомнить меня
+                    a(onclick="createDialog('password')") Забыли пароль?
+                button.gray Войти
+
+            hr
+            span.register Нет аккаунта? #[a(onclick="createDialog('register')") Зарегистрироваться]

@@ -1,0 +1,56 @@
+dialog(data-modal-name="review")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+
+            form(action="")
+                
+                div.title
+                    h3 новый отзыв
+                    span Лосины PUSH-UP малиновые PARADISO
+
+                hr
+                
+                fieldset.stars
+                    strong Оцените товар:
+                    div.list
+                        input(type="radio", name="stars", value="5")#star_5
+                        label(for="star_5")
+                            include ../../../images/star2.svg
+                        input(type="radio", name="stars", value="4")#star_4
+                        label(for="star_4")
+                            include ../../../images/star2.svg
+                        input(type="radio", name="stars", value="3")#star_3
+                        label(for="star_3")
+                            include ../../../images/star2.svg
+                        input(type="radio", name="stars", value="2")#star_2
+                        label(for="star_2")
+                            include ../../../images/star2.svg
+                        input(type="radio", name="stars", value="1")#star_1
+                        label(for="star_1")
+                            include ../../../images/star2.svg
+                    span — не выбрано
+                fieldset.textarea
+                    label Комментарий:
+                    textarea(placeholder="Опишите подробнее свои впечатления", cols="30", rows="4")
+                fieldset.images
+                    input(type="file", id="file", multiple, onchange="getImages(this)", accept="image/*")
+                    label(for="file")
+                        img(src="images/upload.svg", alt="")
+                        span Прикрепите фото к сообщению, перетащите его в эту область или выберите файл.
+                    div.list
+                div.row
+                    fieldset.text
+                        label Как вас зовут?
+                        input(type="text", placeholder="Ваше имя", required)
+                    fieldset.text
+                        label Откуда вы?
+                        input(type="text", placeholder="Город", required)
+                span.policy Соглашаюсь с условиями политики конфиденциальности и правилами продажи.
+
+                hr
+
+                button.gray отправить отзыв

@@ -1,0 +1,77 @@
+[data-modal-name=dolyame]
+
+    div.container
+        position: relative
+        padding: 30px
+        padding-bottom: 52px
+        background-color: #F2F3F4
+        width: 100%
+        max-width: 870px
+        +screen(s)
+            padding: 20px
+            padding-bottom: 30px
+
+    div.content
+        display: grid
+        justify-items: center
+
+    img.dolyame
+        width: 240px
+        height: 77px
+        padding-left: 20px
+        padding-right: 20px
+        margin-bottom: 20px
+
+    div.text
+        width: 100%
+        text-align: center
+        display: grid
+        grid-gap: 10px
+        margin-bottom: 40px
+
+        span
+            margin-top: 6px
+            display: block
+            color: #A1A1A1
+
+    div.list
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 23px
+        width: 100%
+        margin-bottom: 40px
+        +screen(s)
+            grid-gap: 10px
+        span
+            font-size: 14px
+            &::before
+                content: ''
+                display: block
+                margin-bottom: 10px
+                border-radius: 15px
+                background-color: #E4E5E5
+                width: 100%
+                height: 8px
+            &:first-child
+                &::before
+                    background-color: #4E5154
+
+    ul.tick
+        display: grid
+        grid-gap: 5px
+        width: 100%
+        font-size: 14px
+        color: #A1A1A1
+        padding-inline-start: 0px
+        li
+            position: relative
+            padding-left: 20px 
+            &::before
+                content: ''
+                display: block
+                width: 14px
+                height: 10px
+                background-image: url(../images/list_tick.svg)
+                position: absolute
+                top: 5px
+                left: 0

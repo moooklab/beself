@@ -1,0 +1,59 @@
+section.how
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.list
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        grid-gap: 30px
+        margin-top: 16px
+        +screen(m)
+            grid-gap: 20px
+            grid-template-columns: repeat(2, 1fr)
+        +screen(s)
+            margin-top: 21px
+            grid-template-columns: 1fr
+            font-size: 12px
+        span
+            text-align: center
+            grid-column: 2 span
+            display: grid
+            align-items: center
+            width: 100%
+            border: 1px solid #D4E4F5
+            border-radius: 5px
+            padding: 38px
+            +screen(m)
+                grid-column: 1 span
+                padding: 28px
+
+            &:nth-child(4), &:nth-child(5)
+                grid-column: 3 span
+                +screen(m)
+                    grid-column: 1 span
+
+    div.notes
+        display: grid
+        color: #888888
+        margin-top: 30px
+        max-width: 1140px
+        +screen(s)
+            font-size: 12px
+            margin-top: 10px
+
+    div.signin
+        display: grid
+        justify-items: center
+        grid-gap: 20px
+        text-align: center
+        margin-top: 150px
+        +screen(m)
+            margin-top: 80px
+        +screen(s)
+            font-size: 12px
+
+        button
+            min-width: 240px

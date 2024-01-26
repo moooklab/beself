@@ -1,0 +1,45 @@
+section.benefit
+
+    h2
+        margin-bottom: 50px
+        +screen(m)
+            margin-bottom: 24px
+        +screen(s)
+            margin-bottom: 27px
+
+    div.list
+        display: grid
+        align-items: start
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 29px
+        +screen(m)
+            grid-gap: 20px
+        +screen(s)
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 30px 21px
+
+        div.item
+            display: grid
+            justify-items: center
+            text-align: center
+            grid-gap: 30px
+            +screen(m)
+                grid-gap: 12px 
+            +screen(s)
+                grid-gap: 20px
+        div.image
+            width: 100%
+            aspect-ratio: 1 / 1
+            border-radius: 999px
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        span
+            font-size: 20px
+            +screen(m)
+                font-size: 16px
+            +screen(s)
+                font-size: 14px
+                

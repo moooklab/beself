@@ -1,0 +1,23 @@
+dialog(data-modal-name="recover")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+
+            div.title
+                h3 Восстановление данных
+
+            form(action="") 
+                fieldset.text
+                    label Код из письма #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Пароль #[span.required *]
+                    input(type="password", placeholder=" ", required)
+                fieldset.text
+                    label Повторите пароль #[span.required *]
+                    input(type="password", placeholder=" ", required)
+
+                button.gray Отправить

@@ -1,0 +1,79 @@
+section.cards
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    h3
+        +screen(s)
+            font-size: 14px
+
+    div.list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
+        max-width: 1160px
+        margin-top: 24px
+        +screen(m)
+            grid-gap: 30px 18px
+            grid-template-columns: repeat(2, 1fr)
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 34px
+            margin-top: 16px
+
+    div.card
+        div.preview
+            position: relative
+            aspect-ratio:  81 / 49
+            background: url(../images/service/card_background.svg)
+            background-position: center center
+            background-size: cover
+            border-radius: 15px
+
+            span.percent
+                display: block
+                font-family: 'Tenor Sans', sans-serif
+                text-transform: uppercase
+                font-size: 36px
+                position: absolute
+                bottom: 20px
+                left: 20px
+
+            span.name
+                display: block
+                font-family: 'Tenor Sans', sans-serif
+                text-transform: uppercase
+                font-size: 14px
+                line-height: 1.2em
+                letter-spacing: .28px
+                position: absolute
+                bottom: 20px
+                right: 20px
+
+        div.description
+            margin-top: 15px
+            display: grid
+            grid-gap: 5px
+            +screen(s)
+                font-size: 14px
+            h4
+                font-size: 14px
+            span
+                color: #A1A1A1
+                line-height: 1.2em
+            span.discount
+                display: block
+                margin-top: 15px
+                font-weight: 600
+                +screen(s)
+                    margin-top: 5px
+
+    div.notes
+        display: grid
+        color: #888888
+        margin-top: 30px
+        max-width: 1140px
+        +screen(s)
+            font-size: 12px

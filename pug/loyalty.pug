@@ -1,0 +1,14 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/loyalty.css")
+
+block content
+    include sections/loyalty/_breadcrumbs.pug
+    include sections/loyalty/_main.pug
+    include sections/loyalty/_conditions.pug
+    include sections/loyalty/_faq.pug
+    include sections/loyalty/_cards.pug
+    include sections/loyalty/_how.pug
+    
+    include sections/_seo.pug

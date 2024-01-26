@@ -1,0 +1,61 @@
+section.main
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+    +screen(s)
+        font-size: 12px
+
+    div.container
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr 3fr
+        grid-gap: 48px
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 30px
+            justify-items: center
+
+    img
+        width: 254px
+        +screen(m)
+            max-width: 182px 
+
+    div.text
+        display: grid
+        justify-items: start
+        +screen(s)
+            justify-items: center
+            text-align: center
+
+        h2
+            margin-bottom: 16px
+            +screen(s)
+                margin-bottom: 30px
+                font-size: 24px
+
+        span
+            display: block
+            & + span
+                margin-top: 10px
+                +screen(s)
+                    margin-top: 15px
+
+            a
+                text-decoration: underline
+                &:hover
+                    text-decoration: none
+
+        
+
+        a.button
+            font-size: 16px
+            font-weight: 600
+            line-height: 1.2em
+            letter-spacing:  .32px
+
+        a.button
+            margin-top: 32px
+            +screen(s)
+                display: none

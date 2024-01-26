@@ -1,0 +1,13 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/404.css")
+
+block content
+    section.error
+        div.container
+            img(src="images/error.svg", alt="")
+            div.text
+                h2 Страница не найдена
+                span Если вы считаете, что страницы нет по нашей вине, напишите нам.
+                a.button(href="index.html").gray  на главную

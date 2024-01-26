@@ -1,0 +1,17 @@
+section.main
+    div.swiper.main
+        div.swiper-wrapper
+            - for( x = 1; x <= 6; x++ )
+                div.swiper-slide
+                    div.image
+                        img(src="images/index_main.webp", alt="")
+                    div.container
+                        div.text
+                            h1 Новая коллекция Push-Up Motion
+                            a(href="category.html").button Смотреть коллекцию
+        div.swiper-pagination
+        div.swiper-navigation
+            div.arrow
+                include ../../../images/swiper_arrow.svg
+            div.arrow
+                include ../../../images/swiper_arrow.svg

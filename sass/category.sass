@@ -1,0 +1,19 @@
+// Общее 
+@import 'common/_variables'
+@import 'common/_mixins'
+
+//Секции
+@import 'sections/index/_soft_cover_collection'
+
+@import 'sections/_catalog'
+@import 'sections/_filter'
+@import 'sections/_products_slider'
+@import 'sections/_seo'
+
+section.soft_cover_collection
+    margin-top: unset
+    margin-bottom: 50px
+    +screen(m)
+        margin-bottom: 40px
+    +screen(s)
+        margin-bottom: 30px

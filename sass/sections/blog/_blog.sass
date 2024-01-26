@@ -1,0 +1,285 @@
+section.blog
+    margin-top: 30px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 20px
+        margin-bottom: 80px
+
+    h2
+        margin-bottom: 24px
+        +screen(m)
+            display: none
+
+    div.main
+        display: grid
+        grid-template-columns: 2fr 1fr
+        grid-gap: 30px
+        +screen(m)
+            grid-template-columns: 1fr
+        +screen(s)
+            grid-gap: 20px
+
+        div.list
+            display: grid
+            grid-gap: 30px
+            +screen(m)
+                grid-template-columns: repeat(2, 1fr)
+            +screen(s)
+                grid-gap: 20px
+
+    div.sort
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content
+        grid-gap: 30px
+        padding-top: 30px
+        padding-bottom: 30px
+        margin-top: 30px
+        margin-bottom: 30px
+        border-top: 1px solid #E4E5E5
+        border-bottom: 1px solid #E4E5E5
+        +screen(m)
+            margin-top: 40px
+            padding-top: 20px
+            padding-bottom: 20px
+        +screen(s)
+            grid-template-columns: 1fr
+            justify-items: start
+            grid-gap: 20px
+            border-bottom: unset
+        div.tags
+            line-height: 1.3em
+            letter-spacing: .32px
+            text-transform: uppercase
+            display: flex
+            flex-wrap: wrap
+            gap: 10px 20px
+            +screen(m)
+                font-size: 14px
+            +screen(s)
+                font-size: 12px
+                grid-gap: 10px 20px
+                border-bottom: 1px solid #E4E5E5
+                padding-bottom: 20px
+                width: 100%
+        fieldset
+            min-width: 240px
+            +screen(s)
+                font-size: 12px
+                min-width: 200px
+            div.list
+                white-space: nowrap
+
+    div.articles
+        display: grid
+        align-items: start
+        grid-template-columns: 2fr 1fr
+        grid-gap: 30px
+        +screen(m)
+            grid-template-columns: 1fr
+        div.big
+            border-right: 1px solid #E4E5E5
+            padding-right: 30px
+            +screen(m)
+                border-right: unset
+                padding-right: unset
+            div.list
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 30px
+                +screen(m)
+                    grid-gap: 20px
+                +screen(s)
+                    grid-template-columns: 1fr
+        div.shorts
+            display: grid
+            grid-gap: 69px
+            +screen(m)
+                display: none
+            div.category
+                display: grid
+                grid-gap: 24px
+            div.list
+                display: grid
+                grid-gap: 30px
+
+    div.article_big
+        position: relative
+        +screen(m)
+            aspect-ratio: 2 / 1
+        +screen(s)
+            aspect-ratio: 16 / 9
+        a.tag
+            position: absolute
+            top: 20px
+            left: 20px
+            display: inline-block
+            font-size: 14px
+            font-weight: 600
+            background-color: white
+            padding: 5px 13px
+            border-radius: 999px
+            +screen(s)
+                top: 10px
+                left: 10px
+                font-size: 12px
+        div.time
+            position: absolute
+            top: 20px
+            right: 20px
+            color: white
+            display: grid
+            grid-template-columns: max-content auto
+            align-items: center
+            grid-gap: 5px
+            +screen(s)
+                top: 10px
+                right: 10px
+        div.image
+            +background
+            width: 100%
+            height: 100%
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(11deg, rgba(0, 0, 0, 0.40) 21.84%, rgba(0, 0, 0, 0.00) 34.95%)
+        h3
+            position: absolute
+            bottom: 20px
+            left: 20px
+            color: white
+            font-size: 24px
+            letter-spacing: 0.48px
+            max-width: 480px
+            +screen(s)
+                font-size: 14px
+                bottom: 10px
+                left: 10px
+
+    div.article_short
+        display: grid
+        align-items: start
+        grid-template-columns: 217px 1fr
+        grid-gap: 20px
+        +screen(m)
+            grid-template-columns: 118px 1fr
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 12px
+
+        div.description
+            display: grid
+            grid-template-rows: max-content
+            height: 100%
+            div.tags
+                font-size: 14px
+                font-weight: 600
+                display: flex
+                flex-wrap: wrap
+                gap: 4px 16px
+                margin-bottom: 25px
+                +screen(m)
+                    margin-bottom: 16px
+                +screen(s)
+                    font-size: 12px
+                    grid-gap: 4px 15px
+                    margin-bottom: 10px
+            div.text
+                display: grid
+                align-content: start
+                grid-gap: 10px
+                margin-bottom: 11px
+                h3
+                    font-size: 16px
+                    letter-spacing: .32px
+                    +screen(s)
+                        font-size: 12px
+                span
+                    font-size: 14px
+                    +screen(s)
+                        font-size: 12px
+            div.info
+                display: grid
+                align-items: center
+                align-self: end
+                grid-template-columns: 1fr auto
+                grid-gap: 20px
+                align-items: center
+                span.date
+                    color: #A1A1A1
+                    font-size: 14px
+                    line-height: 1.2em
+                    +screen(s)
+                        font-size: 12px
+                div.time
+                    color: #A1A1A1
+                    font-size: 14px
+                    line-height: 1.2em
+                    display: grid
+                    grid-template-columns: max-content auto
+                    align-items: center
+                    grid-gap: 5px
+                    +screen(s)
+                        font-size: 12px
+                    svg
+                        path
+                            stroke: #A1A1A1
+        div.image
+            +background
+            height: auto
+            aspect-ratio: 1 / 1
+
+    div.article
+        display: grid
+        grid-template-rows: max-content 1fr
+
+        a.tag
+            position: absolute
+            top: 20px
+            left: 20px
+            display: inline-block
+            font-size: 14px
+            font-weight: 600
+            background-color: white
+            padding: 5px 13px
+            border-radius: 999px
+            +screen(s)
+                top: 10px
+                left: 10px
+
+        div.image
+            +background
+            width: 100%
+            height: auto
+            aspect-ratio: 4 / 3
+
+        div.text
+            display: grid
+            align-content: start
+            padding: 24px
+            border: 1px solid #E4E5E5
+            +screen(s)
+                padding: 16px
+            span.date
+                display: block
+                margin-bottom: 5px
+                font-size: 14px
+                line-height: 1.2em
+                color: #A1A1A1
+                margin-bottom: 20px
+                +screen(s)
+                    font-size: 12px
+                    margin-bottom: 3px
+            h3
+                font-size: 14px
+                margin-bottom: 10px
+            span
+                font-size: 14px
+                color: #4E5154
+                +screen(s)
+                    font-size: 12px

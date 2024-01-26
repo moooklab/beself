@@ -1,0 +1,58 @@
+-
+    site = {
+        head: {
+            title: 'BeSelf – твой выбор одежды для фитнеса',
+            description: 'BeSelf – твой выбор одежды для фитнеса',
+            keywords: 'BeSelf – твой выбор одежды для фитнеса',
+            image: 'Изображение'
+        }
+    }
+
+head
+    //- Стандарт
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(http-equiv="Cache-Control", content="no-cache")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    //- Описание страницы
+    meta(name='description', content=site.head.description)
+    meta(name='keywords', content=site.head.keywords)
+    title= site.head.title
+
+    //- Управление индексацией
+    meta(name='robots', content='index, follow')
+
+    //- Для мобильных устройств
+    meta(name="HandheldFriendly", content="True")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="format-detection", content="date=no")
+    meta(name="format-detection", content="address=no")
+    meta(name="format-detection", content="email=no")
+    meta(name='application-name', content=site.head.title)
+    meta(name='color-scheme', content="only light")
+    
+    //- Open Graph
+    meta(property='og:title', content=site.head.title)
+    meta(property='og:type', content='website')
+    meta(property='og:description', content=site.head.description)
+    meta(property='og:image', content=site.head.image)
+    meta(property='og:site_name', content=site.head.title)
+
+    //- Стили
+    link(rel='icon', href='images/favicon.svg', type='image/png')
+    link(rel='stylesheet' href='plugins/swiper/swiper-bundle.min.css')
+    link(rel="stylesheet", href="css/common.css")
+    block links
+
+    //- Скрипты
+    script(defer src='plugins/swiper/swiper-bundle.min.js')
+    script(defer src='scripts/main.js')
+    script(defer src='scripts/tabs.js')
+    script(defer src='scripts/modal.js')
+    script(defer src='scripts/accordion.js')
+    script(defer src='scripts/lightbox.js')
+    script(defer src='scripts/range.js')
+    script(defer src='scripts/quantity.js', data-reload)
+    script(defer src='scripts/phone.js', data-reload)
+    script(defer src='scripts/loaded.js', data-reload)

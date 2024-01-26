@@ -1,0 +1,12 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/contacts.css")
+
+block content
+    include sections/contacts/_breadcrumbs.pug
+    include sections/contacts/_contacts.pug
+    include sections/contacts/_map.pug
+    include sections/contacts/_requisite.pug
+    
+    include sections/_seo.pug

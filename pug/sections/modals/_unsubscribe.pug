@@ -1,0 +1,18 @@
+dialog(data-modal-name="unsubscribe")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            span Адрес info123@gmail.com будет отписан от email- рассылки
+            button(onclick="createDialog('unsubscribe_confirm')").gray Подтвердить
+
+dialog(data-modal-name="unsubscribe_confirm")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            span Вы успешно отписались от email рассылки.

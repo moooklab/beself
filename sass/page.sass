@@ -1,0 +1,29 @@
+// Общее 
+@import 'common/_variables'
+@import 'common/_mixins'
+
+//Секции
+section.page
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+    +screen(s)
+        font-size: 12px
+
+    div.wrap
+        display: grid
+        grid-gap: 16px
+        max-width: 827px
+        +screen(s)
+            grid-gap: 10px
+
+        h3
+            margin-top: 34px
+            +screen(s)
+                font-size: 14px
+                margin-top: 30px
+
+        a
+            text-decoration: underline
+            &:hover
+                text-decoration: none

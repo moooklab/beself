@@ -1,0 +1,41 @@
+section.products_slider#products_slider
+    div.container
+        div.title
+            h2= products_slider_title ? products_slider_title : 'Товары'
+            if arrows
+                div.swiper-navigation
+                    div.arrow
+                        include ../../images/swiper_arrow.svg
+                    div.arrow
+                        include ../../images/swiper_arrow.svg
+            else
+                a(href="category.html").link Посмотреть все
+        div.swiper.products
+            div.swiper-wrapper
+                div.swiper-slide
+                    include products/_1.pug
+                div.swiper-slide
+                    include products/_2.pug
+                div.swiper-slide
+                    include products/_3.pug
+                div.swiper-slide
+                    include products/_4.pug
+                div.swiper-slide
+                    include products/_5.pug
+                div.swiper-slide
+                    include products/_1.pug
+                div.swiper-slide
+                    include products/_2.pug
+                div.swiper-slide
+                    include products/_3.pug
+                div.swiper-slide
+                    include products/_4.pug
+                div.swiper-slide
+                    include products/_5.pug
+
+            if !arrows
+                div.swiper-navigation.onslider
+                    div.arrow
+                        include ../../images/swiper_arrow.svg
+                    div.arrow
+                        include ../../images/swiper_arrow.svg

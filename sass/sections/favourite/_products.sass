@@ -1,0 +1,39 @@
+section.products
+
+    a.back
+        grid-column: 2 span
+        display: grid
+        align-items: center
+        grid-template-columns: max-content max-content
+        grid-gap: 5px
+        
+        &:hover
+            span
+                text-decoration: underline
+
+    h2
+        padding-top: 32px
+        padding-bottom: 24px
+        +screen(m)
+            padding-top: 20px
+            padding-bottom: 20px
+
+    div.products
+        border-top: 1px solid #C6D6E7
+        border-bottom: 1px solid #C6D6E7
+
+    div.list
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 30px
+        margin-top: 40px
+        +screen(m)
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 30px 20px
+            margin-top: 20px
+        +screen(s)
+            position: relative
+            width: calc(100% + 40px)
+            left: -20px
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px 10px

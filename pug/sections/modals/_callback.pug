@@ -1,0 +1,39 @@
+dialog(data-modal-name="callback")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            div.title
+                h3 оставить заявку
+                span Здравствуйте! Мы уже готовы отгрузить вам наши самые популярные модели, оставляйте заявку и мы расскажем, что для этого нужно!
+
+            form(action="") 
+                fieldset.text
+                    label Имя #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Фамилия #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Email #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Телефон #[span.required *]
+                    input(type="text", placeholder=" ", data-phone-pattern="", required)
+                fieldset.text
+                    label Адрес #[span.required *]
+                    input(type="text", placeholder=" ", required)
+
+                div.checboxes
+                    fieldset.checkbox
+                        label
+                            input(type="checkbox", name="checbox", checked)
+                            span Подтверждаю своё согласие на получение информации о новинках и выгодных предложениях.
+                    fieldset.checkbox
+                        label
+                            input(type="checkbox", name="checbox")
+                            span Подтверждаю своё согласие на обработку и хранение моих персональных данных в соответствии с пользовательским соглашением
+
+                button.gray отправить

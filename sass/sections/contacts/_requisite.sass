@@ -1,0 +1,25 @@
+section.requisite
+    margin-top: 80px
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+    +screen(s)
+        font-size: 12px
+
+    div.container
+        display: grid
+        grid-gap: 16px
+        +screen(s)
+            grid-gap: 10px
+
+    div.block
+        border: 1px solid #E4E5E5
+        padding: 30px
+        min-width: 460px
+        width: min-content
+        +screen(s)
+            padding: 20px
+            min-width: unset
+            width: 100%
+        span
+            display: block

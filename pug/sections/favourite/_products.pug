@@ -1,0 +1,35 @@
+section.products
+    div.container
+
+        a.back(href="javascript:history.back()")
+            img(src="images/product/back_arrow.svg", alt="")
+            span Назад
+            
+        h2 Избранное
+
+        div.products
+            div.list
+                include ../../elements/products/_5.pug
+                include ../../elements/products/_4.pug
+                include ../../elements/products/_3.pug
+                include ../../elements/products/_2.pug
+            div.pagination
+                button.border Показать ещё
+                div.pages
+                    a(href="catalog.html").active 1
+                    a(href="catalog.html") 2
+                    a(href="catalog.html") 3
+                    a(href="catalog.html") 4
+                    a(href="catalog.html") 5
+                    a(href="catalog.html") 6
+                    span …
+                    a(href="catalog.html") 10
+
+        
+
+        script.
+            favourites = document.querySelectorAll('a.favourite')
+
+            favourites.forEach( favourite => {
+                favourite.classList.add('active')
+            })

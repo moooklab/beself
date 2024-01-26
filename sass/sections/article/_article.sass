@@ -1,0 +1,175 @@
+section.article
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+
+    [id]
+        scroll-margin-top: 93px
+
+    div.container
+        display: grid
+        align-items: start
+        grid-template-columns: 338px 1fr
+        grid-gap: 30px
+        +screen(m)
+            grid-template-columns: 1fr
+            justify-items: start
+        +screen(s)
+            justify-items: stretch
+            grid-gap: 16px
+
+    a.back
+        grid-column: 2 span
+        display: grid
+        align-items: center
+        grid-template-columns: max-content max-content
+        grid-gap: 5px
+        +screen(m)
+            grid-column: 1 span
+        +screen(s)
+            margin-top: 10px
+        &:hover
+            span
+                text-decoration: underline
+    
+    div.navigation
+        top: 93px
+        position: sticky
+        border-radius: 5px
+        border: 1px solid #E4E5E5
+        background: #FFF
+        padding: 30px
+        +screen(m)
+            position: static
+            padding: 15px
+            margin-bottom: 20px
+        +screen(s)
+            margin-bottom: 34px
+            font-size: 14px
+        ul
+            display: grid
+            grid-gap: 20px
+            li
+                &.active
+                    font-weight: 700
+                a:hover
+                    text-decoration: underline
+
+        
+    div.content
+        +screen(s)
+            font-size: 12px
+
+        h2
+            text-transform: uppercase
+
+        h3
+            margin-top: 80px
+            margin-bottom: 16px
+            +screen(m)
+                margin-top: 50px
+            +screen(s)
+                font-size: 14px
+
+        ul
+            margin-top: 20px
+            margin-bottom: 30px
+            +screen(m)
+                margin-bottom: 20px
+
+        p
+            display: block
+            margin-top: 16px
+            margin-bottom: 16px
+
+        strong
+            display: block
+            margin-top: 32px
+            font-size: 20px
+            color: #241D13
+            font-weight: 400
+            +screen(m)
+                margin-top: 24px
+            +screen(s)
+                font-size: 14px
+
+        div.info
+            display: grid
+            align-items: center
+            grid-template-columns: 1fr auto
+            grid-gap: 20px
+            align-items: center
+            margin-top: 20px
+            margin-bottom: 40px
+            +screen(m)
+                margin-bottom: 28px
+            span.date
+                color: #A1A1A1
+                line-height: 1.2em
+                +screen(s)
+                    font-size: 12px
+            div.time
+                color: #A1A1A1
+                line-height: 1.4em
+                display: grid
+                grid-template-columns: max-content auto
+                align-items: center
+                grid-gap: 7px
+                +screen(s)
+                    font-size: 12px
+                svg
+                    path
+                        stroke: #A1A1A1
+
+        div.gallery
+            display: grid
+            margin-top: 30px
+            margin-bottom: 30px
+            +screen(m)
+                margin-top: 20px
+                margin-bottom: 20px
+            img
+                max-width: 100%
+
+            &.two
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 42px 30px
+                +screen(m)
+                    grid-gap: 20px
+
+        div.additional
+            display: grid
+            align-items: center
+            grid-template-columns: 1fr auto
+            grid-gap: 32px
+            margin-top: 100px
+            +screen(m)
+                margin-top: 50px
+            +screen(s)
+                margin-top: 20px
+
+            div.socials
+                display: grid
+                grid-auto-flow: column
+                grid-auto-columns: max-content
+                grid-gap: 24px
+                a
+                    display: block
+                    line-height: 0
+                svg
+                    width: 24px
+                    height: 24px
+                    path
+                        fill: #4E5154
+
+            a.tag
+                display: inline-block
+                font-size: 14px
+                font-weight: 600
+                background-color: white
+                padding: 5px 13px
+                border-radius: 999px
+                border: 1px solid #000000
+                +screen(s)
+                    top: 10px
+                    left: 10px

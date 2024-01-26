@@ -1,0 +1,42 @@
+section.signin
+    margin-top: 80px
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+    +screen(s)
+        font-size: 12px
+
+    div.container
+        display: grid
+        justify-items: center
+        text-align: center
+
+    p
+        display: block
+        margin-bottom: 16px
+        +screen(m)
+            margin-bottom: 10px
+        +screen(s)
+            max-width: 257px
+
+    span
+        color: #B1B1B1
+        display: block
+        margin-bottom: 32px
+        +screen(s)
+            margin-bottom: 24px
+
+    div.buttons
+        display: grid
+        grid-template-columns: max-content max-content
+        grid-gap: 10px
+        +screen(s)
+            grid-template-columns: 1fr
+
+
+        button
+            min-width: 180px
+            font-weight: 600
+            +screen(s)
+                min-width: 240px
+                font-size: 12px

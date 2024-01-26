@@ -1,0 +1,70 @@
+form.filter
+    display: grid
+    grid-gap: 20px
+
+    strong
+        font-weight: 600
+
+    div.accordion
+        div.accordion
+            a
+                margin-top: 12px
+                text-decoration: underline
+                &:hover
+                    text-decoration: none
+            a.hide
+                display: none
+            a.show
+                display: block
+            &.open
+                a.hide
+                    display: block
+                a.show
+                    display: none
+        &.open
+            div.accordion_caption
+                img
+                    transform: rotate(180deg)
+
+    div.accordion_caption
+        display: grid
+        align-items: center
+        justify-content: start
+        grid-template-columns: auto max-content
+        grid-gap: 10px
+        cursor: pointer
+        img
+            transition: all .2s
+        
+
+    div.checkboxes
+        display: grid
+        margin-top: 12px
+        fieldset
+            label
+                position: relative
+                display: block
+                cursor: pointer
+                padding: 5px 0
+                span
+                    color: #4E5154
+                    &.color
+                        padding-left: 48px
+                div.color
+                    width: 15px
+                    height: 15px
+                    border-radius: 15px
+                    position: absolute
+                    top: 8px
+                    left: 28px
+        div.checkboxes
+            margin-top: 0
+
+    div.range
+        margin-top: 12px
+        
+    input[type=reset]
+        text-align: left
+        text-decoration: underline
+        &:hover
+            text-decoration: none

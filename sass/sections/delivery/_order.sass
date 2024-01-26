@@ -1,0 +1,37 @@
+section.order
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+    +screen(s)
+        text-align: center
+
+    div.container
+        display: grid
+        grid-gap: 24px
+
+
+    div.buttons
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        +screen(m)
+            grid-gap: 20px
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 10px
+
+        button
+            text-transform: unset
+            border: 1px solid #D4E4F5
+            background-color: transparent
+            padding: 38px
+            font-size: 16px
+            +screen(s)
+                padding: 24px
+                font-size: 14px
+
+            &:hover
+                background-color: #4E5154
+                color: white

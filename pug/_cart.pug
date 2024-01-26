@@ -1,0 +1,19 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/cart.css")
+
+block content
+
+    include sections/cart/_breadcrumbs.pug
+    include sections/cart/_cart.pug
+
+    - var arrows = true
+    - var products_slider_title = 'Дополнить образ'
+    include elements/_products_slider.pug
+
+    - var arrows = true
+    - var products_slider_title = 'Хиты продаж'
+    include elements/_products_slider.pug
+    
+    include sections/_seo.pug

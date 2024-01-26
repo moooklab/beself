@@ -1,0 +1,272 @@
+dialog(data-modal-name="filter")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+ 
+        form.modal_filter
+
+            input(type="reset", value="Сбросить все фильтры")
+
+            div.accordion.open
+                div.accordion_caption
+                    strong Вид товара
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Лосины
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Велосипедки
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Спортивные бра
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Кроп-топ
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Майка
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Кофта на молнии
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Футболка
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Кофта на молнии
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Лосины Push-Up
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Лонгслив
+                            a(onclick="this.parentElement.querySelectorAll('input').forEach( input => { input.checked = false })").clear Сбросить все виды
+            
+            div.accordion
+                div.accordion_caption
+                    strong Цена
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.range
+                            div.inputs
+                                span от
+                                input(type="number", min="0", max="5000", value="0")
+                                span до
+                                input(type="number", min="0", max="5000", value="5000")
+
+            div.accordion
+                div.accordion_caption
+                    strong Размер
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span 2XS
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span XS
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span S
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span M
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span L
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span XL
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span 2XL
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span 3XL
+                            a(onclick="this.parentElement.querySelectorAll('input').forEach( input => { input.checked = false })").clear Сбросить все размеры
+            
+            div.accordion
+                div.accordion_caption
+                    strong Цвет
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Чёрный
+                                    div(style="background-color: #241D13").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Розовый
+                                    div(style="background-color: #FFB2F7").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Жёлтый
+                                    div(style="background-color: #FFED47").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Салатовый
+                                    div(style="background-color: #C6FFCD").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Голубой
+                                    div(style="background-color: #C6D6E7").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Красный
+                                    div(style="background-color: #ff0000").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Фиолетовый
+                                    div(style="background-color: #800080").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Оливковый
+                                    div(style="background-color: #808000").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Коричневый
+                                    div(style="background-color: #A52A2A").color
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span.color Оранжевый
+                                    div(style="background-color: #FFA500").color
+                            a(onclick="this.parentElement.querySelectorAll('input').forEach( input => { input.checked = false })").clear Сбросить все цвета
+
+            div.accordion
+                div.accordion_caption
+                    strong Материал
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Гладкая ткань
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Бесшовное изделие
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Supplex Sport Hit
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Supplex Yoga Hit
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Supplex Cotton
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Matte Bifleks
+                            a(onclick="this.parentElement.querySelectorAll('input').forEach( input => { input.checked = false })").clear Сбросить все материалы
+            
+            div.accordion
+                div.accordion_caption
+                    strong Уровень поддержки
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Низкая поддержка
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Средняя поддержка
+                            fieldset.checkbox
+                                label
+                                    input(type="checkbox", name="checbox")
+                                    span Высокая поддержка
+                            a(onclick="this.parentElement.querySelectorAll('input').forEach( input => { input.checked = false })").clear Сбросить все уровни поддержки
+            
+            div.accordion
+                div.accordion_caption
+                    strong(data-note="") Упорядочить
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort")
+                                    span Новинки
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort")
+                                    span Хиты продаж
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort")
+                                    span Sale
+            
+            div.accordion
+                div.accordion_caption
+                    strong(data-note="По популярности") Сортировка
+                    img(src="images/filter_arrow.svg", alt="")
+                div.accordion_content
+                    div.wrap
+                        div.checkboxes
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort2", checked)
+                                    span По популярности
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort2")
+                                    span По новизне
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort2")
+                                    span Цена по убыванию
+                            fieldset.radio
+                                label(onclick="setFilterNote(this)")
+                                    input(type="radio", name="sort2")
+                                    span Цена по возрастанию
+
+
+

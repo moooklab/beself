@@ -1,0 +1,78 @@
+section.categories
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        +screen(m)
+            grid-gap: 20px
+        +screen(s)
+            grid-gap: 20px 10px
+
+    a.category
+        position: relative
+        div.image
+            position: relative
+            height: 427px
+            background-color: rgba(198, 214, 231, 0.25)
+            border: 1px solid #C6D6E7
+            border-radius: 10px
+            overflow: hidden
+            +screen(s)
+                height: 191px
+            img
+                height: 100%
+                max-width: 50%
+                position: absolute
+                bottom: 0px
+                right: 0px
+                transition: .3s all
+                z-index: 1
+                object-fit: cover
+                object-position: left bottom
+                +screen(s)
+                    max-width: 100%
+            svg
+                position: absolute
+                top: 15px
+                left: -120px
+                width: 475px
+                height: 475px
+                transition: all .3s
+                path
+                    fill: #EBF0F7
+        div.title
+            position: absolute
+            bottom: 30px
+            left: 30px
+            z-index: 1
+            max-width: calc(50% - 30px)
+            +screen(m)
+                bottom: 20px
+                left: 20px
+            +screen(s)
+                position: static
+                margin-top: 10px
+                max-width: 100%
+            h3
+                +screen(m)
+                    font-size: 16px
+                +screen(s)
+                    font-size: 10px
+            img
+                display: inline
+                vertical-align: middle
+
+        &:hover
+            div.image
+                img
+                    transform: scale(1.1)
+                svg
+                    top: 30px
+                    left: -60px
+                

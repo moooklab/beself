@@ -1,0 +1,217 @@
+section.accordions
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+    +screen(s)
+        margin-top: 40px
+        font-size: 12px
+
+    div.accordion
+        padding-top: 30px
+        padding-bottom: 30px
+        border-bottom: 1px solid #C6C6C6
+        +screen(s)
+            padding-top: 15px
+            padding-bottom: 15px
+        &:first-child
+            border-top: 1px solid #C6C6C6
+
+        &.open
+            div.accordion_caption
+                img
+                    transform: rotate(180deg)
+
+        div.accordion_caption
+            cursor: pointer
+            display: grid
+            align-items: center
+            grid-template-columns: 1fr max-content
+            grid-gap: 16px
+
+            strong
+                font-size: 20px
+                font-weight: 600
+                line-height: 1.2em
+                color: #241D13
+                +screen(s)
+                    font-size: 14px
+
+            img
+                transition: transform .2s
+                +screen(s)
+                    display: block
+
+        div.accordion_wrap
+            margin-top: 16px
+            +screen(s)
+                margin-top: 14px
+
+    div.dolyame
+        display: grid
+        grid-template-columns: 1fr 460px
+        grid-gap: 32px
+        +screen(m)
+            grid-template-columns: 1fr
+            grid-gap: 24px
+                
+
+        div.description
+            max-width: 828px
+            +screen(m)
+                order: 2
+
+            p + p
+                margin-top: 5px
+
+            strong
+                display: block
+                margin-top: 24px
+                margin-bottom: 32px
+                color: #241D13
+                font-weight: 600
+                line-height: 1.2em
+                +screen(s)
+                    margin-top: 16px
+                    margin-bottom: 24px
+
+            div.button
+                display: grid
+                align-items: center
+                grid-template-columns: max-content 1fr
+                grid-gap: 10px 30px
+                font-size: 14px
+                +screen(s)
+                    grid-template-columns: 1fr
+                    font-size: 12px
+                button
+                    text-transform: unset
+                    line-height: 1.2em
+                span
+                    max-width: 348px
+                    font-size: 14px
+
+
+        div.advantages
+            display: grid
+            grid-gap: 30px 32px
+            max-width: 280px
+            +screen(m)
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: 16px
+                max-width: unset
+                order: 1
+            +screen(s)
+                grid-template-columns: 1fr
+            img
+                margin-bottom: 16px
+                +screen(s)
+                    margin-bottom: 13px
+            strong
+                display: block
+                margin-bottom: 10px
+                font-weight: 600
+                line-height: 1.2em
+                color: #241D13
+                +screen(s)
+                    margin-bottom: 13px
+            span
+                font-size: 14px
+                line-height: 1.2em
+                color: #A1A1A1
+                +screen(s)
+                    font-size: 12px
+
+    div.logotypes
+        margin-top: 45px
+        display: flex
+        gap: 24px
+        overflow-x: scroll
+        &::-webkit-scrollbar
+            display: none
+        +screen(m)
+            margin-top: 30px
+        +screen(s)
+            margin-top: 21px
+        img
+            height: 28px
+
+    ol.list
+        display: grid
+        grid-gap: .5em
+        margin-left: 20px
+        li
+            list-style-position: outside
+            list-style-type: decimal
+            display: list-item
+
+    div.banner
+        background-color: #E5EDF4
+        border-radius: 5px
+        padding: 30px
+        border-radius: 5px
+
+        display: grid
+        grid-template-columns: max-content 1fr
+        grid-gap: 20px
+        margin-top: 100px
+        +screen(m)
+            margin-top: 50px
+        +screen(s)
+            margin-top: 25px
+            padding: 15px 12px
+            padding-left: 10px
+            font-size: 12px
+            grid-gap: 10px
+
+        div.icon
+            width: 77px
+            height: 77px
+            border: 2px solid #4E5154
+            border-radius: 50%
+            display: grid
+            align-items: center
+            justify-items: center
+            +screen(s)
+                width: 59px
+                height: 59px
+            img
+                width: 48px
+                height: 48px
+                +screen(s)
+                    width: 37px
+                    height: 37px
+
+        strong
+            display: block 
+            font-size: 20px
+            font-weight: 600
+            line-height: 1.2em
+            margin-bottom: 16px
+            color: #241D13
+            +screen(s)
+                font-size: 16px
+                margin-bottom: 10px
+
+        div.button
+            display: grid
+            align-items: center
+            grid-template-columns: max-content auto
+            grid-gap: 20px
+            margin-top: 24px
+            +screen(s)
+                margin-top: 16px
+                grid-template-columns: 1fr
+                grid-gap: 16px
+
+            button
+                background-color: #67C15E
+                color: white
+                display: grid
+                align-items: center
+                grid-template-columns: max-content max-content
+                grid-gap: 10px
+                svg
+                    path
+                        fill: white

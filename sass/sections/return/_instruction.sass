@@ -1,0 +1,117 @@
+section.instruction
+
+    div.title
+        display: grid
+        grid-gap: 16px
+        margin-bottom: 24px
+        +screen(s)
+            font-size: 12px
+
+        h3
+            +screen(s)
+                font-size: 14px
+
+    table
+        border-collapse: collapse
+        border-spacing: 0
+        font-size: 16px
+        line-height: 1.2em
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        overflow: hidden
+        width: 100%
+        +screen(m)
+            font-size: 14px
+
+        thead
+            background-color: #C6D6E7
+            font-weight: 600
+            +screen(s)
+                display: none
+            td
+                padding: 27px 20px
+                border: 1px solid #E4E5E5
+                border-bottom: unset
+
+        tbody
+            +screen(s)
+                display: grid
+                grid-template-columns: 1fr
+                font-size: 12px
+                tr
+                    display: contents
+                td:first-child
+                    
+                    background-color: #C6D6E7
+                    border: 1px solid #C6D6E7
+                    padding: 15px
+                    text-align: left
+
+                td[data-text]:before
+                    content: attr(data-text)
+                    position: relative
+                    display: grid
+                    align-items: center
+                    font-size: 12px
+                    font-weight: 600
+                    line-height: 1.2em
+                    border-right: 1px solid #E4E5E5
+                    margin-right: 15px
+                    padding-right: 15px
+                    height: calc(100% + 20px)
+                td[data-text]
+                    display: grid
+                    align-items: center
+                    align-content: center
+                    grid-template-columns: repeat(2, 1fr)
+            td
+                padding: 20px
+                border: 1px solid #E4E5E5
+                border-top: unset
+                vertical-align: top
+                +screen(s)
+                    padding: 10px 15px
+
+                &:first-child
+                    max-width: 291px
+                    +screen(m)
+                        max-width: unset
+
+                &.onlymobile
+                    display: none
+                    +screen(s)
+                        display: block
+
+        a.tel
+            white-space: nowrap
+
+        strong
+            font-weight: 600
+
+        span
+            display: block
+            color: #A1A1A1
+            font-size: 12px
+            line-height: 1.2em
+            margin-top: 5px
+            +screen(s)
+                color: #4E515491
+            &.tel
+                margin-top: unset
+
+        button
+            margin-top: 20px
+            +screen(s)
+                margin-top: 16px
+
+    div.notes
+        display: grid
+        grid-gap: 10px
+        font-size: 14px
+        line-height: 1.2em
+        margin-top: 10px 
+        +screen(s)
+            font-size: 12px
+        div.note
+            display: grid
+            grid-template-columns: 20px 1fr

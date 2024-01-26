@@ -1,0 +1,36 @@
+div.product
+
+    span.tag Хит
+    a(onclick="this.classList.toggle('active')").favourite
+        include ../../../images/favourite.svg
+
+    a.slider(href="product.html") 
+        div.swiper.product_gallery
+            div.swiper-wrapper
+                div.swiper-slide: img(src="images/products/7.webp", alt="")
+                div.swiper-slide: img(src="images/products/8.webp", alt="")
+                div.swiper-slide: img(src="images/products/9.webp", alt="")
+                div.swiper-slide: img(src="images/products/10.webp", alt="")
+            div.swiper-pagination
+
+    div.description
+
+        div.colors
+            span.green
+            span.blue
+
+        a.title(href="product.html") Укороченная майка с сеткой черная ACTIVE
+
+        div.price
+            span.current 2 590 ₽
+            span.old 3 790 ₽
+
+        button(data-modal-target="product") Быстрый просмотр
+
+        div.sizes
+            span XS
+            span S
+            span M
+            span L
+            span XL
+            span 2XL

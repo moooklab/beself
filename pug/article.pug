@@ -1,0 +1,15 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/article.css")
+
+block content
+    include sections/article/_breadcrumbs.pug
+    include sections/article/_article.pug
+    include sections/article/_navigation.pug
+
+    - var arrows = true
+    - var products_slider_title = 'Товары, упомянутые в статье'
+    include elements/_products_slider.pug
+    
+    include sections/_seo.pug

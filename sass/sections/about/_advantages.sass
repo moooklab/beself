@@ -1,0 +1,101 @@
+section.advantages
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+    +screen(s)
+        font-size: 12px
+
+    div.container
+        display: grid
+        grid-gap: 32px
+        +screen(m)
+            grid-gap: 24px
+        +screen(s)
+            grid-gap: 20px
+
+    div.list
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        grid-gap: 30px
+        +screen(m)
+            grid-template-columns: 1fr
+            grid-gap: 20px
+
+        & > *:first-child
+            grid-row: 3 span
+
+    div.advantage
+        display: grid
+        background-color: white
+        border: 1px solid #94BADF
+        border-radius: 10px
+        padding: 30px
+        +screen(m)
+            padding: 35px 30px
+        +screen(s)
+            padding: 20px
+
+        div.icon
+            border: 1px solid #C6D6E7
+            background-color: rgba(226, 233, 239, 0.28)
+            width: 113px
+            aspect-ratio: 1 / 1
+            border-radius: 50%
+            display: grid
+            align-items: center
+            justify-items: center 
+            img
+                width: 50%
+                height: 50%
+                object-fit: contain
+                object-position: center center
+            +screen(s)
+                width: 61px
+                align-self: start
+
+        div.text
+            display: grid
+            grid-gap: 10px
+            max-width: 430px
+            +screen(m)
+                max-width: unset
+
+            h3
+                font-size: 24px
+                +screen(s)
+                    font-size: 14px
+
+        &:first-child
+            padding: 50px
+            +screen(m)
+                padding: 35px 30px
+                grid-template-columns: max-content 1fr
+                align-items: center
+                grid-gap: 20px
+            +screen(s)
+                padding: 20px
+
+            div.icon
+                width: 147px
+                height: 147px
+                background-color: #E8ECF1
+                +screen(m)
+                    width: 113px
+                    height: 113px
+                    background-color: rgba(226, 233, 239, 0.28)
+                +screen(s)
+                    width: 61px
+                    height: 61px
+
+            div.text
+                align-self: end
+                +screen(m)
+                    align-self: center
+
+        &:not(:first-child)
+            grid-template-columns: max-content 1fr
+            align-items: center
+            grid-gap: 20px

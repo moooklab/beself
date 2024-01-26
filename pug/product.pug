@@ -1,0 +1,22 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/product.css")
+
+block content
+
+    include sections/product/_breadcrumbs.pug
+    include sections/product/_main.pug
+    include sections/product/_description.pug
+
+    - var arrows = true
+    - var products_slider_title = 'Дополнить образ'
+    include elements/_products_slider.pug
+
+    - var products_slider_title = 'Вам может понравиться'
+    include elements/_products_slider.pug
+
+    - var products_slider_title = 'Ранее смотрели'
+    include elements/_products_slider.pug
+
+    include sections/_seo.pug

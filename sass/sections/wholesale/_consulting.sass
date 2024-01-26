@@ -1,0 +1,78 @@
+section.consulting
+    background-color: #EFEFEF
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+    
+
+    div.container
+        display: grid
+        align-items: center
+        grid-template-columns: repeat(2, 1fr)
+        +screen(m)
+            grid-template-columns: 5fr 3fr
+        +screen(s)
+            grid-template-columns: 1fr
+            justify-items: center
+
+    div.text
+        position: relative
+        padding-top: 118px
+        padding-bottom: 118px
+        max-width: 430px
+        z-index: 1
+        +screen(m)
+            padding-top: 30px
+            padding-bottom: 114px
+        +screen(s)
+            padding-top: 20px
+            padding-bottom: 35px
+            max-width: unset
+            order: 2
+        h2
+            display: block
+            margin-bottom: 16px
+            +screen(m)
+                font-size: 32px
+            +screen(s)
+                font-size: 20px
+                line-height: 1.2em
+                margin-bottom: 10px
+        span
+            display: block
+            margin-bottom: 24px
+            font-size: 20px
+            +screen(s)
+                font-size: 12px
+                margin-bottom: 16px
+
+        button
+            +screen(s)
+                width: 100%
+
+    div.images
+        position: relative
+        height: 100%
+        width: 100%
+        display: grid
+        grid-template-columns: 298px 237px
+        align-items: end
+        grid-gap: 72px
+        +screen(m)
+            left: -100px
+            width: calc(100% + 120px)
+            grid-template-columns: 21fr 18fr
+            grid-gap: 0px
+        +screen(s)
+            left: unset
+            width: 100%
+            max-width: 320px
+            padding-top: 20px
+            order: 1
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+            object-position: center bottom

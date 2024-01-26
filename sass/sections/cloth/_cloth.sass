@@ -1,0 +1,183 @@
+section.cloth
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+
+    div.title
+        display: grid
+        grid-gap: 12px
+        margin-bottom: 30px
+        +screen(m)
+            grid-gap: 16px
+            margin-bottom: 32px
+        +screen(s)
+            grid-gap: 10px
+            margin-bottom: 20px
+        i
+            display: block
+            margin-left: 121px
+            max-width: 252px
+            +screen(s)
+                margin-left: 63px
+                font-size: 12px
+
+    b
+        font-weight: 600
+
+    hr
+        width: 100%
+        height: 1px
+        background-color: #C6D6E7
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.article
+        display: grid
+        align-items: start
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        border-bottom: 1px solid #C6D6E7
+        padding: 80px 0
+        +screen(m)
+            padding: 24px 0 30px
+            grid-template-columns: 1fr !important
+            grid-gap: 24px
+        +screen(s)
+            padding: 20px 0 24px
+            grid-gap: 20px
+        &:first-child
+            padding-top: unset
+        &:last-child
+            border-bottom: unset
+            padding-bottom: unset
+
+        &:nth-child(2n - 1)
+            grid-template-columns: 2fr 3fr
+            +screen(l)
+                grid-template-columns: repeat(2, 1fr)
+
+        div.images
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: 1fr
+            grid-gap: 30px
+            // +screen(l)
+            //     grid-auto-flow: row
+            //     grid-gap: 20px
+            +screen(m)
+                order: 1
+                grid-auto-flow: column
+            img
+                width: 100%
+                object-fit: cover
+                aspect-ratio: 3 / 4
+                // +screen(l)
+                //     aspect-ratio: 3 / 4 !important
+                //     margin-top: unset !important
+            &.ladder_right
+                grid-gap: 20px
+                img
+                    aspect-ratio: 8 / 12
+                img:nth-child(2)
+                    margin-top: 96px
+                img:nth-child(3)
+                    margin-top: 192px
+            &.ladder_left
+                grid-gap: 20px
+                img
+                    aspect-ratio: 8 / 12
+                img:nth-child(1)
+                    margin-top: 96px
+
+        div.text
+            position: relative
+            display: grid
+            +screen(l)
+                position: sticky
+                top: 100px
+            +screen(m)
+                order: 2
+                position: static
+                top: unset
+            +screen(s)
+                font-size: 12px
+            h3
+                margin-bottom: 16px
+                +screen(s)
+                    font-size: 14px
+                    margin-bottom: 10px
+            span.materials
+                display: block
+                color: #A1A1A1
+                font-style: italic
+                margin-bottom: 16px
+
+            div.params
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 5px
+                margin-bottom: 24px
+                max-width: 420px
+                +screen(s)
+                    margin-bottom: 20px
+                div.scale
+                    position: relative
+                    grid-column: 2 span
+                    width: 100%
+                    height: 10px
+                    border: 1px solid #4E5154
+                    border-radius: 999px
+                    &::before
+                        content: ''
+                        display: block
+                        width: 1px
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: calc(100% / 3)
+                        background-color: #4E5154
+                    &::after
+                        content: ''
+                        display: block
+                        width: 1px
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: calc(100% / 3 * 2)
+                        background-color: #4E5154
+                    div.scroller
+                        position: absolute
+                        top: 0
+                        width: calc(100% / 3)
+                        height: 100%
+                        background-color: #4E5154
+                        border-radius: 999px
+                span
+                    font-style: italic
+                    &:last-child
+                        justify-self: end
+                        text-align: right
+            p
+                display: block
+                margin-bottom: 24px
+            strong
+                display: block
+                margin-bottom: 10px
+                font-size: 20px
+                font-weight: 600
+                +screen(s)
+                    font-size: 16px
+            ul
+                font-style: italic
+            a.button
+                margin-top: 32px
+                justify-self: start
+                +screen(s)
+                    margin-top: 24px
+                    justify-self: stretch
+            strong.soon
+                margin-top: 32px
+                +screen(s)
+                    margin-top: 24px
+                    font-size: 16px
+

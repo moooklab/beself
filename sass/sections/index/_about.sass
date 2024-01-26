@@ -1,0 +1,85 @@
+section.about
+    overflow: hidden
+    background-color: #C6D6E7
+    margin-top: 150px
+    +screen(m)
+        margin-top: 80px
+
+    div.container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        height: 100%
+        +screen(m)
+            grid-template-columns: 1fr
+
+    
+
+    div.image
+        position: relative
+        width: 100%
+        height: 100%
+        min-height: 860px
+        +screen(m)
+            min-height: unset
+            aspect-ratio: 16 / 9
+            width: calc(100% + 40px)
+            margin-left: -20px
+        +screen(s)
+            aspect-ratio: 4 / 3
+        img
+            position: absolute
+            top: 0
+            right: 0
+            width: 50vw
+            height: 100%
+            object-fit: cover
+            object-position: center bottom
+            +screen(m)
+                width: 100%
+
+    div.text
+        position: relative
+        display: grid
+        justify-items: start
+        align-content: end
+        grid-gap: 16px
+        padding: 80px
+        padding-top: calc(92px + 80px + 160px)
+        +screen(m)
+            padding: 30px 0px
+            padding-top: calc(40px + 30px + 24px)
+        +screen(s)
+            font-size: 14px
+            grid-gap: 10px
+        a.link
+            display: inline-block
+            margin-top: 8px
+            +screen(s)
+                margin-top: 4px
+
+    div.symbol
+        position: absolute
+        top: 0
+        left: 0
+        padding: 80px
+        border-right: 1px solid #DEEEFF
+        border-bottom: 1px solid #DEEEFF
+        +screen(m)
+            padding: 12px 20px
+            margin-left: -20px
+        svg
+            width: 92px
+            height: 92px
+            +screen(m)
+                width: 40px
+                height: 40px
+            path
+                fill: #DEEEFF
+        &::after
+            content: ''
+            position: absolute
+            bottom: -1px
+            left: 100%
+            width: 100vw
+            height: 1px
+            background-color: #DEEEFF

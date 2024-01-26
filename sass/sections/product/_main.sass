@@ -1,0 +1,432 @@
+section.main
+
+    div.container
+        display: grid
+        grid-template-columns: 3fr 2fr
+        grid-gap: 32px 60px
+        +screen(1280px)
+            grid-gap: 32px
+        +screen(m)
+            grid-template-columns: 1fr
+
+    a.back
+        grid-column: 2 span
+        display: grid
+        align-items: center
+        grid-template-columns: max-content max-content
+        grid-gap: 5px
+        +screen(m)
+            display: none
+        &:hover
+            span
+                text-decoration: underline
+
+    form
+        max-width: 417px
+        +screen(m)
+            max-width: unset
+
+    div.slider
+        display: grid
+        grid-template-columns: 92px 1fr
+        grid-gap: 30px
+        user-select: none
+        +screen(m)
+            grid-template-columns: 1fr
+            width: calc(100% + 40px)
+            margin-left: -20px
+        
+        div.swiper-pagination
+            // position: absolute
+            bottom: 20px
+            top: unset
+            left: 50%
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            transform: translateX(-50%)
+            width: max-content
+            span
+                position: relative
+                cursor: pointer
+                margin: unset
+                display: block
+                width: 24px
+                height: 24px
+                opacity: .5
+                background-color: transparent
+                transition: all .2s
+                &:hover
+                    opacity: 1
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 8px
+                    height: 8px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    background-color: white
+                    border-radius: 999px
+                    z-index: 2
+                &.swiper-pagination-bullet-active
+                    opacity: 1
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        border: 1px solid white
+                        border-radius: 999px
+                        width: 16px
+                        height: 16px
+                        transform: translate(-50%, -50%)
+        
+        div.swiper.gallery
+            width: 100%
+            min-width: 0
+            div.swiper-slide
+                +background
+                aspect-ratio: 664 / 872
+                overflow: hidden
+                +screen(m)
+                    aspect-ratio: 515 / 676
+                +screen(s)
+                    // aspect-ratio: 375 / 442
+                img
+                    transition: all .3s
+                    cursor: pointer
+                &:hover
+                    img
+                        transform: scale(1.025)
+        
+        div.swiper.thumbs
+            height: 100%
+            width: 100%
+            min-width: 0
+            +screen(m)
+                display: none
+            div.swiper-slide
+                +background
+                width: 100%
+                height: auto !important
+                aspect-ratio: 2 / 3
+                border: 1px solid transparent
+                overflow: hidden
+                cursor: pointer
+                img
+                    transition: all .2s
+                &.swiper-slide-thumb-active
+                    border: 1px solid #4E5154
+                &:hover
+                    img
+                        transform: scale(1.05)
+
+    div.tags
+        display: flex
+        flex-wrap: wrap
+        gap: 15px
+        margin-bottom: 30px
+        font-size: 14px
+
+        div.tag
+            display: grid
+            align-items: center
+            grid-template-columns: max-content auto
+            grid-gap: 5px
+            img
+                height: 20px
+
+    h2
+        font-size: 32px
+        margin-bottom: 10px
+
+    div.additional
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content
+        margin-bottom: 20px
+        span
+            font-size: 14px
+            color: #A1A1A1
+        a.favourite
+            display: grid
+            align-items: center
+            grid-template-columns: max-content auto
+            grid-gap: 6px
+            svg
+                width: 20px
+                path
+                    stroke: #FF8585
+            @media (hover: hover) and (pointer: fine)
+                &:hover
+                    svg
+                        path
+                            fill: #FF8585
+            &.active
+                svg
+                    path
+                        fill: #FF5E5E
+                        stroke: #FF5E5E
+
+    div.price
+        display: grid
+        grid-gap: 10px
+        +screen(s)
+            display: grid
+            align-items: center
+            grid-template-columns: max-content max-content
+            grid-gap: 15px
+
+        strong
+            display: block
+            font-family: 'Tenor Sans', sans-serif
+            font-size: 36px
+            font-weight: 400
+
+        div.dolyame
+            cursor: pointer
+            position: relative
+            background-color: #E6EDF4
+            border-radius: 5px
+            display: grid
+            align-items: center
+            grid-template-columns: max-content 1fr max-content
+            grid-gap: 15px
+            padding: 12px
+            max-width: 360px
+            +screen(s)
+                padding: unset
+                background-color: unset
+            
+            img.logo
+                width: 84px
+                border: 2px solid #4E5154
+                padding: 6px
+            
+            span
+                +screen(s)
+                    display: none
+
+            div.arrow
+                width: 24px
+                height: 24px
+                +screen(s)
+                    display: none
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    right: 48px
+                    display: block
+                    height: 100%
+                    width: 1px
+                    background-color: #C6D6E7
+
+    div.colors
+        display: grid
+        grid-gap: 10px
+        margin-top: 30px
+        margin-bottom: 30px
+        strong
+            font-weight: 600
+        div.list
+            display: grid
+            grid-template-columns: repeat(auto-fit, 20px)
+            grid-gap: 15px
+            width: 100%
+            +screen(m)
+                grid-template-columns: repeat(auto-fit, 40px)
+            +screen(s)
+                grid-template-columns: repeat(auto-fit, 30px)
+            a
+                display: block
+                aspect-ratio: 1 / 1
+                border-radius: 999px
+                &.active
+                    border: 2px solid #4E5154
+
+    div.sizes
+        display: grid
+        grid-gap: 15px
+        margin-top: 30px
+        margin-bottom: 30px
+        div.title
+            display: grid
+            grid-template-columns: 1fr auto
+            strong
+                font-weight: 600
+            span
+                cursor: pointer
+                font-size: 14px
+                color: #A1A1A1
+                text-decoration: underline
+                &:hover
+                    text-decoration: none
+        div.list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 10px 15px
+            +screen(m)
+                grid-template-columns: repeat(8, 1fr)
+                grid-gap: 20px
+            +screen(s)
+                grid-template-columns: repeat(6, 1fr)
+                grid-gap: 10px
+            label
+                cursor: pointer
+                position: relative
+                &:hover
+                    div.tooltip
+                        display: block
+                input:checked + span
+                    border-color: #4E5154
+                & > span
+                    display: block
+                    font-size: 14px
+                    padding: 4px 10px
+                    border: 1px solid #E4E5E5
+                    border-radius: 2px
+                    text-align: center
+                    +screen(m)
+                        padding: 15px
+                    +screen(s)
+                        padding: 12px
+
+                &:nth-child(4n+3),
+                &:nth-child(4n+4)
+                    div.tooltip
+                        right: 0
+                        left: unset
+
+                +screen(m)
+                    &:nth-child(4n+3),
+                    &:nth-child(4n+4)
+                        div.tooltip
+                            right: unset
+                            left: 0
+                    &:nth-child(8n+5),
+                    &:nth-child(8n+6),
+                    &:nth-child(8n+7),
+                    &:nth-child(8n+8)
+                        div.tooltip
+                            right: 0
+                            left: unset
+
+            div.tooltip
+                position: absolute
+                bottom: calc(100% + 10px)
+                left: 0
+                border-radius: 2px
+                background: #F2F3F4
+                box-shadow: 0px 0px 0px 0px rgba(212, 212, 212, 0.10), 0px 8px 18px 0px rgba(212, 212, 212, 0.10), 0px 33px 33px 0px rgba(212, 212, 212, 0.09), 0px 74px 44px 0px rgba(212, 212, 212, 0.05), 0px 132px 53px 0px rgba(212, 212, 212, 0.01), 0px 206px 58px 0px rgba(212, 212, 212, 0.00)
+                z-index: 9
+                padding: 15px
+                display: none
+                +screen(s)
+                    display: none !important
+
+                div.row
+                    display: grid
+                    grid-template-columns: repeat(2, max-content)
+                    grid-gap: 5px
+                    span:nth-child(2n)
+                        text-align: right
+                span.red
+                    display: block
+                    margin-top: 10px
+                    color: #FF5E5E
+
+    div.buttons
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 8px
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 15px
+        button
+            font-size: 14px
+            font-weight: 600
+            letter-spacing: .28px
+            text-transform: uppercase
+            color: white
+            &.buy
+                color: #4E5154
+
+    div.tinkoff
+        display: grid
+        margin-top: 42px
+        +screen(s)
+            display: none
+        div.title
+            display: grid
+            align-items: center
+            grid-template-columns: max-content 1fr max-content
+            grid-gap: 6px
+            margin-bottom: 15px
+            strong
+                font-weight: 400
+                color: black
+            label.checkbox
+                input:checked + span
+                    background-color: #57DC6C
+                    &::after
+                        left: 18px
+                span
+                    display: block
+                    cursor: pointer
+                    position: relative
+                    background-color: #E4E5E5
+                    width: 36px
+                    height: 20px
+                    border-radius: 999px
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: 2px
+                        left: 2px
+                        display: block
+                        width: 16px
+                        height: 16px
+                        background-color: white
+                        border-radius: 999px
+                        transition: all .2s
+        div.list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 12px
+            margin-bottom: 24px
+            span
+                font-size: 14px
+                &::before
+                    content: ''
+                    display: block
+                    margin-bottom: 10px
+                    border-radius: 15px
+                    background-color: #E4E5E5
+                    width: 100%
+                    height: 8px
+        button
+            font-size: 14px
+            font-weight: 600
+            letter-spacing: .28px
+            text-transform: uppercase
+            background-color: #241D13
+            color: white
+            padding: 18px 36px
+            margin-bottom: 10px
+        div.note
+            display: grid
+            align-items: center
+            justify-self: center
+            grid-template-columns: max-content 1fr
+            grid-gap: 5px
+            color: black
+
+
+
+
+
+

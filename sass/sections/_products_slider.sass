@@ -1,0 +1,86 @@
+section.products_slider
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.container
+        display: grid
+        grid-gap: 24px
+        +screen(s)
+            grid-gap: 16px
+
+    div.title
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content
+
+    div.swiper.products
+        width: 100%
+        min-width: 0
+        overflow: visible
+        &:hover
+            div.swiper-navigation.onslider
+                display: flex
+
+    div.swiper-navigation
+        user-select: none
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        grid-gap: 8px
+        +screen(s)
+            grid-gap: 5px
+        div.arrow
+            cursor: pointer
+            display: grid
+            align-items: center
+            justify-items: center
+            border: 1px solid #C6D6E7
+            width: 57px
+            height: 57px
+            border-radius: 999px
+            transition: all .2s
+            +screen(s)
+                width: 33px
+                height: 33px
+            svg
+                height: 13px
+                width: 8px
+                +screen(s)
+                    height: 7px
+                    width: 5px
+                path
+                    fill: #4E5154
+                    stroke-width: 0.6px
+                    stroke: #4E5154
+            &:last-child
+                svg
+                    transform: rotate(180deg)
+
+            &.swiper-button-disabled
+                pointer-events: none
+                opacity: .25
+
+            &:hover
+                background-color: #C6D6E7
+
+    div.swiper-navigation.onslider
+        display: none
+        position: absolute
+        top: 35%
+        left: 20px
+        width: calc(100% - 40px)
+        z-index: 1
+        justify-content: space-between
+        pointer-events: none
+        +screen(m)
+            display: none !important
+        div.arrow
+            width: 46px
+            height: 46px
+            pointer-events: auto
+            background-color: white
+            &:hover
+                background-color: #C6D6E7

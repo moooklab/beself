@@ -1,0 +1,194 @@
+footer
+    padding-top: 60px
+    padding-bottom: 60px
+    background-color: $gray-color
+    color: white
+
+    display: grid
+    grid-gap: 20px
+    +screen(l)
+        grid-gap: 50px
+    +screen(m)
+        padding-top: 32px
+        padding-bottom: 32px
+    +screen(s)
+        padding-top: 20px
+        padding-bottom: 20px
+        grid-gap: 60px
+
+    div.top
+        div.container
+            display: grid
+            grid-template-areas: 'C A S'
+            grid-template-columns: 240px 1fr 360px
+            grid-gap: 48px
+            +screen(l)
+                grid-template-columns: repeat(3, 1fr)
+                grid-template-areas: 'A A A' 'C S S'
+            +screen(s)
+                grid-template-columns: 1fr
+                grid-template-areas: 'C' 'A' 'S'
+
+            div.contacts
+                display: grid
+                grid-gap: 12px
+                grid-area: C
+                a.logotype
+                    margin-bottom: 18px
+                    +screen(s)
+                        margin-bottom: 8px
+
+                a.phone, a.email
+                    display: grid
+                    align-items: center
+                    grid-template-columns: 24px 1fr
+                    grid-gap: 10px
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+
+                div.adress
+                    display: grid
+                    grid-gap: 5px
+                    span
+                        font-size: 14px
+                        +screen(m)
+                            display: none
+
+            div.accordions
+                grid-area: A
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: 48px
+                +screen(s)
+                    border-top: 1px solid rgba(255,255,255,.5)
+                    width: calc(100% + 40px)
+                    margin-left: -20px
+                    grid-template-columns: 1fr
+                    grid-gap: unset
+
+                div.accordion
+                    +screen(s)
+                        border-bottom: 1px solid rgba(255,255,255,.5)
+
+                div.accordion_caption
+                    font-size: 18px
+                    font-weight: 600
+                    padding-bottom: 15px
+                    display: grid
+                    align-items: center
+                    grid-template-columns: 1fr max-content
+                    +screen(s)
+                        cursor: pointer
+                        padding: 20px
+                        
+                    img
+                        display: none
+                        +screen(s)
+                            display: block
+
+                div.accordion_content
+                    div.accordion_wrap
+                        overflow: visible !important
+                        +screen(s)
+                            overflow: hidden !important
+                    menu
+                        display: grid
+                        grid-gap: 12px
+                        +screen(s)
+                            padding: 20px
+                            padding-top: unset
+                        a:hover
+                            text-decoration: underline
+
+            div.subscribe
+                grid-area: S
+                h3
+                    color: white
+                    margin-bottom: 15px
+                form
+                    display: grid
+                    grid-template-columns: 1fr max-content
+                    grid-gap: 20px
+                    margin-bottom: 10px
+                input
+                    padding: 20px
+                    border: 1px solid white
+                    border-radius: 5px
+                    line-height: 1.2em
+                    height: 60px
+                    &::placeholder
+                        color: #969A9E
+
+                button
+                    cursor: pointer
+                    height: 60px
+                    width: 60px
+                    background-color: transparent
+                    border: 1px solid white
+                    border-radius: 999px
+                    padding: unset
+
+                a
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+
+    div.bottom
+        div.container
+            display: grid
+            align-items: center
+            grid-template-columns: max-content 1fr max-content
+            grid-template-areas: 'S S S' 'C L P'
+            grid-gap: 42px 32px
+            +screen(m)
+                grid-template-columns: 1fr max-content
+                grid-template-areas: 'C S' 'L P'
+                grid-gap: 12px
+            +screen(s)
+                grid-template-columns: 1fr
+                grid-template-areas: 'S' 'C' 'L' 'P'
+                grid-gap: 15px
+
+            div.socials
+                grid-area: S
+                display: grid
+                grid-auto-flow: column
+                grid-auto-columns: max-content
+                align-items: center
+                grid-gap: 15px
+                +screen(s)
+                    margin-bottom: 35px
+                a
+                    display: block
+                    line-height: 0
+            span.copyright
+                grid-area: C
+                font-size: 14px
+                line-height: 1.2em
+                color: #8C8E90
+            div.links
+                grid-area: L
+                justify-self: center
+                display: grid
+                grid-template-columns: auto auto
+                grid-gap: 75px
+                font-size: 14px
+                line-height: 1.2em
+                color: #8C8E90
+                a
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+                +screen(m)
+                    justify-self: start
+                    grid-template-columns: 1fr
+                    grid-gap: 15px
+            a.production
+                grid-area: P
+                +screen(m)
+                    align-self: end
+                    justify-self: end
+                +screen(s)
+                    align-self: start
+                    justify-self: start

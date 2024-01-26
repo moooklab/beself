@@ -1,0 +1,87 @@
+section.main
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+
+    div.title
+        display: grid
+        grid-gap: 24px
+        margin-bottom: 40px
+        +screen(m)
+            margin-bottom: 20px
+
+        i
+            display: block
+            font-size: 24px
+            max-width: 897px
+            +screen(s)
+                font-size: 12px
+
+    div.logoname
+        width: 100vw
+        height: 200px
+        position: absolute
+        top: 80px
+        left: 50%
+        transform: translateX(-50%)
+        background-image: url(../images/logotype_name.svg)
+        background-size: contain
+        background-position: center center
+        z-index: -1
+        +screen(m)
+            height: 75px
+        +screen(s)
+            top: 58px
+
+
+    div.gallery
+        position: relative
+        width: calc( (100vw - 100%) + 100% )
+        max-width: 1920px
+        transform: translateX(-50%)
+        left: 50%
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        +screen(s)
+            width: 100%
+            left: unset
+            transform: unset
+        img
+            width: 100%
+            aspect-ratio: 1 / 1
+            object-fit: cover
+            object-position: center center
+
+    div.row
+        display: grid
+        grid-template-columns: 2fr 3fr
+        grid-gap: 32px
+        margin-top: 50px
+        +screen(m)
+            margin-top: 30px
+            grid-template-columns: 1fr
+            grid-gap: 16px
+        +screen(s)
+            margin-top: 40px
+            grid-gap: 10px
+
+        h3
+            font-size: 32px
+            letter-spacing: 0.64px
+            +screen(s)
+                font-size: 16px
+
+        strong
+            display: block
+            font-size: 20px
+            font-weight: 600
+            margin-bottom: 16px
+            +screen(s)
+                font-size: 12px
+                margin-bottom: 10px
+
+        span
+            display: block
+            font-size: 18px
+            +screen(s)
+                font-size: 12px

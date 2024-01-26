@@ -1,0 +1,23 @@
+section.clients
+    div.container
+        div.title
+            h2 Наши клиенты
+            span Делитесь своими образами, отмечайте @beself_activewear и мы разместим ваш образ на сайте
+        div.swiper
+            div.swiper-wrapper
+                - for ( x = 1; x <= 8; x++ )
+                    div.swiper-slide.client
+                        div.image
+                            img(src="images/instagram/" + x + ".webp", alt="")
+                        div.description
+                            a.instagram(href="https://www.instagram.com") @snezhana.naboka
+                            div.info
+                                div.likes
+                                    include ../../../images/favourite.svg
+                                    span 2.0k
+                                div.comments
+                                    include ../../../images/instagram_comment.svg
+                                    span 190
+                            a.shop(data-modal-target="client")
+                                include ../../../images/instagram_buy.svg
+

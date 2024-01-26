@@ -1,0 +1,47 @@
+// Общее 
+@import 'common/_variables'
+@import 'common/_mixins'
+
+//Секции
+section.error
+    margin-top: 100px
+    margin-bottom: 100px
+
+    div.container
+        display: grid
+        justify-items: center
+
+    img
+        margin-bottom: 75px
+        width: 410px
+        +screen(m)
+            width: 210px
+            margin-bottom: 30px
+
+    div.text
+        display: grid
+        justify-items: center
+        max-width: 410px
+        text-align: center
+
+        h2
+            margin-bottom: 16px
+            +screen(s)
+                font-size: 24px
+                margin-bottom: 10px
+
+        span
+            font-size: 20px
+            line-height: 24px
+            +screen(s)
+                font-size: 12px
+                line-height: 1.2em
+                max-width: 240px
+
+        a.button
+            margin-top: 32px
+            justify-self: center
+            width: max-content
+            +screen(s)
+                font-size: 12px
+                margin-top: 24px

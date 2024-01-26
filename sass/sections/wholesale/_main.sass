@@ -1,0 +1,65 @@
+section.main
+    aspect-ratio: 1900 / 860
+    width: 100%
+    max-height: 860px
+    +screen(m)
+        aspect-ratio: 768 / 528
+    +screen(s)
+        aspect-ratio: 375 / 403
+
+    div.background
+        +background
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(to right, #181a1d54 50%, #5d515000 90%)
+
+    div.container
+        display: grid
+        align-items: center
+        justify-items: center
+        height: 100%
+        +screen(m)
+            align-items: end
+
+    div.text
+        color: white
+        display: grid
+        justify-items: center
+        grid-gap: 16px
+        text-align: center
+        padding: 60px 0
+        +screen(s)
+            padding: 44px 0
+            grid-gap: 10px
+            br
+                display: none
+        h1
+            color: white
+            text-transform: unset
+        span
+            +screen(s)
+                font-size: 12px
+        button
+            border-radius: 5px
+            border: 1px solid white
+            background: rgba(255, 255, 255, 0.25)
+            backdrop-filter: blur(7px)
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: 600
+            letter-spacing: .28px
+            margin-top: 16px
+            +screen(s)
+                font-size: 12px
+                margin-top: 6px

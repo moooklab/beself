@@ -1,0 +1,50 @@
+section.wonders
+    margin-top: 150px
+    margin-bottom: 150px
+    padding-top: 112px
+    padding-bottom: 112px
+    background-color: #C6D6E7
+    overflow: hidden
+
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+        padding-top: 87px
+        padding-bottom: 87px
+    +screen(m)
+        padding-top: 43px
+        padding-bottom: 43px
+
+    div.container
+        display: grid
+        align-items: center
+        justify-items: center
+
+    div.text
+        position: relative
+        text-align: center
+        display: grid
+        grid-gap: 16px
+        z-index: 1
+        +screen(s)
+            grid-gap: 10px
+        span
+            display: block
+            font-size: 24px
+            max-width: 640px
+            +screen(s)
+                font-size: 12px
+
+    svg
+        width: 75vw
+        height: 75vw
+        max-width: 1000px
+        max-height: 1000px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-30%, -35%) rotate(45deg)
+        opacity: .5
+        
+        path
+            fill: #DBEAF9

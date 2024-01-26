@@ -1,0 +1,35 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/index.css")
+
+block content
+    include sections/index/_main.pug
+    include sections/index/_advantages.pug
+
+    - var products_slider_title = 'Хиты'
+    include elements/_products_slider.pug
+    include sections/index/_categories.pug
+    include sections/index/_motion_collection.pug
+
+    - var products_slider_title = 'Новинки'
+    include elements/_products_slider.pug
+    include sections/index/_soft_cover_collection.pug
+
+    - var products_slider_title = 'Скидки'
+    include elements/_products_slider.pug
+    include sections/index/_active_collection.pug
+
+    include sections/index/_about.pug
+    include sections/index/_blog.pug
+    include sections/index/_clients.pug
+    include sections/index/_subscribe.pug
+
+    script.
+        header = document.querySelector('header')
+        sticky = header.querySelector('div.sticky')
+        header.classList.add('transparent_light')
+
+        window.addEventListener('scroll', event => {
+            this.scrollY > 10 ? header.classList.remove("transparent_light") : header.classList.add("transparent_light")
+        })

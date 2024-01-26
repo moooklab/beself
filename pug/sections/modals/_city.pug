@@ -1,0 +1,13 @@
+dialog(data-modal-name="city")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            h4 выберите город
+
+            form(action="") 
+                fieldset.text
+                    input(type="text", placeholder=" ", required)
+                button.gray применить

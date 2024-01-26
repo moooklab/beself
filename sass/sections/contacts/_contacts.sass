@@ -1,0 +1,51 @@
+section.contacts
+    margin-bottom: 150px
+    +screen(m)
+        margin-bottom: 80px
+
+    div.container
+        display: grid
+        align-items: start
+        grid-template-columns: 5fr 4fr
+        grid-gap: 30px
+        +screen(s)
+            grid-template-columns: 1fr
+            font-size: 12px
+
+    h2
+        grid-column: 2 span
+        +screen(s)
+            grid-column: 1 span
+
+
+    div.image
+        +background
+        width: 100%
+        height: auto
+        aspect-ratio: 4 / 3
+
+    div.content
+        display: grid
+        grid-gap: 15px
+        max-width: 360px
+        +screen(s)
+            grid-gap: 10px
+
+        a.icon
+            display: grid
+            grid-template-columns: max-content auto
+            grid-gap: 10px
+            span
+                text-decoration: underline
+            &:hover
+                span
+                    text-decoration: none
+
+        i
+            color: #A1A1A1
+
+        strong
+            font-weight: 600
+            display: block
+            &:not(:first-child)
+                margin-top: 14px

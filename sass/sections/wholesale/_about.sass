@@ -1,0 +1,46 @@
+section.about
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+    +screen(s)
+        margin-top: 40px
+
+    div.container
+        display: grid
+        grid-template-columns: 2fr 3.07fr
+        grid-gap: 74px
+        +screen(m)
+            grid-template-columns: 1fr
+            grid-gap: 24px
+        +screen(s)
+            grid-gap: 20px
+
+        div.text
+            +screen(m)
+                order: 2
+
+            h2
+                margin-bottom: 16px
+            p
+                margin-bottom: 20px
+                +screen(m)
+                    margin-bottom: 10px
+                +screen(s)
+                    font-size: 12px
+
+            div.buttons
+                margin-top: 32px
+                display: grid
+                grid-template-columns: max-content max-content
+                grid-gap: 10px
+                +screen(s)
+                    grid-template-columns: 1fr
+                    margin-top: 24px
+
+        div.image
+            img
+                width: 100%
+                +screen(m)
+                    order: 1

@@ -1,0 +1,55 @@
+section.catalog
+    div.container
+        div.title
+            h2 Каталог
+            span Всего моделей: 4165
+        include ../../elements/_filter.pug
+        div.sort
+            a.filter_button(data-modal-target="filter")
+                img(src="images/filter.svg", alt="")
+                span Фильтры
+            fieldset.select
+                div(tabindex="0").current
+                    input(type="radio", id="select_0", value="1", name="Select", checked="checked")
+                    span По популярности
+                    input(type="radio", id="select_1", value="2", name="Select")
+                    span По новизне
+                    input(type="radio", id="select_2", value="3", name="Select")
+                    span Цена по убыванию
+                    input(type="radio", id="select_3", value="4", name="Select")
+                    span Цена по возрастанию
+                    img(src="images/filter_arrow.svg", alt="")
+                div.list
+                    label(for="select_0") По популярности
+                    label(for="select_1") По новизне
+                    label(for="select_2") Цена по убыванию
+                    label(for="select_3") Цена по возрастанию
+
+            div.view
+                div(data-view="three", onclick="changeView(this)"): include ../../../images/view_three.svg
+                div(data-view="two", onclick="changeView(this)"): include ../../../images/view_two.svg
+        div.products
+            div.list
+                include ../../elements/products/_1.pug
+                include ../../elements/products/_2.pug
+                include ../../elements/products/_3.pug
+                include ../../elements/products/_4.pug
+                include ../../elements/products/_5.pug
+                include ../../elements/products/_1.pug
+                include ../../elements/products/_2.pug
+                include ../../elements/products/_3.pug
+                include ../../elements/products/_4.pug
+            div.pagination
+                button.border Показать ещё
+                div.pages
+                    a(href="catalog.html").active 1
+                    a(href="catalog.html") 2
+                    a(href="catalog.html") 3
+                    a(href="catalog.html") 4
+                    a(href="catalog.html") 5
+                    a(href="catalog.html") 6
+                    span …
+                    a(href="catalog.html") 10
+            div.loyalty_login
+                span Войдите, чтобы участвовать в программе лояльности
+                a.button(data-modal-target="authorise").gray Войти

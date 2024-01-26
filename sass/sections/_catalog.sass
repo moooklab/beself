@@ -1,0 +1,131 @@
+section.catalog
+
+    div.container
+        display: grid
+        align-items: start
+        grid-template-areas: 'Title Title' 'Filter Sort' 'Filter Products'
+        grid-template-columns: 1fr 3fr
+        grid-gap: 30px
+        +screen(m)
+            grid-template-areas: 'Title' 'Sort' 'Products'
+            grid-template-columns: 1fr
+            grid-gap: 20px
+        +screen(s)
+            grid-template-areas: 'Title Sort' 'Products Products'
+            grid-template-columns: 1fr max-content
+            grid-gap: 10px
+
+    div.title
+        grid-area: Title
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content
+        grid-gap: 30px
+        margin-bottom: 5px
+        +screen(m)
+            grid-template-columns: max-content 1fr
+            grid-gap: 20px
+            align-items: end
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 5px
+        span
+            display: block
+            font-size: 14px
+            +screen(m)
+                margin-bottom: 7px
+            +screen(s)
+                font-size: 12px
+                margin-bottom: unset
+
+    form.filter
+        grid-area: Filter
+        +screen(m)
+            display: none
+
+    div.sort
+        grid-area: Sort
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content
+        grid-gap: 30px
+        +screen(s)
+            grid-template-columns: 1fr
+        fieldset
+            max-width: 240px
+            +screen(m)
+                display: none
+
+        a.filter_button
+            grid-template-columns: max-content auto
+            align-items: center
+            grid-gap: 4px
+            font-size: 14px
+            font-weight: 600
+            text-decoration: underline
+            display: none
+            +screen(m)
+                display: grid
+            +screen(s)
+                img
+                    width: 24px
+                span
+                    display: none
+
+        div.view
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            grid-gap: 10px
+            +screen(s)
+                display: none
+            div
+                line-height: 0
+            div.active
+                svg
+                    rect
+                        fill: #C6D6E7
+            div:hover
+                svg
+                    rect
+                        fill: #C6D6E7
+            svg
+                cursor: pointer
+                rect
+                    fill: #E4E5E5
+
+    div.products
+        grid-area: Products
+        div.list
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 30px
+            +screen(m)
+                grid-gap: 30px 20px
+            +screen(s)
+                position: relative
+                width: calc(100% + 40px)
+                left: -20px
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 20px 10px
+
+            &[data-view=two]
+                grid-template-columns: repeat(2, 1fr)
+                div.product
+                    a.favourite
+                        width: 26px
+                        height: 26px
+                    +screen(s)
+                        a.favourite
+                            width: 20px
+                            height: 20px
+            
+            div.product
+                button
+                    +screen(m)
+                        display: block
+
+    div.navigation-thumbs
+        +screen(m)
+            display: none !important
+            pointer-events: none

@@ -1,0 +1,14 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/delivery.css")
+
+block content
+    include sections/delivery/_breadcrumbs.pug
+    include sections/delivery/_main.pug
+    include sections/delivery/_instruction.pug
+    include sections/delivery/_additional.pug
+    include sections/delivery/_return.pug
+    include sections/delivery/_order.pug
+    
+    include sections/_seo.pug

@@ -1,0 +1,61 @@
+section.instruction
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.container
+        display: grid
+        grid-gap: 24px
+        +screen(m)
+            grid-gap: 16px
+        +screen(s)
+            grid-gap: 24px
+
+    div.list
+        display: grid
+        align-items: start
+        grid-template-columns: repeat(3, 1fr) max-content
+        counter-reset: list
+        gap: 32px
+        +screen(m)
+            grid-template-columns: repeat(4, 1fr)
+            gap: 16px
+        +screen(s)
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 30px 12px
+
+    div.step
+        counter-increment: list
+        max-width: 280px
+        display: grid
+        grid-gap: 10px
+        +screen(m)
+            text-align: center
+            justify-items: center
+
+        &::before
+            content: counter(list)
+            display: grid
+            align-items: center
+            justify-items: center
+            font-family: 'Tenor Sans', sans-serif
+            font-size: 36px
+            width: 73px
+            aspect-ratio: 1 / 1
+            background-color: #C6D6E78F
+            border-radius: 50%
+            margin-bottom: 14px
+            +screen(m)
+                margin-bottom: 5px
+
+        h4
+            +screen(m)
+                font-size: 14px
+
+        span
+            font-size: 14px
+            color: #A1A1A1
+            +screen(m)
+                font-size: 12px

@@ -1,0 +1,185 @@
+header
+    div.top
+        div.container
+            include ../../images/delivery.svg
+            span Бесплатная доставка по России от 4 500 ₽! #[a(href="delivery.html") Подробнее >]
+
+    div.sticky
+
+        div.bottom
+            div.container
+                a.catalog(onclick="showMenu(); this.classList.toggle('close')")
+                    div.icon
+                        div.catalog: include ../../images/catalog.svg
+                        div.catalog_mobile: include ../../images/catalog_mobile.svg
+                        div.cross: include ../../images/cross.svg
+                    span Каталог 
+                a.logotype(href="index.html")
+                    include ../../images/logotype.svg
+                a.phone(href="tel:88002011463")
+                    include ../../images/phone.svg
+                    span 8 800 201-14-63
+                div.controls
+                    a.search(onclick="showSearch()")
+                        include ../../images/search.svg
+                    a.signin(data-modal-target="authorise")
+                        include ../../images/signin.svg
+                    a.favourite(href="favourite.html")
+                        include ../../images/favourite.svg
+                    a.cart(href="cart.html", onmouseenter="showCart(event)").onlydesktop
+                        include ../../images/cart.svg
+                        span.total 2
+                    a.cart(data-modal-target="cart").onlymobile
+                        include ../../images/cart.svg
+
+        section.search
+            div.container
+                div.search_wrap
+
+                    form.search
+                        img(src="images/search.svg", alt="").search
+                        input(type="text", placeholder="Название, цвет или артикул", onfocus="this.parentElement.classList.add('focus')", onblur="this.parentElement.classList.remove('focus')")
+                        //- button
+                        //-     include ../../images/subscribe_arrow.svg
+
+                    div.requests
+                        h4 Популярные запросы
+                        div.list
+                            a.request
+                                img(src="images/search.svg", alt="").search
+                                span Велосипедки
+                            a.request
+                                img(src="images/search.svg", alt="").search
+                                span Боди
+                            a.request
+                                img(src="images/search.svg", alt="").search
+                                span Push-up
+                            a.request
+                                img(src="images/search.svg", alt="").search
+                                span Йога
+
+                    div.categories
+                        h3 Популярные категории
+                        div.list
+                            div.category
+                                div.image
+                                    img(src="images/collections/other/1.webp", alt="")
+                                div.title
+                                    h4 motion colletion
+                                    img(src="/images/category_arrow2.svg", alt="")
+                            div.category
+                                div.image
+                                    img(src="images/collections/other/2.webp", alt="")
+                                div.title
+                                    h4 Soft Cover colletion
+                                    img(src="/images/category_arrow2.svg", alt="")
+                            div.category
+                                div.image
+                                    img(src="images/collections/other/4.webp", alt="")
+                                div.title
+                                    h4 Push-Up Motion
+                                    img(src="/images/category_arrow2.svg", alt="")
+
+        section.menu
+            div.container
+                div.menu_wrap
+
+                    form.search
+                        img(src="images/search.svg", alt="").search
+                        input(type="text", placeholder="Название, цвет или артикул", onfocus="this.parentElement.classList.add('focus')", onblur="this.parentElement.classList.remove('focus')")
+
+                    menu.compilations
+                        li: a(href="catalog.html"): h4 Sale
+                        li: a(href="catalog.html"): h4 Новинки
+                        li: a(href="catalog.html"): h4 Скоро в продаже
+                        li: a(href="catalog.html"): h4 Подарочные сертификаты
+
+                    menu.categories
+                        div.category.accordion
+                            div.accordion_caption
+                                h4 Верх
+                                img(src="images/select_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    ul
+                                        li: a(href="catalog.html") Спортивные бра
+                                        li: a(href="catalog.html") Майки
+                                        li: a(href="catalog.html") Кофты на молнии
+                                        li: a(href="catalog.html") Кроп-топы
+                        div.category.accordion
+                            div.accordion_caption
+                                h4 По коллекциям
+                                img(src="images/select_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    ul.submenu
+                                        li: a(href="category.html") Motion collection
+                                        li: a(href="category.html") Soft Cover colletion
+                                        li: a(href="category.html") Active collection
+                                        li: a(href="category.html") Velvet collection
+                        div.category.accordion
+                            div.accordion_caption
+                                h4 Низ
+                                img(src="images/select_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    ul.submenu
+                                        li: a(href="catalog.html") Лосины
+                                        li: a(href="catalog.html") Велосипедки
+                        div.category.accordion
+                            div.accordion_caption
+                                h4 Тип тренировок
+                                img(src="images/select_arrow.svg", alt="")
+                            div.accordion_content
+                                div.accordion_wrap
+                                    ul.submenu
+                                        li: a(href="catalog.html") Одежда для фитнеса
+                                        li: a(href="catalog.html") Одежда для йоги
+                                        li: a(href="catalog.html") Одежда для бега
+                                        li: a(href="catalog.html") Одежда для пилатеса
+
+                    div.collection
+                        img(src="images/motion_collection.webp", alt="").preview
+                        a.title(href="category.html") 
+                            h4 motion colletion
+                            img(src="/images/category_arrow2.svg", alt="")
+
+                    hr
+
+                    menu.main
+                        li: a(href="shops.html") Магазины
+                        li: a(href="about.html") О нас
+                        li: a(href="payment.html") Оплата
+                        li: a(href="cloth.html") Ткани BeSelf
+                        li: a(href="return.html") Возврат и обмен
+                        li: a(href="partners.html") Партнёры
+                        li: a(href="delivery.html") Доставка
+                        li: a(href="contacts.html") Контакты
+                        li: a(href="wholesale.html") Оптовым клиентам
+
+                    div.socials
+                        li: a(href="###")
+                            include ../../images/telegram.svg
+                        li: a(href="###")
+                            include ../../images/vkontakte.svg
+                        li: a(href="###")
+                            include ../../images/instagram.svg
+                        li: a(href="###")
+                            include ../../images/dzen.svg
+                        li: a(href="###")
+                            include ../../images/youtube.svg
+
+        section.cart
+            div.container
+                div.cart_wrap
+
+                    h3 Корзина
+
+                    div.list
+                        include ../elements/products/_small.pug
+                        include ../elements/products/_small.pug
+
+                    span.total Итого: 2 290 ₽
+
+                    button.gray Перейти к оформлению
+

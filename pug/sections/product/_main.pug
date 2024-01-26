@@ -1,0 +1,237 @@
+
+section.main
+    div.container
+
+        a.back(href="javascript:history.back()")
+            img(src="images/product/back_arrow.svg", alt="")
+            span Назад
+
+        div.slider
+            div.swiper.thumbs
+                div.swiper-wrapper
+                    div.swiper-slide: img(src="images/products/1.webp", alt="")
+                    div.swiper-slide: img(src="images/products/2.webp", alt="")
+                    div.swiper-slide: img(src="images/products/3.webp", alt="")
+                    div.swiper-slide: img(src="images/products/4.webp", alt="")
+                    div.swiper-slide: img(src="images/products/5.webp", alt="")
+                    div.swiper-slide: img(src="images/products/6.webp", alt="")
+                    div.swiper-slide: img(src="images/products/1.webp", alt="")
+                    div.swiper-slide: img(src="images/products/2.webp", alt="")
+                    div.swiper-slide: img(src="images/products/3.webp", alt="")
+                    div.swiper-slide: img(src="images/products/4.webp", alt="")
+                    div.swiper-slide: img(src="images/products/5.webp", alt="")
+                    div.swiper-slide: img(src="images/products/6.webp", alt="")
+
+            div.swiper.gallery
+                div.swiper-wrapper
+                    div.swiper-slide: img(src="images/products/1.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/2.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/3.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/4.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/5.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/6.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/1.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/2.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/3.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/4.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/5.webp", alt="", lightbox="product")
+                    div.swiper-slide: img(src="images/products/6.webp", alt="", lightbox="product")
+
+                div.swiper-pagination
+
+        form(action="cart.html")
+
+            div.tags
+                div.tag
+                    img(src="images/product/tag_1.svg", alt="")
+                    span Сертифицировано
+                div.tag
+                    img(src="images/product/tag_2.svg", alt="")
+                    span Сделано в России
+                div.tag
+                    img(src="images/product/tag_3.svg", alt="")
+                    span Supplex Sport Hit
+                div.tag
+                    img(src="images/product/tag_4.svg", alt="")
+                    span Для занятий йогой
+                div.tag
+                    img(src="images/product/tag_5.svg", alt="")
+                    span Фитнес
+                div.tag
+                    img(src="images/product/tag_6.svg", alt="")
+                    span Пилатес
+
+            h2 Лосины PUSH-UP малиновые PARADISO
+
+            div.additional
+                span Арт: 04400210
+                a(onclick="this.classList.toggle('active')").favourite.active
+                    include ../../../images/favourite.svg
+                    span В избранное
+
+            div.price
+                strong 1 145 ₽
+
+                div.dolyame(data-modal-target="dolyame")
+                    img(src="images/dolyame.svg", alt="").logo
+                    span 4 платежа по 300 ₽ *
+                    div.arrow
+                        img(src="images/product/dolyame_arrow.svg", alt="")
+
+            div.colors
+                strong Цвет
+                div.list
+                    a(href="product.html", style="background-color: #241D13")
+                    a(href="product.html", style="background-color: #FFB2F7").active
+                    a(href="product.html", style="background-color: #FFED47")
+                    a(href="product.html", style="background-color: #C6FFCD")
+                    a(href="product.html", style="background-color: #C6D6E7")
+                    a(href="product.html", style="background-color: #ff0000")
+                    a(href="product.html", style="background-color: #800080")
+                    a(href="product.html", style="background-color: #808000")
+                    a(href="product.html", style="background-color: #A52A2A")
+                    a(href="product.html", style="background-color: #FFA500")
+
+            div.sizes
+                div.title
+                    strong Размер
+                    span(data-modal-target="sizes") Таблица размеров
+                div.list
+                    label
+                        input(type="radio", name="productSize", value="2XS", required)
+                        span 2XS
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="XS")
+                        span XS
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="S")
+                        span S
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="M")
+                        span M
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="L")
+                        span L
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="XL")
+                        span XL
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="2XL")
+                        span 2XL
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+                    label
+                        input(type="radio", name="productSize", value="3XL")
+                        span 3XL
+                        div.tooltip
+                            div.row
+                                span Российский размер
+                                span 40–42
+                                span Европейский размер (EUR)
+                                span L
+                                span Обхват бёдер
+                                span 90–100
+                                span Обхват талии
+                                span 60–80
+                            span.red Осталось менее 6 шт.
+
+            div.buttons
+                button.incart.gray
+                    include ../../../images/product/cart.svg
+                    span В корзину
+                button.buy(data-modal-target="buy").border Быстрый заказ
+
+            //- div.tinkoff
+            //-     div.title
+            //-         img(src="images/product/tinkoff.svg", alt="")
+            //-         strong Тинькофф — оплата частями
+            //-         label.checkbox
+            //-             input(type="checkbox", name="")
+            //-             span
+            //-     div.list
+            //-         span 13 июля #[br]300 ₽
+            //-         span 27 июля #[br]300 ₽
+            //-         span 10 августа #[br]300 ₽
+            //-         span 24 августа #[br]300 ₽
+            //-     button Оплатить
+            //-     div.note
+            //-         img(src="images/product/lock.svg", alt="")
+            //-         span Быстрая и безопасная оплата
+
+
+

@@ -1,0 +1,1194 @@
+
+<dialog data-modal-name="lightbox">
+    <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+    </div>
+    <div class="container">
+        <div class="images">
+            <div class="swiper">
+                <div class="swiper-wrapper"></div>
+            </div>
+            <div class="swiper-navigation">
+                <div class="arrow"><svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.25503 0.126731C7.42547 -0.0422437 7.70178 -0.0422437 7.87222 0.126731C8.04259 0.295706 8.04259 0.569669 7.87222 0.738652L7.25503 0.126731ZM0.436341 7.5L0.127832 7.80592C-0.0426111 7.63699 -0.0426111 7.36301 0.127832 7.19401L0.436341 7.5ZM7.87222 14.2613C8.04259 14.4303 8.04259 14.7042 7.87222 14.8732C7.70178 15.0423 7.42547 15.0423 7.25503 14.8732L7.87222 14.2613ZM7.87222 0.738652L0.744936 7.80592L0.127832 7.19401L7.25503 0.126731L7.87222 0.738652ZM0.744936 7.19401L7.87222 14.2613L7.25503 14.8732L0.127832 7.80592L0.744936 7.19401Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="arrow"><svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.25503 0.126731C7.42547 -0.0422437 7.70178 -0.0422437 7.87222 0.126731C8.04259 0.295706 8.04259 0.569669 7.87222 0.738652L7.25503 0.126731ZM0.436341 7.5L0.127832 7.80592C-0.0426111 7.63699 -0.0426111 7.36301 0.127832 7.19401L0.436341 7.5ZM7.87222 14.2613C8.04259 14.4303 8.04259 14.7042 7.87222 14.8732C7.70178 15.0423 7.42547 15.0423 7.25503 14.8732L7.87222 14.2613ZM7.87222 0.738652L0.744936 7.80592L0.127832 7.19401L7.25503 0.126731L7.87222 0.738652ZM0.744936 7.19401L7.87222 14.2613L7.25503 14.8732L0.127832 7.80592L0.744936 7.19401Z" fill="white"/>
+</svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="thumbs">
+            <div class="swiper">
+                <div class="swiper-wrapper"></div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="authorise">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <h3>Авторизация</h3>
+            <form action=""> 
+                <fieldset class="text">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Пароль <span class="required">*</span></label>
+                    <input type="password" placeholder=" " required="required"/>
+                    <div class="eye" onclick="showPassword(this)">
+                        <div class="show_password"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.4342 10.91C11.1584 10.91 12.5562 9.51224 12.5562 7.78801C12.5562 6.06378 11.1584 4.666 9.4342 4.666C7.70997 4.666 6.31219 6.06378 6.31219 7.78801C6.31219 9.51224 7.70997 10.91 9.4342 10.91Z" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.500183 7.78802C0.655183 7.37702 3.23921 0.775024 9.44421 0.775024C15.8482 0.775024 18.3692 7.78802 18.3692 7.78802C18.3692 7.78802 15.6482 14.801 9.44421 14.801C3.03921 14.801 0.500183 7.78802 0.500183 7.78802Z" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+                        <div class="hide_password"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.67722 11.4004C9.59622 11.4064 9.51523 11.4095 9.43423 11.4095C7.71123 11.4095 6.31223 10.0105 6.31223 8.28746C6.31223 8.18646 6.3172 8.08543 6.3262 7.98643" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.20023 6.10844C7.76723 5.52744 8.55923 5.16643 9.43423 5.16643C11.1572 5.16643 12.5552 6.56546 12.5552 8.28746C12.5552 9.16346 12.1952 9.95447 11.6142 10.5215" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.22818 3.13547C5.56118 2.07547 7.28221 1.27448 9.44321 1.27448C15.8472 1.27448 18.3682 8.28748 18.3682 8.28748C18.3682 8.28748 17.1692 11.3774 14.5482 13.4554" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.7502 14.5724C11.7832 15.0204 10.6822 15.3005 9.44321 15.3005C3.03821 15.3005 0.499176 8.28746 0.499176 8.28746C0.578176 8.07746 1.29016 6.25445 2.79416 4.51945" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.36722 1.27448L16.5002 15.4075" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="remember">
+                    <fieldset class="switch">
+                        <label class="checkbox">
+                            <input type="checkbox" name=""/><span></span>
+                        </label><span>Запомнить меня</span>
+                    </fieldset><a onclick="createDialog('password')">Забыли пароль?</a>
+                </div>
+                <button class="gray">Войти</button>
+            </form>
+            <hr/><span class="register">Нет аккаунта? <a onclick="createDialog('register')">Зарегистрироваться</a></span>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="register">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <h3>Регистрация</h3>
+            <form action=""> 
+                <fieldset class="text">
+                    <label>Имя <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Телефон <span class="required">*</span></label>
+                    <input type="text" placeholder=" " data-phone-pattern="" required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Пароль <span class="required">*</span></label>
+                    <input type="password" placeholder=" " required="required"/>
+                    <div class="eye" onclick="showPassword(this)">
+                        <div class="show_password"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.4342 10.91C11.1584 10.91 12.5562 9.51224 12.5562 7.78801C12.5562 6.06378 11.1584 4.666 9.4342 4.666C7.70997 4.666 6.31219 6.06378 6.31219 7.78801C6.31219 9.51224 7.70997 10.91 9.4342 10.91Z" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.500183 7.78802C0.655183 7.37702 3.23921 0.775024 9.44421 0.775024C15.8482 0.775024 18.3692 7.78802 18.3692 7.78802C18.3692 7.78802 15.6482 14.801 9.44421 14.801C3.03921 14.801 0.500183 7.78802 0.500183 7.78802Z" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+                        <div class="hide_password"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.67722 11.4004C9.59622 11.4064 9.51523 11.4095 9.43423 11.4095C7.71123 11.4095 6.31223 10.0105 6.31223 8.28746C6.31223 8.18646 6.3172 8.08543 6.3262 7.98643" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.20023 6.10844C7.76723 5.52744 8.55923 5.16643 9.43423 5.16643C11.1572 5.16643 12.5552 6.56546 12.5552 8.28746C12.5552 9.16346 12.1952 9.95447 11.6142 10.5215" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.22818 3.13547C5.56118 2.07547 7.28221 1.27448 9.44321 1.27448C15.8472 1.27448 18.3682 8.28748 18.3682 8.28748C18.3682 8.28748 17.1692 11.3774 14.5482 13.4554" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.7502 14.5724C11.7832 15.0204 10.6822 15.3005 9.44321 15.3005C3.03821 15.3005 0.499176 8.28746 0.499176 8.28746C0.578176 8.07746 1.29016 6.25445 2.79416 4.51945" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.36722 1.27448L16.5002 15.4075" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Повторите пароль <span class="required">*</span></label>
+                    <input type="password" placeholder=" " required="required"/>
+                    <div class="eye" onclick="showPassword(this)">
+                        <div class="show_password"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.4342 10.91C11.1584 10.91 12.5562 9.51224 12.5562 7.78801C12.5562 6.06378 11.1584 4.666 9.4342 4.666C7.70997 4.666 6.31219 6.06378 6.31219 7.78801C6.31219 9.51224 7.70997 10.91 9.4342 10.91Z" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.500183 7.78802C0.655183 7.37702 3.23921 0.775024 9.44421 0.775024C15.8482 0.775024 18.3692 7.78802 18.3692 7.78802C18.3692 7.78802 15.6482 14.801 9.44421 14.801C3.03921 14.801 0.500183 7.78802 0.500183 7.78802Z" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+                        <div class="hide_password"><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.67722 11.4004C9.59622 11.4064 9.51523 11.4095 9.43423 11.4095C7.71123 11.4095 6.31223 10.0105 6.31223 8.28746C6.31223 8.18646 6.3172 8.08543 6.3262 7.98643" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.20023 6.10844C7.76723 5.52744 8.55923 5.16643 9.43423 5.16643C11.1572 5.16643 12.5552 6.56546 12.5552 8.28746C12.5552 9.16346 12.1952 9.95447 11.6142 10.5215" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.22818 3.13547C5.56118 2.07547 7.28221 1.27448 9.44321 1.27448C15.8472 1.27448 18.3682 8.28748 18.3682 8.28748C18.3682 8.28748 17.1692 11.3774 14.5482 13.4554" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.7502 14.5724C11.7832 15.0204 10.6822 15.3005 9.44321 15.3005C3.03821 15.3005 0.499176 8.28746 0.499176 8.28746C0.578176 8.07746 1.29016 6.25445 2.79416 4.51945" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.36722 1.27448L16.5002 15.4075" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="checboxes">
+                    <fieldset class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checbox" checked="checked"/><span>Подтверждаю своё согласие на получение информации о новинках и выгодных предложениях.</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checbox"/><span>Подтверждаю своё согласие на обработку и хранение моих персональных данных в соответствии с пользовательским соглашением</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checbox"/><span>Соглашаюсь с условиями программы лояльности</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <button class="gray">Зарегистрироваться</button>
+            </form>
+            <div class="socials"><span>или</span>
+                <div class="list"><a href="###"><img src="images/google.png" alt=""/></a><a href="###"><img src="images/vkontakte.png" alt=""/></a><a href="###"><img src="images/facebook.png" alt=""/></a><a href="###"><img src="images/apple.png" alt=""/></a></div>
+            </div>
+            <hr/><span class="register">У вас уже есть аккаунт? <a onclick="createDialog('authorise')">Войти</a></span>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="callback">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <div class="title">
+                <h3>оставить заявку</h3><span>Здравствуйте! Мы уже готовы отгрузить вам наши самые популярные модели, оставляйте заявку и мы расскажем, что для этого нужно!</span>
+            </div>
+            <form action=""> 
+                <fieldset class="text">
+                    <label>Имя <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Фамилия <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Телефон <span class="required">*</span></label>
+                    <input type="text" placeholder=" " data-phone-pattern="" required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Адрес <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <div class="checboxes">
+                    <fieldset class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checbox" checked="checked"/><span>Подтверждаю своё согласие на получение информации о новинках и выгодных предложениях.</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checbox"/><span>Подтверждаю своё согласие на обработку и хранение моих персональных данных в соответствии с пользовательским соглашением</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <button class="gray">отправить</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="password">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <div class="title">
+                <h3>Восстановление данных</h3><span>Введите ваш адрес электронной почты, и мы отправим на него ссылку для смены пароля</span>
+            </div>
+            <form action=""> 
+                <fieldset class="text">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <button class="gray" onclick="createDialog('recover')">Отправить</button>
+            </form>
+            <hr/>
+            <div class="socials"><span>Или войдите при помощи:</span>
+                <div class="list"><a href="###"><img src="images/google.png" alt=""/></a><a href="###"><img src="images/vkontakte.png" alt=""/></a><a href="###"><img src="images/facebook.png" alt=""/></a><a href="###"><img src="images/apple.png" alt=""/></a></div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="recover">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <div class="title">
+                <h3>Восстановление данных</h3>
+            </div>
+            <form action=""> 
+                <fieldset class="text">
+                    <label>Код из письма <span class="required">*</span></label>
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Пароль <span class="required">*</span></label>
+                    <input type="password" placeholder=" " required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Повторите пароль <span class="required">*</span></label>
+                    <input type="password" placeholder=" " required="required"/>
+                </fieldset>
+                <button class="gray">Отправить</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="sizes">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <div class="title">
+                <h2>Таблица размеров</h2><span>Данные обмеры относятся к выбранной вами вещи, для других вещей могут быть другие обмеры</span>
+            </div>
+            <table>
+                <thead>
+                    <tr> 
+                        <td>Размер</td>
+                        <td><strong>XS</strong></td>
+                        <td><strong>S</strong></td>
+                        <td><strong>M</strong></td>
+                        <td><strong>L</strong></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>Обхват груди</td>
+                        <td>33</td>
+                        <td>34</td>
+                        <td>35</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>Обхват под грудью</td>
+                        <td>72</td>
+                        <td>76</td>
+                        <td>80</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>Талия</td>
+                        <td>55</td>
+                        <td>56</td>
+                        <td>57</td>
+                        <td>58</td>
+                    </tr>
+                    <tr>
+                        <td>Бёдра</td>
+                        <td>65</td>
+                        <td>66</td>
+                        <td>68</td>
+                        <td>70</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note"><img src="images/size.png" alt=""/>
+                <div class="description">
+                    <h3>Как правильно себя обмерять?</h3>
+                    <h4>1. ОБХВАТ ГРУДИ</h4><span>Измеряется по самым выступающим точкам.</span>
+                    <h4>2. ОБХВАТ под ГРУДью</h4><span>Обхват под грудью измеряется по самым нижним точкам под линией груди.</span>
+                    <h4>3. ОБХВАТ ТАЛИИ</h4><span>Естественная линия талии измеряется в самом узком месте.</span>
+                    <h4>4. ОБХВАТ БЁДЕР</h4><span>Измеряется горизонтально полу по наиболее выступающим точкам ягодиц.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="city">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <h4>выберите город</h4>
+            <form action=""> 
+                <fieldset class="text">
+                    <input type="text" placeholder=" " required="required"/>
+                </fieldset>
+                <button class="gray">применить</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="review">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <form action="">
+                <div class="title">
+                    <h3>новый отзыв</h3><span>Лосины PUSH-UP малиновые PARADISO</span>
+                </div>
+                <hr/>
+                <fieldset class="stars"><strong>Оцените товар:</strong>
+                    <div class="list">
+                        <input type="radio" name="stars" value="5" id="star_5"/>
+                        <label for="star_5"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Star 11" d="M10.0489 0.927053C10.3483 0.00574231 11.6517 0.00573993 11.9511 0.927051L13.6942 6.29179C13.828 6.70382 14.212 6.98278 14.6452 6.98278H20.2861C21.2548 6.98278 21.6576 8.22239 20.8738 8.7918L16.3103 12.1074C15.9598 12.362 15.8132 12.8134 15.947 13.2254L17.6902 18.5902C17.9895 19.5115 16.935 20.2776 16.1513 19.7082L11.5878 16.3926C11.2373 16.138 10.7627 16.138 10.4122 16.3926L5.84869 19.7082C5.06498 20.2776 4.0105 19.5115 4.30985 18.5902L6.05296 13.2254C6.18683 12.8134 6.04018 12.362 5.68969 12.1074L1.12616 8.7918C0.342451 8.22239 0.745225 6.98278 1.71395 6.98278H7.35477C7.788 6.98278 8.17196 6.70382 8.30583 6.2918L10.0489 0.927053Z" fill="#94BADF"/>
+</svg>
+
+                        </label>
+                        <input type="radio" name="stars" value="4" id="star_4"/>
+                        <label for="star_4"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Star 11" d="M10.0489 0.927053C10.3483 0.00574231 11.6517 0.00573993 11.9511 0.927051L13.6942 6.29179C13.828 6.70382 14.212 6.98278 14.6452 6.98278H20.2861C21.2548 6.98278 21.6576 8.22239 20.8738 8.7918L16.3103 12.1074C15.9598 12.362 15.8132 12.8134 15.947 13.2254L17.6902 18.5902C17.9895 19.5115 16.935 20.2776 16.1513 19.7082L11.5878 16.3926C11.2373 16.138 10.7627 16.138 10.4122 16.3926L5.84869 19.7082C5.06498 20.2776 4.0105 19.5115 4.30985 18.5902L6.05296 13.2254C6.18683 12.8134 6.04018 12.362 5.68969 12.1074L1.12616 8.7918C0.342451 8.22239 0.745225 6.98278 1.71395 6.98278H7.35477C7.788 6.98278 8.17196 6.70382 8.30583 6.2918L10.0489 0.927053Z" fill="#94BADF"/>
+</svg>
+
+                        </label>
+                        <input type="radio" name="stars" value="3" id="star_3"/>
+                        <label for="star_3"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Star 11" d="M10.0489 0.927053C10.3483 0.00574231 11.6517 0.00573993 11.9511 0.927051L13.6942 6.29179C13.828 6.70382 14.212 6.98278 14.6452 6.98278H20.2861C21.2548 6.98278 21.6576 8.22239 20.8738 8.7918L16.3103 12.1074C15.9598 12.362 15.8132 12.8134 15.947 13.2254L17.6902 18.5902C17.9895 19.5115 16.935 20.2776 16.1513 19.7082L11.5878 16.3926C11.2373 16.138 10.7627 16.138 10.4122 16.3926L5.84869 19.7082C5.06498 20.2776 4.0105 19.5115 4.30985 18.5902L6.05296 13.2254C6.18683 12.8134 6.04018 12.362 5.68969 12.1074L1.12616 8.7918C0.342451 8.22239 0.745225 6.98278 1.71395 6.98278H7.35477C7.788 6.98278 8.17196 6.70382 8.30583 6.2918L10.0489 0.927053Z" fill="#94BADF"/>
+</svg>
+
+                        </label>
+                        <input type="radio" name="stars" value="2" id="star_2"/>
+                        <label for="star_2"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Star 11" d="M10.0489 0.927053C10.3483 0.00574231 11.6517 0.00573993 11.9511 0.927051L13.6942 6.29179C13.828 6.70382 14.212 6.98278 14.6452 6.98278H20.2861C21.2548 6.98278 21.6576 8.22239 20.8738 8.7918L16.3103 12.1074C15.9598 12.362 15.8132 12.8134 15.947 13.2254L17.6902 18.5902C17.9895 19.5115 16.935 20.2776 16.1513 19.7082L11.5878 16.3926C11.2373 16.138 10.7627 16.138 10.4122 16.3926L5.84869 19.7082C5.06498 20.2776 4.0105 19.5115 4.30985 18.5902L6.05296 13.2254C6.18683 12.8134 6.04018 12.362 5.68969 12.1074L1.12616 8.7918C0.342451 8.22239 0.745225 6.98278 1.71395 6.98278H7.35477C7.788 6.98278 8.17196 6.70382 8.30583 6.2918L10.0489 0.927053Z" fill="#94BADF"/>
+</svg>
+
+                        </label>
+                        <input type="radio" name="stars" value="1" id="star_1"/>
+                        <label for="star_1"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Star 11" d="M10.0489 0.927053C10.3483 0.00574231 11.6517 0.00573993 11.9511 0.927051L13.6942 6.29179C13.828 6.70382 14.212 6.98278 14.6452 6.98278H20.2861C21.2548 6.98278 21.6576 8.22239 20.8738 8.7918L16.3103 12.1074C15.9598 12.362 15.8132 12.8134 15.947 13.2254L17.6902 18.5902C17.9895 19.5115 16.935 20.2776 16.1513 19.7082L11.5878 16.3926C11.2373 16.138 10.7627 16.138 10.4122 16.3926L5.84869 19.7082C5.06498 20.2776 4.0105 19.5115 4.30985 18.5902L6.05296 13.2254C6.18683 12.8134 6.04018 12.362 5.68969 12.1074L1.12616 8.7918C0.342451 8.22239 0.745225 6.98278 1.71395 6.98278H7.35477C7.788 6.98278 8.17196 6.70382 8.30583 6.2918L10.0489 0.927053Z" fill="#94BADF"/>
+</svg>
+
+                        </label>
+                    </div><span>— не выбрано</span>
+                </fieldset>
+                <fieldset class="textarea">
+                    <label>Комментарий:</label>
+                    <textarea placeholder="Опишите подробнее свои впечатления" cols="30" rows="4"></textarea>
+                </fieldset>
+                <fieldset class="images">
+                    <input type="file" id="file" multiple="multiple" onchange="getImages(this)" accept="image/*"/>
+                    <label for="file"><img src="images/upload.svg" alt=""/><span>Прикрепите фото к сообщению, перетащите его в эту область или выберите файл.</span></label>
+                    <div class="list"></div>
+                </fieldset>
+                <div class="row">
+                    <fieldset class="text">
+                        <label>Как вас зовут?</label>
+                        <input type="text" placeholder="Ваше имя" required="required"/>
+                    </fieldset>
+                    <fieldset class="text">
+                        <label>Откуда вы?</label>
+                        <input type="text" placeholder="Город" required="required"/>
+                    </fieldset>
+                </div><span class="policy">Соглашаюсь с условиями политики конфиденциальности и правилами продажи.</span>
+                <hr/>
+                <button class="gray">отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="unsubscribe">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content"><span>Адрес info123@gmail.com будет отписан от email- рассылки</span>
+            <button class="gray" onclick="createDialog('unsubscribe_confirm')">Подтвердить</button>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="unsubscribe_confirm">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content"><span>Вы успешно отписались от email рассылки.</span></div>
+    </div>
+</dialog>
+<dialog data-modal-name="client">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <div class="image"><img src="images/collections/other/1.webp" alt=""/></div>
+            <div class="text">
+                <div class="title">
+                    <div class="symbol"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M37.9049 10.2705C37.4931 9.63715 37.0472 9.02667 36.5692 8.44175C34.6445 6.09415 32.2225 4.20275 29.4777 2.90403C26.733 1.6053 23.734 0.931641 20.6971 0.931641C17.6603 0.931641 14.6613 1.6053 11.9166 2.90403C9.17181 4.20275 6.74975 6.09415 4.82513 8.44175C4.34789 9.02733 3.90204 9.63776 3.48944 10.2705C1.47984 13.3655 0.343138 16.945 0.199197 20.6317C0.0552553 24.3184 0.909404 27.9756 2.67158 31.2176C4.43375 34.4597 7.03865 37.1665 10.2116 39.0526C13.3846 40.9387 17.008 41.9343 20.6998 41.9343C24.3916 41.9343 28.0151 40.9387 31.188 39.0526C34.361 37.1665 36.9659 34.4597 38.7281 31.2176C40.4902 27.9756 41.3444 24.3184 41.2004 20.6317C41.0565 16.945 39.9198 13.3655 37.9102 10.2705H37.9049ZM39.107 21.4324C39.107 22.0482 39.0776 22.6569 39.0188 23.2585H21.7457V19.577C24.6013 19.434 27.3954 18.6951 29.948 17.4076C32.5006 16.1202 34.7552 14.3128 36.5665 12.1019C38.2329 14.9271 39.1103 18.1475 39.107 21.4271V21.4324ZM20.6958 12.7533C19.9408 12.7538 19.2026 12.5306 18.5745 12.1118C17.9465 11.6931 17.4568 11.0976 17.1673 10.4007C16.8779 9.70382 16.8018 8.9368 16.9486 8.19667C17.0953 7.45653 17.4584 6.77651 17.9919 6.24261C18.5254 5.7087 19.2054 5.34489 19.9458 5.19717C20.6862 5.04945 21.4538 5.12446 22.1515 5.41272C22.8493 5.70098 23.4458 6.18953 23.8657 6.81661C24.2856 7.44369 24.51 8.18112 24.5105 8.93565C24.5109 9.43664 24.4125 9.93279 24.221 10.3958C24.0295 10.8588 23.7486 11.2795 23.3943 11.634C23.0401 11.9885 22.6195 12.2698 22.1565 12.4619C21.6934 12.6539 21.1971 12.7529 20.6958 12.7533ZM35.335 10.2652C33.7255 12.3765 31.6773 14.1142 29.3313 15.3586C26.9854 16.603 24.3974 17.3244 21.7457 17.4733V14.7582C23.1976 14.4934 24.4981 13.6959 25.3919 12.5222C26.2857 11.3484 26.7083 9.88328 26.5768 8.41418C26.4454 6.94509 25.7693 5.57813 24.6812 4.58157C23.5932 3.585 22.1717 3.03076 20.6958 3.02764C23.5295 3.02539 26.3253 3.67798 28.8648 4.93442C31.4043 6.19086 33.6187 8.01712 35.335 10.2705V10.2652ZM20.6958 3.02764C19.2197 3.03011 17.7978 3.58387 16.7092 4.58022C15.6207 5.57658 14.9441 6.94357 14.8122 8.41286C14.6804 9.88215 15.1029 11.3476 15.9967 12.5216C16.8905 13.6956 18.1912 14.4934 19.6433 14.7582V17.4786C16.9915 17.3298 14.4036 16.6083 12.0576 15.3639C9.71164 14.1196 7.66341 12.3819 6.05396 10.2705C7.77078 8.01706 9.98567 6.19081 12.5256 4.93438C15.0655 3.67796 17.8617 3.02538 20.6958 3.02764ZM2.28197 21.4271C2.27532 18.1412 3.15277 14.9139 4.82245 12.0832C6.63379 14.2941 8.88833 16.1015 11.4409 17.3889C13.9935 18.6764 16.7876 19.4154 19.6433 19.5583V39.7812C14.9526 39.5128 10.542 37.4627 7.31448 34.0506C4.08692 30.6385 2.28655 26.1224 2.28197 21.4271ZM21.7457 39.7998V25.3515H38.6876C37.8271 29.2769 35.7058 32.8135 32.6471 35.422C29.5884 38.0306 25.76 39.568 21.7457 39.7998Z" fill="#241D13"/>
+</svg>
+
+                        <h3>@beself_activewear </h3>
+                    </div>
+                    <div class="likes"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span>2.0k</span>
+                    </div>
+                    <div class="comments"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.10558 2.23047C12.8378 2.23047 15.868 5.26063 15.868 8.99286C15.868 12.7251 12.8378 15.7553 9.10558 15.7553C7.95577 15.7553 2.13208 15.77 2.13208 15.77C2.13208 15.77 3.68937 14.2922 4.26772 13.7158C3.40168 12.2479 2.34319 10.83 2.34319 8.99286C2.34319 5.26063 5.37335 2.23047 9.10558 2.23047Z" stroke="#4E5154" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span>190</span>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="instagram_product"><span>Лосины морская волна PUSH UP</span><strong>1 145 ₽</strong>
+                        <button class="gray">в корзину</button>
+                    </div>
+                    <div class="instagram_product"><span>Топ-бра молочный SOFT COVER</span><strong>1 145 ₽</strong>
+                        <button class="gray">в корзину</button>
+                    </div>
+                </div>
+                <div class="comment"><span>Даже не верится, что первая половина лета уже прошла! Поэтому, нужно как можно больше прогулок, летних веранд и танцев под луной</span><i>Артикул лосины: 04400210</i><i>Артикул топ-бра: 04400210</i></div>
+                <div class="note"><span>БЕСПЛАТНАЯ ДОСТАВКА по России при заказе от 5,000 ₽. Оплата частями</span><span>Обмен/Возврат в течение 14 дней, на онлайн-заказы в том числе.</span></div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="dolyame">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content"><img class="dolyame" src="images/dolyame.svg" alt=""/>
+            <div class="text">
+                <h3>Оплатите долями</h3>
+                <h3>только 25% стоимости покупки</h3><span>Оставшиеся три платежа спишутся автоматически с шагом в две недели</span>
+            </div>
+            <div class="list"><span>13 июля <br/>300 ₽</span><span>27 июля <br/>300 ₽</span><span>10 августа <br/>300 ₽</span><span>24 августа <br/>300 ₽</span></div>
+            <ul class="tick">
+                <li>Оплачивайте покупки частями — по 25% каждые две недели</li>
+                <li>Никаких дополнительных платежей — как обычная оплата картой</li>
+                <li>Соберите корзину на общую сумму до 30 000 ₽ и выберите способ оплаты Долями при оформлении заказа</li>
+            </ul>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="product">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <h2 class="modal_title">Быстрый просмотр</h2>
+            <div class="swiper gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/products/1.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/2.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/3.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/4.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/5.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/6.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/1.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/2.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/3.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/4.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/5.webp" alt="" lightbox="product"/></div>
+                    <div class="swiper-slide"><img src="images/products/6.webp" alt="" lightbox="product"/></div>
+                </div>
+            </div>
+            <form action="cart.html">
+                <div class="tags">
+                    <div class="tag"><img src="images/product/tag_1.png" alt=""/><span>Сертифицировано</span></div>
+                    <div class="tag"><img src="images/product/tag_2.png" alt=""/><span>Сделано в России</span></div>
+                    <div class="tag"><img src="images/product/tag_3.png" alt=""/><span>Supplex Sport Hit</span></div>
+                    <div class="tag"><img src="images/product/tag_4.svg" alt=""/><span>Для занятий йогой</span></div>
+                </div>
+                <h2 class="product_title">Лосины PUSH-UP малиновые PARADISO</h2>
+                <div class="additional"><span>Арт: 04400210</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span>В избранное</span></a></div>
+                <div class="price"><strong>1 145 ₽</strong>
+                    <div class="dolyame" onclick="createDialog('dolyame')"><img class="logo" src="images/dolyame.svg" alt=""/><span>4 платежа по 300 ₽ *</span>
+                        <div class="arrow"><img src="images/product/dolyame_arrow.svg" alt=""/></div>
+                    </div>
+                </div>
+                <div class="colors"><strong>Цвет</strong>
+                    <div class="list"><a href="product.html" style="background-color: #241D13"></a><a class="active" href="product.html" style="background-color: #FFB2F7"></a><a href="product.html" style="background-color: #FFED47"></a><a href="product.html" style="background-color: #C6FFCD"></a><a href="product.html" style="background-color: #C6D6E7"></a><a href="product.html" style="background-color: #ff0000"></a><a href="product.html" style="background-color: #800080"></a><a href="product.html" style="background-color: #808000"></a><a href="product.html" style="background-color: #A52A2A"></a><a href="product.html" style="background-color: #FFA500"></a></div>
+                </div>
+                <div class="sizes">
+                    <div class="title"><strong>Размер</strong><span onclick="createDialog('sizes')">Таблица размеров</span></div>
+                    <div class="list">
+                        <label>
+                            <input type="radio" name="productSize" value="2XS" required="required"/><span>2XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="XS"/><span>XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="S"/><span>S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="M"/><span>M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="L"/><span>L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="XL"/><span>XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="2XL"/><span>2XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="productSize" value="3XL"/><span>3XL</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="incart"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<path id="Vector" d="M18.2786 8H5.72141C5.22258 8 4.79686 8.35341 4.71486 8.8356L3.01414 18.8356C2.91047 19.4451 3.39012 20 4.02068 20H19.9793C20.6098 20 21.0895 19.4451 20.9859 18.8356L19.2851 8.8356C19.2032 8.35341 18.7774 8 18.2786 8Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<span>В корзину</span>
+                    </button>
+                    <button class="buy">Быстрый заказ</button>
+                </div>
+                <div class="descriptions">
+                    <div class="description">
+                        <div class="accordion">
+                            <div class="accordion_caption"><span>Описание</span><img src="images/filter_arrow.svg" alt=""/></div>
+                            <div class="accordion_content">
+                                <div class="accordion_wrap">
+                                    <div class="accordion_block row">
+                                        <div class="left">
+                                            <p>Спортивный топик VELVET:</p><br/>
+                                            <ul class="disc">
+                                                <li>Средняя поддержка груди;</li>
+                                                <li>Вставные поролоновые чашки;</li>
+                                                <li>Плотная резинка под грудью;</li>
+                                                <li>Красивая спинка;</li>
+                                                <li>Подойдёт на чашку А‑С;</li>
+                                                <li>Лучше всего подходит для спокойных видов спорта, «мягкого» фитнеса: йога, пилатес, растяжка, калланетика и т.д.</li>
+                                            </ul><br/>
+                                            <p>Ткань сертифицирована по международному стандарту OEKO-TEX® Standart 100 (в составе отсутствуют вредные вещества).</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>Состав: 68% полиэстер, 32% спандекс.</p><br/>
+                                            <p>VELVET - и этим многое сказано. Невероятно мягкая бархатистая ткань с высокой степенью эластичности создана для ещё большего комфорта во время тренировок. В костюме из этой ткани вы можете принимать любые позы — вам будет легко и удобно, ведь ткань коллекции VELVET создаёт ощущение невесомости на коже и обеспечивает неограниченную свободу движений.</p>
+                                            <p>VELVET - это подтверждение того, что с каждой новой коллекцией BeSelf совершенствуется и создаёт все более уникальные продукты международного уровня.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery">
+                        <div class="accordion">
+                            <div class="accordion_caption"><span>Доставка</span><img src="images/filter_arrow.svg" alt=""/></div>
+                            <div class="accordion_content">
+                                <div class="accordion_wrap">
+                                    <div class="accordion_block">
+                                        <div class="title"><span>Доставка в г. Москва</span><a onclick="createDialog('city')">Изменить</a></div>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Вид доставки</td>
+                                                    <td>Сроки</td>
+                                                    <td>Стоимость</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Самовывоз со склада*</td>
+                                                    <td data-text="Сроки">Сегодня <span>В рабочие часы</span></td>
+                                                    <td data-text="Стоимость">Бесплатно</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>В пункт выдачи CДЭК</td>
+                                                    <td>1–3 дня</td>
+                                                    <td>150 ₽ <span>Бесплатно при заказе от 4 000 ₽</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Курьером CДЭК</td>
+                                                    <td>1–3 дня</td>
+                                                    <td>300 ₽ <span>Бесплатно при заказе от 7 000 ₽</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Экспресс доставка**</td>
+                                                    <td>Сегодня <span>При заказе до 12</span></td>
+                                                    <td>550 ₽ <span>Бесплатно при заказе от 10 000 ₽</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="notes">
+                                            <div class="note"><span class="stars">*</span><span>Находится на метро Строгино, улица Кулакова 20с1А, Технопарк Орбита. Работаем по будням с 9:30 до 17. По выходным и праздничным дням офис не работает. Забрать заказ возможно только после предварительного согласования с менеджером. В точке самовывоза нет услуги примерки товара.</span></div>
+                                            <div class="note"><span class="stars">**</span><span>Доставка пешими курьерами осуществляется только в будние рабочие дни. Доставка в пределах МКАД. При отказе от получения заказа после отправки с нашего склада, стоимость доставки не возвращается. Если доставка была 0 ₽, денежные средства будут возвращены за вычетом доставки (стоимость по запросу у менеджеров).</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stock">
+                        <div class="accordion">
+                            <div class="accordion_caption"><span>Наличие в магазинах</span><img src="images/filter_arrow.svg" alt=""/></div>
+                            <div class="accordion_content">
+                                <div class="accordion_wrap">
+                                    <div class="accordion_block">
+                                        <div class="table">
+                                            <div class="column">
+                                                <div class="title">Магазин</div>
+                                                <div class="text"><span class="black">Магазин Beself Арена Плаза</span><span class="gray small">Москва, ТЦ Арена Плаза, м. Динамо, Ленинградский проспект 36, 1 этаж</span><span class="gray small">Пн-Вс: 10:00–22:00</span><a class="phone" href="tel:79918561858"><img src="images/phone2.svg" alt=""/><span>+7 (991) 856-18-58</span></a></div>
+                                            </div>
+                                            <div class="column">
+                                                <div class="title">Размеры в наличии</div>
+                                                <div class="text"><span class="black">XS - Есть в наличии</span><span class="gray">S - нет в наличии</span><span class="black">M – 2</span><span class="black">L – 2</span>
+                                                    <h3 class="red">Внимание!</h3><span class="gray">Фактическое количество товара в магазине может отличаться.Обязательно звоните нам, чтобы уточнить наличие.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="filter">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <form class="modal_filter">
+            <input type="reset" value="Сбросить все фильтры"/>
+            <div class="accordion open">
+                <div class="accordion_caption"><strong>Вид товара</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Лосины</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Велосипедки</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Спортивные бра</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Кроп-топ</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Майка</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Кофта на молнии</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Футболка</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Кофта на молнии</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Лосины Push-Up</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Лонгслив</span>
+                                </label>
+                            </fieldset><a class="clear" onclick="this.parentElement.querySelectorAll('input').forEach( input =&gt; { input.checked = false })">Сбросить все виды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong>Цена</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="range">
+                            <div class="inputs"><span>от</span>
+                                <input type="number" min="0" max="5000" value="0"/><span>до</span>
+                                <input type="number" min="0" max="5000" value="5000"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong>Размер</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>2XS</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>XS</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>S</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>M</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>L</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>XL</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>2XL</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>3XL</span>
+                                </label>
+                            </fieldset><a class="clear" onclick="this.parentElement.querySelectorAll('input').forEach( input =&gt; { input.checked = false })">Сбросить все размеры</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong>Цвет</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Чёрный</span>
+                                    <div class="color" style="background-color: #241D13"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Розовый</span>
+                                    <div class="color" style="background-color: #FFB2F7"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Жёлтый</span>
+                                    <div class="color" style="background-color: #FFED47"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Салатовый</span>
+                                    <div class="color" style="background-color: #C6FFCD"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Голубой</span>
+                                    <div class="color" style="background-color: #C6D6E7"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Красный</span>
+                                    <div class="color" style="background-color: #ff0000"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Фиолетовый</span>
+                                    <div class="color" style="background-color: #800080"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Оливковый</span>
+                                    <div class="color" style="background-color: #808000"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Коричневый</span>
+                                    <div class="color" style="background-color: #A52A2A"></div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span class="color">Оранжевый</span>
+                                    <div class="color" style="background-color: #FFA500"></div>
+                                </label>
+                            </fieldset><a class="clear" onclick="this.parentElement.querySelectorAll('input').forEach( input =&gt; { input.checked = false })">Сбросить все цвета</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong>Материал</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Гладкая ткань</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Бесшовное изделие</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Supplex Sport Hit</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Supplex Yoga Hit</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Supplex Cotton</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Matte Bifleks</span>
+                                </label>
+                            </fieldset><a class="clear" onclick="this.parentElement.querySelectorAll('input').forEach( input =&gt; { input.checked = false })">Сбросить все материалы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong>Уровень поддержки</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Низкая поддержка</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Средняя поддержка</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="checbox"/><span>Высокая поддержка</span>
+                                </label>
+                            </fieldset><a class="clear" onclick="this.parentElement.querySelectorAll('input').forEach( input =&gt; { input.checked = false })">Сбросить все уровни поддержки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong data-note="">Упорядочить</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort"/><span>Новинки</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort"/><span>Хиты продаж</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort"/><span>Sale</span>
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_caption"><strong data-note="По популярности">Сортировка</strong><img src="images/filter_arrow.svg" alt=""/></div>
+                <div class="accordion_content">
+                    <div class="wrap">
+                        <div class="checkboxes">
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort2" checked="checked"/><span>По популярности</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort2"/><span>По новизне</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort2"/><span>Цена по убыванию</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="radio">
+                                <label onclick="setFilterNote(this)">
+                                    <input type="radio" name="sort2"/><span>Цена по возрастанию</span>
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</dialog>
+<dialog data-modal-name="buy">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <h3>Купить в 1 клик</h3>
+            <div class="small_product">
+                <div class="image"><img src="images/products/1.webp" alt=""/></div>
+                <div class="description">
+                    <h4>Лосины PUSH-UP малиновые PARADISO</h4><span class="article">Арт: 04400210</span>
+                    <div class="color"><span style="background-color: #241D13"></span><span>Чёрный|M</span></div>
+                    <div class="price"><strong>1 145 ₽</strong>
+                        <div class="quantity">
+                            <div class="minus"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529_10201)">
+<path d="M4.16699 9.625H15.8337V11.375H4.16699V9.625Z" fill="#4E5154"/>
+</g>
+<defs>
+<clipPath id="clip0_1529_10201">
+<rect width="20" height="21" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                            </div>
+                            <input type="number" value="1" min="1" max="100"/>
+                            <div class="plus"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529_10203)">
+<path d="M9.16699 9.625V4.375H10.8337V9.625H15.8337V11.375H10.8337V16.625H9.16699V11.375H4.16699V9.625H9.16699Z" fill="#4E5154"/>
+</g>
+<defs>
+<clipPath id="clip0_1529_10203">
+<rect width="20" height="21" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls"><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a><a class="trash"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.45734 4.22028H15.8822" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.08371 4.22026V2.45618C6.08371 1.4671 6.88496 0.665771 7.87405 0.665771C8.38952 0.665771 8.95051 0.665771 9.46598 0.665771C10.4539 0.665771 11.2563 1.4671 11.2563 2.45618C11.2563 3.34002 11.2563 4.22026 11.2563 4.22026" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.25461 4.22028V14.8048C3.25461 15.2988 3.45074 15.7712 3.79997 16.1204C4.14801 16.4696 4.62166 16.6658 5.11561 16.6658C7.10335 16.6658 10.2356 16.6658 12.2234 16.6658C12.7173 16.6658 13.191 16.4696 13.5402 16.1204C13.8894 15.7712 14.0856 15.2988 14.0856 14.8048C14.0856 11.3329 14.0856 4.22028 14.0856 4.22028" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a></div>
+            </div>
+            <hr/>
+            <form action=""> 
+                <fieldset class="text">
+                    <label>Имя <span class="required">*</span></label>
+                    <input type="text" placeholder="Имя" required="required"/>
+                </fieldset>
+                <fieldset class="text">
+                    <label>Телефон <span class="required">*</span></label>
+                    <input type="text" placeholder="+7 (___) ___ __ __" data-phone-pattern="" required="required"/>
+                </fieldset>
+                <button class="gray">Купить</button><a class="tocart" href="index.html">Посмотреть корзину</a>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog data-modal-name="cart">
+    <div class="container">
+        <div class="cross" data-modal-close="data-modal-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3L17 17M3 17L17 3" stroke="#4E5154" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+        </div>
+        <div class="content">
+            <h3>Корзина</h3>
+            <div class="list">
+                <div class="small_product">
+                    <div class="image"><img src="images/products/1.webp" alt=""/></div>
+                    <div class="description">
+                        <h4>Лосины PUSH-UP малиновые PARADISO</h4><span class="article">Арт: 04400210</span>
+                        <div class="color"><span style="background-color: #241D13"></span><span>Чёрный|M</span></div>
+                        <div class="price"><strong>1 145 ₽</strong>
+                            <div class="quantity">
+                                <div class="minus"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529_10201)">
+<path d="M4.16699 9.625H15.8337V11.375H4.16699V9.625Z" fill="#4E5154"/>
+</g>
+<defs>
+<clipPath id="clip0_1529_10201">
+<rect width="20" height="21" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                                </div>
+                                <input type="number" value="1" min="1" max="100"/>
+                                <div class="plus"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529_10203)">
+<path d="M9.16699 9.625V4.375H10.8337V9.625H15.8337V11.375H10.8337V16.625H9.16699V11.375H4.16699V9.625H9.16699Z" fill="#4E5154"/>
+</g>
+<defs>
+<clipPath id="clip0_1529_10203">
+<rect width="20" height="21" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls"><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a><a class="trash"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.45734 4.22028H15.8822" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.08371 4.22026V2.45618C6.08371 1.4671 6.88496 0.665771 7.87405 0.665771C8.38952 0.665771 8.95051 0.665771 9.46598 0.665771C10.4539 0.665771 11.2563 1.4671 11.2563 2.45618C11.2563 3.34002 11.2563 4.22026 11.2563 4.22026" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.25461 4.22028V14.8048C3.25461 15.2988 3.45074 15.7712 3.79997 16.1204C4.14801 16.4696 4.62166 16.6658 5.11561 16.6658C7.10335 16.6658 10.2356 16.6658 12.2234 16.6658C12.7173 16.6658 13.191 16.4696 13.5402 16.1204C13.8894 15.7712 14.0856 15.2988 14.0856 14.8048C14.0856 11.3329 14.0856 4.22028 14.0856 4.22028" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a></div>
+                </div>
+                <div class="small_product">
+                    <div class="image"><img src="images/products/1.webp" alt=""/></div>
+                    <div class="description">
+                        <h4>Лосины PUSH-UP малиновые PARADISO</h4><span class="article">Арт: 04400210</span>
+                        <div class="color"><span style="background-color: #241D13"></span><span>Чёрный|M</span></div>
+                        <div class="price"><strong>1 145 ₽</strong>
+                            <div class="quantity">
+                                <div class="minus"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529_10201)">
+<path d="M4.16699 9.625H15.8337V11.375H4.16699V9.625Z" fill="#4E5154"/>
+</g>
+<defs>
+<clipPath id="clip0_1529_10201">
+<rect width="20" height="21" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                                </div>
+                                <input type="number" value="1" min="1" max="100"/>
+                                <div class="plus"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1529_10203)">
+<path d="M9.16699 9.625V4.375H10.8337V9.625H15.8337V11.375H10.8337V16.625H9.16699V11.375H4.16699V9.625H9.16699Z" fill="#4E5154"/>
+</g>
+<defs>
+<clipPath id="clip0_1529_10203">
+<rect width="20" height="21" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls"><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a><a class="trash"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.45734 4.22028H15.8822" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.08371 4.22026V2.45618C6.08371 1.4671 6.88496 0.665771 7.87405 0.665771C8.38952 0.665771 8.95051 0.665771 9.46598 0.665771C10.4539 0.665771 11.2563 1.4671 11.2563 2.45618C11.2563 3.34002 11.2563 4.22026 11.2563 4.22026" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.25461 4.22028V14.8048C3.25461 15.2988 3.45074 15.7712 3.79997 16.1204C4.14801 16.4696 4.62166 16.6658 5.11561 16.6658C7.10335 16.6658 10.2356 16.6658 12.2234 16.6658C12.7173 16.6658 13.191 16.4696 13.5402 16.1204C13.8894 15.7712 14.0856 15.2988 14.0856 14.8048C14.0856 11.3329 14.0856 4.22028 14.0856 4.22028" stroke="#4E5154" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a></div>
+                </div>
+            </div>
+            <div class="total"><span>Итого:</span><span>2 290 ₽</span></div>
+            <button class="gray">Перейти к оформлению</button>
+        </div>
+    </div>
+</dialog>

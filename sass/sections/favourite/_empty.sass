@@ -1,0 +1,53 @@
+section.empty
+    +screen(s)
+        font-size: 12px
+
+    a.back
+        grid-column: 2 span
+        display: grid
+        align-items: center
+        grid-template-columns: max-content max-content
+        grid-gap: 5px
+        margin-top: 30px  
+        +screen(s)
+            margin-top: 20px  
+        +screen(m)
+            margin-top: 30px       
+        &:hover
+            span
+                text-decoration: underline
+
+    h2
+        padding-top: 32px
+        padding-bottom: 24px
+        +screen(m)
+            padding-top: 20px
+            padding-bottom: 20px
+            
+
+    div.products
+        border-top: 1px solid #C6D6E7
+        border-bottom: 1px solid #C6D6E7
+        padding-top: 105px
+        padding-bottom: 105px
+        +screen(s)
+            padding-top: 110px
+            padding-bottom: 110px
+
+        display: grid
+        justify-items: center
+
+        img
+            margin-bottom: 24px
+
+        span
+            margin-bottom: 32px
+            +screen(s)
+                margin-bottom: 27px
+
+        a.button
+            +screen(s)
+                font-size: 12px
+                min-width: 240px
+
+        

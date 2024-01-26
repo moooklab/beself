@@ -1,0 +1,42 @@
+:root {
+  --gap: 30px;
+}
+
+section.page {
+  margin-bottom: 150px;
+}
+@media (max-width: 960px) {
+  section.page {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 640px) {
+  section.page {
+    font-size: 12px;
+  }
+}
+section.page div.wrap {
+  display: grid;
+  grid-gap: 16px;
+  max-width: 827px;
+}
+@media (max-width: 640px) {
+  section.page div.wrap {
+    grid-gap: 10px;
+  }
+}
+section.page div.wrap h3 {
+  margin-top: 34px;
+}
+@media (max-width: 640px) {
+  section.page div.wrap h3 {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+section.page div.wrap a {
+  text-decoration: underline;
+}
+section.page div.wrap a:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=page.css.map */

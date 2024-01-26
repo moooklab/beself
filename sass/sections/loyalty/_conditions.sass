@@ -1,0 +1,53 @@
+section.conditions
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.list
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        grid-gap: 32px
+        margin-top: 32px
+        +screen(m)
+            margin-top: 24px
+        +screen(s)
+            margin-top: 16px
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 24px
+
+
+    div.condition
+        display: grid
+        align-content: start
+        div.icon
+            margin-bottom: 30px
+            width: 96px
+            height: 96px
+            display: grid
+            align-items: center
+            justify-items: center
+            border: 2px solid #C6D6E7
+            background: #F7F9FB
+            border-radius: 100%
+            img
+                width: 50%
+                height: 50%
+            +screen(m)
+                width: 60px
+                height: 60px
+                margin-bottom: 15px
+
+        strong
+            font-family: 'Tenor Sans', sans-serif
+            text-transform: uppercase
+            font-size: 14px
+            display: block
+            margin-bottom: 10px
+
+        span
+            font-size: 14px
+            color: #8F9193
+            +screen(s)
+                font-size: 12px

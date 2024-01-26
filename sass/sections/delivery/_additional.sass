@@ -1,0 +1,72 @@
+section.additional
+    margin-top: 150px
+    margin-bottom: 150px
+    +screen(m)
+        margin-top: 80px
+        margin-bottom: 80px
+
+    div.container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 32px
+        +screen(m)
+            grid-template-columns: 1fr
+            grid-gap: 69px
+        +screen(s)
+            grid-gap: 51px
+
+    div.item
+        position: relative
+        border: 1px solid #94BADF
+        padding: 32px 30px
+        padding-top: calc(32px + 49px)
+        display: grid
+        align-items: start
+        align-content: start
+        +screen(s)
+            padding: 24px 15px
+            padding-top: calc(24px + 31px)
+            font-size: 12px
+
+        div.icon
+            width: 98px
+            aspect-ratio: 1 / 1
+            position: absolute
+            top: -49px
+            left: 30px
+            border: 1px solid #94BADF
+            background-color: white
+            border-radius: 50%
+            display: grid
+            align-items: center
+            justify-items: center
+            +screen(s)
+                width: 62px
+                top: -31px
+                left: 15px
+                img
+                    width: 38px
+
+        h3
+            margin-bottom: 16px
+            +screen(s)
+                font-size: 14px
+                margin-bottom: 10px
+
+        strong
+            font-weight: 400
+            margin-bottom: 10px
+            color: #241D13
+            +screen(s)
+                margin-bottom: 5px
+
+        div.note
+            margin-top: 24px
+            display: grid
+            grid-template-columns: max-content 1fr
+            grid-gap: 10px
+            font-size: 14px
+            font-style: italic
+            +screen(s)
+                margin-top: 16px
+                font-size: 12px

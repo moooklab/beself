@@ -1,0 +1,62 @@
+dialog(data-modal-name="register")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            h3 Регистрация
+
+            form(action="") 
+                fieldset.text
+                    label Имя #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Email #[span.required *]
+                    input(type="text", placeholder=" ", required)
+                fieldset.text
+                    label Телефон #[span.required *]
+                    input(type="text", placeholder=" ", data-phone-pattern="", required)
+                fieldset.text
+                    label Пароль #[span.required *]
+                    input(type="password", placeholder=" ", required)
+                    div.eye(onclick="showPassword(this)")
+                        div.show_password
+                            include ../../../images/show_password.svg
+                        div.hide_password
+                            include ../../../images/hide_password.svg
+                fieldset.text
+                    label Повторите пароль #[span.required *]
+                    input(type="password", placeholder=" ", required)
+                    div.eye(onclick="showPassword(this)")
+                        div.show_password
+                            include ../../../images/show_password.svg
+                        div.hide_password
+                            include ../../../images/hide_password.svg
+
+                div.checboxes
+                    fieldset.checkbox
+                        label
+                            input(type="checkbox", name="checbox", checked)
+                            span Подтверждаю своё согласие на получение информации о новинках и выгодных предложениях.
+                    fieldset.checkbox
+                        label
+                            input(type="checkbox", name="checbox")
+                            span Подтверждаю своё согласие на обработку и хранение моих персональных данных в соответствии с пользовательским соглашением
+                    fieldset.checkbox
+                        label
+                            input(type="checkbox", name="checbox")
+                            span Соглашаюсь с условиями программы лояльности
+
+                button.gray Зарегистрироваться
+
+            div.socials
+                span или
+                div.list
+                    a(href="###"): img(src="images/google.png", alt="")
+                    a(href="###"): img(src="images/vkontakte.png", alt="")
+                    a(href="###"): img(src="images/facebook.png", alt="")
+                    a(href="###"): img(src="images/apple.png", alt="")
+
+            hr
+            span.register У вас уже есть аккаунт? #[a(onclick="createDialog('authorise')") Войти]

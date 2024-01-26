@@ -1,0 +1,22 @@
+extends common/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/about.css")
+
+block content
+    include sections/about/_breadcrumbs.pug
+    include sections/about/_main.pug
+    include sections/about/_symbol.pug
+    include sections/about/_advantages.pug
+    include sections/about/_video.pug
+    
+    include sections/_seo.pug
+
+    script.
+        header = document.querySelector('header')
+        sticky = header.querySelector('div.sticky')
+        header.classList.add('transparent_dark')
+
+        window.addEventListener('scroll', event => {
+            this.scrollY ? header.classList.remove("transparent_dark") : header.classList.add("transparent_dark")
+        })

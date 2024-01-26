@@ -1,0 +1,142 @@
+section.main
+    margin-top: -115px
+    +screen(m)
+        margin-top: -103px
+    +screen(s)
+        margin-top: -99px
+
+    div.image
+        +background
+        position: absolute
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(to right, #5d515059, #5d515059)
+
+    div.swiper
+        position: relative
+
+    div.container
+        display: grid
+        align-content: end
+        justify-content: center
+        padding-top: 226px
+        padding-bottom: 226px
+        min-height: 100vh
+        +screen(m)
+            padding-top: 116px
+            padding-bottom: 116px
+        +screen(s)
+            padding-top: 68px
+            padding-bottom: 68px
+        div.text
+            color: white
+            display: grid
+            justify-items: center
+            grid-gap: 24px
+            text-align: center
+            max-width: 640px
+            h1
+                color: white
+            a.button
+                border-radius: 5px
+                border: 1px solid white
+                background: rgba(255, 255, 255, 0.25)
+                backdrop-filter: blur(7px)
+                text-transform: uppercase
+                font-size: 14px
+                font-weight: 600
+                letter-spacing: .28px
+                +screen(s)
+                    font-size: 12px
+
+
+    div.swiper-navigation
+        display: grid
+        align-items: center
+        grid-template-columns: repeat(2, 1fr)
+        width: 100%
+        position: absolute
+        top: 50%
+        left: 0
+        z-index: 1
+        pointer-events: none
+        +screen(s)
+            display: none
+        div.arrow
+            cursor: pointer
+            display: grid
+            align-items: center
+            justify-items: center
+            width: 40px
+            aspect-ratio: 1 / 2
+            background-color: transparent
+            border: 1px solid white
+            transition: all .2s
+            pointer-events: auto
+            &:first-child
+                border-top-right-radius: 40px
+                border-bottom-right-radius: 40px
+                border-left: unset
+                svg
+                    margin-left: -10px
+            &:last-child
+                justify-self: end
+                border-top-left-radius: 40px
+                border-bottom-left-radius: 40px
+                border-right: unset
+                svg
+                    transform: rotate(180deg)
+                    margin-right: -10px
+            &:hover
+                background-color: #FFFFFF40
+            &.swiper-button-disabled
+                pointer-events: none
+                opacity: .15
+
+    div.swiper-pagination
+        position: absolute
+        bottom: 50px
+        left: 50%
+        display: grid
+        justify-content: center
+        align-items: center
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        grid-gap: 4px
+        transform: translateX(-50%)
+        +screen(m)
+            bottom: 40px
+        +screen(s)
+            bottom: 30px
+        span
+            position: relative
+            display: block
+            margin: unset !important
+            width: 18px
+            height: 18px
+            background-color: transparent
+            border: 1px solid transparent
+            opacity: .6
+            transition: all .2s
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                top: 4px
+                left: 4px
+                width: 8px
+                height: 8px
+                background-color: rgba(255, 255, 255, 0.5)
+                border-radius: 4px
+            &:hover
+                border: 1px solid rgba(255, 255, 255, 0.5)
+            &.swiper-pagination-bullet-active
+                opacity: 1
+                border: 1px solid white
+                &::before
+                    background-color: white

@@ -1,0 +1,139 @@
+[data-modal-name=client]
+    +screen(s)
+        font-size: 12px
+
+    div.cross
+        z-index: 1
+        +screen(m)
+            svg
+                path
+                    stroke: white
+
+    div.container
+        padding: unset
+        background-color: white
+        width: 100%
+        max-width: 1362px
+
+    div.content
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        +screen(m)
+            grid-template-columns: 1fr
+
+    div.image
+        position: relative
+        width: 100%
+        height: 100%
+        aspect-ratio: 681 / 829
+        +screen(m)
+            aspect-ratio: 727 / 781
+            max-height: 781px
+        img
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center center
+
+    div.text
+        padding: 50px
+        padding-right: 70px
+        +screen(m)
+            padding: 30px 20px
+
+    div.title
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr max-content max-content
+        grid-gap: 22px
+        +screen(s)
+            grid-template-columns: 1fr
+
+        div.symbol
+            display: grid
+            align-items: center
+            grid-template-columns: max-content 1fr
+            grid-gap: 10px
+
+            svg
+                width: 42px
+                height: 42px
+                path
+                    fill: #4E5154
+                    stroke-width: 5px
+
+        div.likes, div.comments
+            display: grid
+            align-items: center
+            grid-template-columns: max-content max-content
+            grid-gap: 5px
+            +screen(s)
+                display: none
+            svg
+                width: 18px
+                height: 18px
+                path
+                    stroke-width: 1.5
+
+    div.products
+        display: grid
+        grid-gap: 21px
+        text-align: left
+        margin-top: 40px
+        +screen(s)
+            margin-top: 30px
+
+        div.instagram_product
+            display: grid
+            align-items: center
+            grid-template-columns: 4fr 1fr max-content
+            grid-template-areas: 'T P B'
+            grid-gap: 45px
+            +screen(s)
+                grid-gap: 5px 45px
+                grid-template-columns: 1fr max-content
+                grid-template-areas: 'T B' 'P B'
+
+            span
+                grid-area: T
+                +screen(s)
+                    align-self: end
+
+            strong
+                grid-area: P
+                font-weight: 600
+                +screen(s)
+                    align-self: start
+
+            button
+                grid-area: B
+                +screen(s)
+                    font-size: 12px
+
+
+    div.comment
+        border-top: 1px solid #E4E5E5
+        border-bottom: 1px solid #E4E5E5
+        padding-top: 30px
+        padding-bottom: 30px
+        margin-top: 30px
+        margin-bottom: 30px
+        +screen(s)
+            padding-top: 20px
+            padding-bottom: 20px
+            margin-bottom: 20px
+        span
+            display: block
+            margin-bottom: 20px
+        i
+            display: block
+
+    div.note
+        display: grid
+        grid-gap: 7px
+        +screen(s)
+            grid-gap: 10px
+

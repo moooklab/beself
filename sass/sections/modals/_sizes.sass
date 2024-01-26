@@ -1,0 +1,88 @@
+[data-modal-name=sizes]
+
+    div.container
+        position: relative
+        padding: 40px 50px
+        background-color: white
+        width: 100%
+        max-width: 883px
+        +screen(m)
+            padding: 30px
+        +screen(s)
+            padding: 20px
+            font-size: 12px
+
+
+    div.content
+        display: grid
+
+        div.title
+            display: grid
+            grid-gap: 4px
+            max-width: 432px
+            +screen(s)
+                grid-gap: 10px
+
+        table
+            border-collapse: collapse
+            border-spacing: 0
+            margin-top: 20px
+            margin-bottom: 50px
+            border: 0
+            +screen(m)
+                margin-top: 30px
+            +screen(s)
+                margin-top: 10px
+                margin-bottom: 20px
+                font-size: 14px
+
+            tbody
+                tr:nth-child(2n - 1)
+                    td
+                        background-color: rgba(227, 236, 243, 0.26)
+                        border-top: 1px solid rgba(217, 217, 217, 0.12)
+                        border-bottom: 1px solid rgba(217, 217, 217, 0.12)
+                        td:first-child
+                            border-left: 1px solid rgba(217, 217, 217, 0.12)
+                        td:last-child
+                            border-right: 1px solid rgba(217, 217, 217, 0.12)
+
+            td
+                padding: 20px
+                +screen(s)
+                    padding: 20px 15px
+                &:first-child
+                    max-width: 100px
+                &:not(:first-child)
+                    text-align: center
+
+        div.note
+            display: grid
+            grid-template-columns: max-content 1fr
+            grid-gap: 57px
+            +screen(s)
+                grid-template-columns: 1fr
+                justify-items: center
+
+            img
+                width: 135px
+                padding-left: 14px
+                +screen(s)
+                    order: 2
+                    padding-left: unset
+                    width: 172px
+
+            div.description
+                +screen(s)
+                    order: 1
+
+            h3
+                text-transform: unset
+                margin-bottom: 24px
+
+            h4
+                font-size: 14px
+                margin-top: 20px
+                margin-bottom: 5px
+                +screen(s)
+                    margin-top: 16px

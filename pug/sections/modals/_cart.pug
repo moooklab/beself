@@ -1,0 +1,17 @@
+dialog(data-modal-name="cart")
+    div.container
+
+        div(data-modal-close).cross
+            include ../../../images/cross.svg
+
+        div.content
+            h3 Корзина
+
+            div.list
+                include ../../elements/products/_small.pug
+                include ../../elements/products/_small.pug
+                
+            div.total
+                span Итого:
+                span 2 290 ₽
+            button.gray Перейти к оформлению
