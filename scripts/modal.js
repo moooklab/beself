@@ -76,7 +76,7 @@ const createDialog = (target, video = null) => {
 
     
 
-    if ( prevDialog == 'product' ) {
+    if ( prevDialog == 'product' && target != 'product' ) {
         links.forEach(link => {
             link.addEventListener('click', event => {
                 dialog.remove()
