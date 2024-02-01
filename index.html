@@ -96,7 +96,7 @@
 </a><a class="favourite" href="favourite.html"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</a><a class="cart onlydesktop" href="cart.html" onmouseenter="showCart(event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<span class="total">4</span></a><a class="cart onlydesktop" href="cart.html" onmouseenter="showCart(event)"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.6824 4.17752H2.78693C2.39452 4.17752 2.05884 4.50217 1.99422 4.9458L0.653869 14.1392C0.571919 14.6994 0.950149 15.2092 1.44736 15.2092H14.0219C14.5192 15.2092 14.8974 14.6994 14.8154 14.1392L13.4751 4.9458C13.4105 4.50217 13.0748 4.17752 12.6824 4.17752Z" stroke="#4E5154" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M4.58273 4.1775C4.58273 2.14609 5.99401 0.5 7.73465 0.5C9.4753 0.5 10.8866 2.14609 10.8866 4.1775" stroke="#4E5154" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -119,26 +119,19 @@
                             </div>
                             <div class="categories">
                                 <h3>Популярные категории</h3>
-                                <div class="list">
-                                    <div class="category">
+                                <div class="list"><a class="category" href="category.html">
                                         <div class="image"><img src="images/collections/other/1.webp" alt=""></div>
                                         <div class="title">
-                                            <h4>motion colletion</h4><img src="/images/category_arrow2.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="category">
+                                            <h4>motion colletion</h4><img src="images/category_arrow2.svg" alt="">
+                                        </div></a><a class="category" href="category.html">
                                         <div class="image"><img src="images/collections/other/2.webp" alt=""></div>
                                         <div class="title">
-                                            <h4>Soft Cover colletion</h4><img src="/images/category_arrow2.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="category">
+                                            <h4>Soft Cover colletion</h4><img src="images/category_arrow2.svg" alt="">
+                                        </div></a><a class="category" href="category.html">
                                         <div class="image"><img src="images/collections/other/4.webp" alt=""></div>
                                         <div class="title">
-                                            <h4>Push-Up Motion</h4><img src="/images/category_arrow2.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                                            <h4>Push-Up Motion</h4><img src="images/category_arrow2.svg" alt="">
+                                        </div></a></div>
                             </div>
                         </div>
                     </div>
@@ -220,12 +213,13 @@
                                 </div>
                             </menu>
                             <div class="collection"><img class="preview" src="images/motion_collection.webp" alt=""><a class="title" href="category.html"> 
-                                    <h4>motion colletion</h4><img src="/images/category_arrow2.svg" alt=""></a></div>
+                                    <h4>motion colletion</h4><img src="images/category_arrow2.svg" alt=""></a></div>
                             <hr>
                             <menu class="main">
                                 <li><a href="shops.html">Магазины</a></li>
                                 <li><a href="about.html">О нас</a></li>
                                 <li><a href="payment.html">Оплата</a></li>
+                                <li><a href="loyalty.html">Программа лояльности</a></li>
                                 <li><a href="cloth.html">Ткани BeSelf</a></li>
                                 <li><a href="return.html">Возврат и обмен</a></li>
                                 <li><a href="partners.html">Партнёры</a></li>
@@ -472,12 +466,12 @@
             <section class="products_slider" id="products_slider">
                 <div class="container">
                     <div class="title">
-                        <h2>Хиты</h2><a class="link" href="category.html">Посмотреть все</a>
+                        <h2>Хиты</h2><a class="link" href="catalog.html">Посмотреть все</a>
                     </div>
                     <div class="swiper products">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Спорт</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Спорт</a><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -499,7 +493,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Новинка</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Новинка</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -520,7 +514,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Хит</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Хит</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -542,7 +536,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Sale</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Sale</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -563,7 +557,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">-30%</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">-30%</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -584,7 +578,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Спорт</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Спорт</a><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -606,7 +600,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Новинка</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Новинка</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -627,7 +621,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Хит</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Хит</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -649,7 +643,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Sale</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Sale</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -670,7 +664,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">-30%</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">-30%</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -768,12 +762,12 @@
             <section class="products_slider" id="products_slider">
                 <div class="container">
                     <div class="title">
-                        <h2>Новинки</h2><a class="link" href="category.html">Посмотреть все</a>
+                        <h2>Новинки</h2><a class="link" href="catalog.html">Посмотреть все</a>
                     </div>
                     <div class="swiper products">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Спорт</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Спорт</a><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -795,7 +789,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Новинка</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Новинка</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -816,7 +810,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Хит</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Хит</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -838,7 +832,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Sale</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Sale</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -859,7 +853,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">-30%</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">-30%</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -880,7 +874,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Спорт</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Спорт</a><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -902,7 +896,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Новинка</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Новинка</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -923,7 +917,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Хит</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Хит</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -945,7 +939,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Sale</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Sale</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -966,7 +960,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">-30%</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">-30%</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1020,12 +1014,12 @@
             <section class="products_slider" id="products_slider">
                 <div class="container">
                     <div class="title">
-                        <h2>Скидки</h2><a class="link" href="category.html">Посмотреть все</a>
+                        <h2>Скидки</h2><a class="link" href="catalog.html">Посмотреть все</a>
                     </div>
                     <div class="swiper products">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Спорт</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Спорт</a><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1047,7 +1041,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Новинка</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Новинка</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1068,7 +1062,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Хит</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Хит</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1090,7 +1084,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Sale</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Sale</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1111,7 +1105,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">-30%</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">-30%</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1132,7 +1126,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Спорт</span><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Спорт</a><a class="favourite active" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1154,7 +1148,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Новинка</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Новинка</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1175,7 +1169,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Хит</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Хит</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1197,7 +1191,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">Sale</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">Sale</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1218,7 +1212,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product"><span class="tag">-30%</span><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <div class="product"><a class="card_tag">-30%</a><a class="favourite" onclick="this.classList.toggle('active')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.637 1.52976C12.6013 1.29563 10.4106 2.4663 9.64105 4.21627C8.87151 2.4663 6.65671 1.29563 4.64506 1.52976C1.96459 1.83104 0.245601 4.64752 0.788755 7.36501C1.52903 11.0629 5.56438 12.7139 9.64105 16.8861C13.6996 12.7139 17.7531 11.0561 18.4933 7.36501C19.0365 4.64752 17.3175 1.83104 14.637 1.52976Z" stroke="#4E5154" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a><a class="slider" href="product.html"> 
@@ -1266,7 +1260,7 @@
                             <h2>Active collection</h2><span>Купи сейчас, плати потом</span><a class="link" href="category.html">Смотреть коллекцию</a>
                         </div>
                     </div>
-                    <div class="image"><img src="images/collections/4.webp" alt=""></div>
+                    <div class="image"><img src="images/collections/9.webp" alt=""></div>
                 </div>
             </section>
             <section class="about"> 
@@ -1290,17 +1284,17 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide article">
-                                <div class="image"><a href="article.html"><img src="images/blog/1.webp" alt=""></a><a class="tag" href="blog.html">Спорт</a></div>
+                                <div class="image"><a href="article.html"><img src="images/blog/1.webp" alt=""></a><a class="card_tag" href="blog.html">Спорт</a></div>
                                 <div class="text"><span class="date">27.06.2023</span><a href="article.html">
                                         <h3>Как подобрать спортивный топ-бра?</h3></a><span>Никому не нравится, когда грудь во время пробежки и других подвижных тренировок находится в свободном полёте. И едва ли доставляют радость красные следы и полосы…</span></div>
                             </div>
                             <div class="swiper-slide article">
-                                <div class="image"><a href="article.html"><img src="images/blog/2.webp" alt=""></a><a class="tag" href="blog.html">Спорт</a></div>
+                                <div class="image"><a href="article.html"><img src="images/blog/2.webp" alt=""></a><a class="card_tag" href="blog.html">Спорт</a></div>
                                 <div class="text"><span class="date">27.06.2023</span><a href="article.html">
                                         <h3>Что нужно знать о кардио­тренировках</h3></a><span>Тренировка из категории кардио — это любая физическая активность (аэробная), во время которой частота сердечных сокращений (ЧСС, или пульс) ускоряется, а дыхание учащается…</span></div>
                             </div>
                             <div class="swiper-slide article">
-                                <div class="image"><a href="article.html"><img src="images/blog/3.webp" alt=""></a><a class="tag" href="blog.html">Спорт</a></div>
+                                <div class="image"><a href="article.html"><img src="images/blog/3.webp" alt=""></a><a class="card_tag" href="blog.html">Спорт</a></div>
                                 <div class="text"><span class="date">27.06.2023</span><a href="article.html">
                                         <h3>ANIMAL FLOW - новое направление в тренинге</h3></a><span>Никому не нравится, когда грудь во время пробежки и других подвижных тренировок находится в свободном полёте…</span></div>
                             </div>
@@ -1568,6 +1562,7 @@
                                         <li><a href="cloth.html">Ткани BeSelf</a></li>
                                         <li><a href="partners.html">Партнёры</a></li>
                                         <li><a href="lookbook.html">Lookbook</a></li>
+                                        <li><a href="blog.html">Блог</a></li>
                                     </menu>
                                 </div>
                             </div>

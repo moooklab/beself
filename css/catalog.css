@@ -285,8 +285,8 @@ section.catalog div.products div.list[data-view=two] div.product a.favourite {
 }
 
 section.products_slider {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.products_slider {
@@ -413,7 +413,7 @@ section.products_slider div.swiper-navigation.onslider div.arrow:hover {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

@@ -4,7 +4,7 @@
 
 section.shops {
   margin-top: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.shops {
@@ -173,7 +173,7 @@ section.shops div.links a:hover {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

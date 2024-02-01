@@ -22,22 +22,29 @@ dialog(data-modal-name="product")
                     div.swiper-slide: img(src="images/products/4.webp", alt="", lightbox="product")
                     div.swiper-slide: img(src="images/products/5.webp", alt="", lightbox="product")
                     div.swiper-slide: img(src="images/products/6.webp", alt="", lightbox="product")
+                div.swiper-pagination
 
             form(action="cart.html")
 
                 div.tags
                     div.tag
-                        img(src="images/product/tag_1.png", alt="")
+                        img(src="images/product/tag_1.svg", alt="")
                         span Сертифицировано
                     div.tag
-                        img(src="images/product/tag_2.png", alt="")
+                        img(src="images/product/tag_2.svg", alt="")
                         span Сделано в России
                     div.tag
-                        img(src="images/product/tag_3.png", alt="")
+                        img(src="images/product/tag_3.svg", alt="")
                         span Supplex Sport Hit
                     div.tag
                         img(src="images/product/tag_4.svg", alt="")
                         span Для занятий йогой
+                    div.tag
+                        img(src="images/product/tag_5.svg", alt="")
+                        span Фитнес
+                    div.tag
+                        img(src="images/product/tag_6.svg", alt="")
+                        span Пилатес
 
                 h2.product_title Лосины PUSH-UP малиновые PARADISO
 
@@ -105,6 +112,23 @@ dialog(data-modal-name="product")
                         include ../../../images/product/cart.svg
                         span В корзину
                     button.buy(onclick="createDialog('buy')").border Быстрый заказ
+
+                div.tinkoff
+                    //- div.title
+                    //-     img(src="images/product/tinkoff.svg", alt="")
+                    //-     strong Тинькофф — оплата частями
+                    //-     label.checkbox
+                    //-         input(type="checkbox", name="")
+                    //-         span
+                    //- div.list
+                    //-     span 13 июля #[br]300 ₽
+                    //-     span 27 июля #[br]300 ₽
+                    //-     span 10 августа #[br]300 ₽
+                    //-     span 24 августа #[br]300 ₽
+                    button Оплатить
+                    div.note
+                        img(src="images/product/lock.svg", alt="")
+                        span Быстрая и безопасная оплата
 
                 div.descriptions
                     div.description

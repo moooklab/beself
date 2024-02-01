@@ -3,7 +3,7 @@
 }
 
 section.contacts {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.contacts {
@@ -85,7 +85,7 @@ section.contacts div.content strong:not(:first-child) {
 }
 
 section.map {
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 80px;
 }
 @media (max-width: 960px) {
@@ -127,7 +127,7 @@ section.map div.map iframe {
 
 section.requisite {
   margin-top: 80px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.requisite {
@@ -169,7 +169,7 @@ section.requisite div.block span {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

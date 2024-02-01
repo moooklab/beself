@@ -3,7 +3,7 @@
 }
 
 section.partners {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.partners {
@@ -119,7 +119,7 @@ section.partners div.partner i {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

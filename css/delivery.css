@@ -46,6 +46,7 @@ section.main div.menu a.link:hover::after {
 }
 section.main div.menu a.link.active {
   color: #4E5154;
+  pointer-events: none;
 }
 section.main div.menu a.link.active::after {
   width: 100%;
@@ -243,6 +244,9 @@ section.main div.notes div.note {
   display: grid;
   grid-template-columns: 20px 1fr;
 }
+section.main div.notes div.note b {
+  font-weight: 600;
+}
 section.main div.text {
   display: grid;
   grid-gap: 16px;
@@ -273,8 +277,8 @@ section.main div.text {
 }
 
 section.instruction {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.instruction {
@@ -366,8 +370,8 @@ section.instruction div.step span {
 }
 
 section.additional {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.additional {
@@ -471,8 +475,8 @@ section.additional div.item div.note {
 }
 
 section.return {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.return {
@@ -542,8 +546,8 @@ section.return div.container div.image img {
 }
 
 section.order {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.order {
@@ -596,7 +600,7 @@ section.order div.buttons button:hover {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

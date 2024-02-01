@@ -128,7 +128,7 @@ section.main div.slider div.swiper.gallery div.swiper-slide {
   position: relative;
   width: 100%;
   height: 100%;
-  aspect-ratio: 664/872;
+  aspect-ratio: 5/7;
   overflow: hidden;
 }
 section.main div.slider div.swiper.gallery div.swiper-slide img {
@@ -141,11 +141,6 @@ section.main div.slider div.swiper.gallery div.swiper-slide img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-}
-@media (max-width: 960px) {
-  section.main div.slider div.swiper.gallery div.swiper-slide {
-    aspect-ratio: 515/676;
-  }
 }
 section.main div.slider div.swiper.gallery div.swiper-slide img {
   -webkit-transition: all 0.3s;
@@ -576,6 +571,9 @@ section.main div.tinkoff button {
   padding: 18px 36px;
   margin-bottom: 10px;
 }
+section.main div.tinkoff button:hover {
+  background-color: #3E382F;
+}
 section.main div.tinkoff div.note {
   display: grid;
   -webkit-box-align: center;
@@ -590,7 +588,7 @@ section.main div.tinkoff div.note {
 
 section.description {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.description {
@@ -1127,8 +1125,8 @@ section.description div.reviews div.pagination a.active {
 }
 
 section.products_slider {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.products_slider {
@@ -1255,7 +1253,7 @@ section.products_slider div.swiper-navigation.onslider div.arrow:hover {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

@@ -10,6 +10,10 @@ accordions.forEach( element => {
 new Swiper(popupProductGallery, {
     slidesPerView: 1,
     spaceBetween: 10,
+    pagination: {
+        el: popupProductGallery?.querySelector('div.swiper-pagination'),
+        clickable: true
+    },
     breakpoints: {
         960: {
             slidesPerView: 1,

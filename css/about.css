@@ -3,7 +3,7 @@
 }
 
 section.main {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.main {
@@ -133,8 +133,8 @@ section.main div.row span {
 }
 
 section.symbol {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background-color: white;
 }
 @media (max-width: 960px) {
@@ -221,8 +221,8 @@ section.symbol div.description strong {
 }
 
 section.advantages {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.advantages {
@@ -383,8 +383,8 @@ section.advantages div.advantage:not(:first-child) {
 }
 
 section.video {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.video {
@@ -473,7 +473,7 @@ section.video div.video img.play {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

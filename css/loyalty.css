@@ -115,8 +115,8 @@ section.main div.text button {
 }
 
 section.conditions {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.conditions {
@@ -189,8 +189,8 @@ section.conditions div.condition span {
 }
 
 section.faq {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.faq {
@@ -268,8 +268,8 @@ section.faq div.accordion.open div.accordion_caption img {
 }
 
 section.cards {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.cards {
@@ -370,8 +370,8 @@ section.cards div.notes {
 }
 
 section.how {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.how {
@@ -441,7 +441,7 @@ section.how div.signin {
   justify-items: center;
   grid-gap: 20px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 @media (max-width: 960px) {
   section.how div.signin {
@@ -459,7 +459,7 @@ section.how div.signin button {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

@@ -1,6 +1,6 @@
 section.blog
     margin-top: 30px
-    margin-bottom: 150px
+    margin-bottom: 100px
     +screen(m)
         margin-top: 20px
         margin-bottom: 80px
@@ -47,21 +47,56 @@ section.blog
             justify-items: start
             grid-gap: 20px
             border-bottom: unset
+        // div.tags
+        //     line-height: 1.3em
+        //     letter-spacing: .32px
+        //     text-transform: uppercase
+        //     display: flex
+        //     flex-wrap: wrap
+        //     gap: 10px 20px
+        //     +screen(m)
+        //         font-size: 14px
+        //     +screen(s)
+        //         font-size: 12px
+        //         grid-gap: 10px 20px
+        //         border-bottom: 1px solid #E4E5E5
+        //         padding-bottom: 20px
+        //         width: 100%
         div.tags
-            line-height: 1.3em
-            letter-spacing: .32px
-            text-transform: uppercase
+            margin-top: 24px
+            margin-bottom: 30px
             display: flex
             flex-wrap: wrap
             gap: 10px 20px
             +screen(m)
-                font-size: 14px
+                margin-top: 16px
+                margin-bottom: 32px
             +screen(s)
-                font-size: 12px
-                grid-gap: 10px 20px
-                border-bottom: 1px solid #E4E5E5
-                padding-bottom: 20px
-                width: 100%
+                gap: 12px 20px
+
+            a.tag
+                text-transform: unset
+                font-size: 16px
+                font-weight: 400
+                line-height: 1.2em
+                color: #C7C7C7
+                +screen(s)
+                    font-size: 14px
+
+                &:after
+                    width: 0
+                &:hover
+                    color: #4E5154
+                    &::after
+                        width: 100%
+                &.active
+                    color: #4E5154
+                    pointer-events: none
+                    &::after
+                        width: 100%
+
+            & + div.accordion
+                margin-top: 30px
         fieldset
             min-width: 240px
             +screen(s)
@@ -123,6 +158,8 @@ section.blog
                 top: 10px
                 left: 10px
                 font-size: 12px
+                line-height: 1.4em
+                padding: 4px 12px
         div.time
             position: absolute
             top: 20px
@@ -251,6 +288,19 @@ section.blog
             +screen(s)
                 top: 10px
                 left: 10px
+
+        div.time
+            position: absolute
+            top: 23px
+            right: 20px
+            color: white
+            display: grid
+            grid-template-columns: max-content auto
+            align-items: center
+            grid-gap: 5px
+            +screen(s)
+                top: 10px
+                right: 10px
 
         div.image
             +background

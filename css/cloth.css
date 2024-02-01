@@ -3,7 +3,7 @@
 }
 
 section.cloth {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.cloth {
@@ -261,7 +261,7 @@ section.cloth div.article div.text strong.soon {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

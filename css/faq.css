@@ -3,7 +3,7 @@
 }
 
 section.main {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.main {
@@ -54,6 +54,7 @@ section.main div.menu a.link:hover::after {
 }
 section.main div.menu a.link.active {
   color: #4E5154;
+  pointer-events: none;
 }
 section.main div.menu a.link.active::after {
   width: 100%;
@@ -150,7 +151,7 @@ section.main div.accordion.open div.accordion_caption img {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

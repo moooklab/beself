@@ -6,7 +6,7 @@ section.blog
             div.article_big
                 div.image
                     a(href="article.html"): img(src="images/blog/1.webp", alt="")
-                a.tag(href="blog.html") Спорт
+                a.card_tag(href="blog.html") Спорт
                 div.time
                     include ../../../images/clock.svg
                     span 5 мин
@@ -49,30 +49,30 @@ section.blog
 
         div.sort
             div.tags
-                a.tag(href="blog.html") Все
-                a.tag(href="blog.html") Спорт
-                a.tag(href="blog.html") Стиль
-                a.tag(href="blog.html") СМИ о нас
-                a.tag(href="blog.html") Советы
-            fieldset.select
-                div(tabindex="0").current
-                    input(type="radio", id="select_0", value="1", name="Select", checked="checked")
-                    span По популярности
-                    input(type="radio", id="select_1", value="2", name="Select")
-                    span По возрастанию цены
-                    input(type="radio", id="select_2", value="3", name="Select")
-                    span По убыванию цены
-                    input(type="radio", id="select_3", value="4", name="Select")
-                    span Сначало новые
-                    input(type="radio", id="select_4", value="5", name="Select")
-                    span По названию
-                    img(src="images/filter_arrow.svg", alt="")
-                div.list
-                    label(for="select_0") По популярности
-                    label(for="select_1") По возрастанию цены
-                    label(for="select_2") По убыванию цены
-                    label(for="select_3") Сначало новые
-                    label(for="select_4") По названию
+                a.link.tag.active(href="blog.html") Все
+                a.link.tag(href="blog.html") Спорт
+                a.link.tag(href="blog.html") Стиль
+                a.link.tag(href="blog.html") СМИ о нас
+                a.link.tag(href="blog.html") Советы
+            //- fieldset.select
+            //-     div(tabindex="0").current
+            //-         input(type="radio", id="select_0", value="1", name="Select", checked="checked")
+            //-         span По популярности
+            //-         input(type="radio", id="select_1", value="2", name="Select")
+            //-         span По возрастанию цены
+            //-         input(type="radio", id="select_2", value="3", name="Select")
+            //-         span По убыванию цены
+            //-         input(type="radio", id="select_3", value="4", name="Select")
+            //-         span Сначало новые
+            //-         input(type="radio", id="select_4", value="5", name="Select")
+            //-         span По названию
+            //-         img(src="images/filter_arrow.svg", alt="")
+            //-     div.list
+            //-         label(for="select_0") По популярности
+            //-         label(for="select_1") По возрастанию цены
+            //-         label(for="select_2") По убыванию цены
+            //-         label(for="select_3") Сначало новые
+            //-         label(for="select_4") По названию
 
         div.articles
 
@@ -82,13 +82,16 @@ section.blog
                         div.article
                             div.image
                                 a(href="article.html"): img(src="images/blog/" + x + ".webp", alt="")
-                                a.tag(href="blog.html") Спорт
+                                a.card_tag(href="blog.html") Спорт
+                                div.time
+                                    include ../../../images/clock.svg
+                                    span 5 мин
                             div.text
                                 span.date 27.06.2023
                                 a(href="article.html"): h3 Как подобрать спортивный топ-бра?
                                 span Никому не нравится, когда грудь во время пробежки и других подвижных тренировок находится в свободном полёте. И едва ли доставляют радость красные следы и полосы…
                 div.pagination
-                    button Показать ещё
+                    button.border Показать ещё
                     div.pages
                         a(href="blog.html").active 1
                         a(href="blog.html")  2

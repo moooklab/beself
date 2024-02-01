@@ -19,6 +19,9 @@ class Accordion {
     }
 
     onClick(event) {
+        for (let sibling of this.element.parentNode.children) {
+            this.element != sibling && sibling.addEventListener('click', event => this.onClick(event))
+        }
         this.element.classList.toggle('open')
         this.updateSize()
     }

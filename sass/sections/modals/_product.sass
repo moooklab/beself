@@ -30,19 +30,66 @@
             display: none
     
     div.swiper
+        height: max-content
         width: 100%
         min-width: 0
         div.swiper-slide
             +background
-            aspect-ratio: 2 / 3
+            aspect-ratio:  5 / 7
             overflow: hidden
-            +screen(m)
-                max-height: 75vh
             img
                 transition: all .3s
                 cursor: pointer
-                object-fit: contain
+                object-fit: cover
                 object-position: center top
+
+    div.swiper-pagination
+        position: absolute
+        bottom: 20px
+        top: unset
+        left: 50%
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        transform: translateX(-50%)
+        width: max-content
+        span
+            position: relative
+            cursor: pointer
+            margin: unset
+            display: block
+            width: 24px
+            height: 24px
+            opacity: .5
+            background-color: transparent
+            transition: all .2s
+            margin: unset !important
+            &:hover
+                opacity: 1
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                width: 8px
+                height: 8px
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                background-color: white
+                border-radius: 999px
+                z-index: 2
+            &.swiper-pagination-bullet-active
+                opacity: 1
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    border: 1px solid white
+                    border-radius: 999px
+                    width: 16px
+                    height: 16px
+                    transform: translate(-50%, -50%)
 
     div.tags
         display: flex
@@ -224,6 +271,79 @@
             font-weight: 600
             letter-spacing: .28px
             text-transform: uppercase
+
+    div.tinkoff
+        display: grid
+        margin-top: 42px
+        margin-bottom: 42px
+        +screen(s)
+            display: none
+        div.title
+            display: grid
+            align-items: center
+            grid-template-columns: max-content 1fr max-content
+            grid-gap: 6px
+            margin-bottom: 15px
+            strong
+                font-weight: 400
+                color: black
+            label.checkbox
+                input:checked + span
+                    background-color: #57DC6C
+                    &::after
+                        left: 18px
+                span
+                    display: block
+                    cursor: pointer
+                    position: relative
+                    background-color: #E4E5E5
+                    width: 36px
+                    height: 20px
+                    border-radius: 999px
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: 2px
+                        left: 2px
+                        display: block
+                        width: 16px
+                        height: 16px
+                        background-color: white
+                        border-radius: 999px
+                        transition: all .2s
+        div.list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 12px
+            margin-bottom: 24px
+            span
+                font-size: 14px
+                &::before
+                    content: ''
+                    display: block
+                    margin-bottom: 10px
+                    border-radius: 15px
+                    background-color: #E4E5E5
+                    width: 100%
+                    height: 8px
+        button
+            font-size: 14px
+            font-weight: 600
+            letter-spacing: .28px
+            text-transform: uppercase
+            background-color: #241D13
+            color: white
+            padding: 18px 36px
+            margin-bottom: 10px
+            &:hover
+                background-color: #3E382F
+        div.note
+            display: grid
+            align-items: center
+            justify-self: center
+            grid-template-columns: max-content 1fr
+            grid-gap: 5px
+            color: black
 
     div.descriptions
         font-size: 14px

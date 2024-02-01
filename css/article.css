@@ -3,7 +3,7 @@
 }
 
 section.article {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.article {
@@ -261,8 +261,8 @@ section.article div.content div.additional a.tag {
 }
 
 section.navigation {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.navigation {
@@ -473,8 +473,8 @@ section.navigation div.arrow svg path {
 }
 
 section.products_slider {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.products_slider {
@@ -601,7 +601,7 @@ section.products_slider div.swiper-navigation.onslider div.arrow:hover {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

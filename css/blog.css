@@ -4,7 +4,7 @@
 
 section.blog {
   margin-top: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.blog {
@@ -80,9 +80,8 @@ section.blog div.sort {
   }
 }
 section.blog div.sort div.tags {
-  line-height: 1.3em;
-  letter-spacing: 0.32px;
-  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,17 +91,45 @@ section.blog div.sort div.tags {
 }
 @media (max-width: 960px) {
   section.blog div.sort div.tags {
-    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 32px;
   }
 }
 @media (max-width: 640px) {
   section.blog div.sort div.tags {
-    font-size: 12px;
-    grid-gap: 10px 20px;
-    border-bottom: 1px solid #E4E5E5;
-    padding-bottom: 20px;
-    width: 100%;
+    gap: 12px 20px;
   }
+}
+section.blog div.sort div.tags a.tag {
+  text-transform: unset;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #C7C7C7;
+}
+@media (max-width: 640px) {
+  section.blog div.sort div.tags a.tag {
+    font-size: 14px;
+  }
+}
+section.blog div.sort div.tags a.tag:after {
+  width: 0;
+}
+section.blog div.sort div.tags a.tag:hover {
+  color: #4E5154;
+}
+section.blog div.sort div.tags a.tag:hover::after {
+  width: 100%;
+}
+section.blog div.sort div.tags a.tag.active {
+  color: #4E5154;
+  pointer-events: none;
+}
+section.blog div.sort div.tags a.tag.active::after {
+  width: 100%;
+}
+section.blog div.sort div.tags + div.accordion {
+  margin-top: 30px;
 }
 section.blog div.sort fieldset {
   min-width: 240px;
@@ -200,6 +227,8 @@ section.blog div.article_big a.tag {
     top: 10px;
     left: 10px;
     font-size: 12px;
+    line-height: 1.4em;
+    padding: 4px 12px;
   }
 }
 section.blog div.article_big div.time {
@@ -417,6 +446,25 @@ section.blog div.article a.tag {
     left: 10px;
   }
 }
+section.blog div.article div.time {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  color: white;
+  display: grid;
+  grid-template-columns: -webkit-max-content auto;
+  grid-template-columns: max-content auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 5px;
+}
+@media (max-width: 640px) {
+  section.blog div.article div.time {
+    top: 10px;
+    right: 10px;
+  }
+}
 section.blog div.article div.image {
   position: relative;
   width: 100%;
@@ -477,8 +525,8 @@ section.blog div.article div.text span {
 }
 
 section.products_slider {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.products_slider {
@@ -605,7 +653,7 @@ section.products_slider div.swiper-navigation.onslider div.arrow:hover {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

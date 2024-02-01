@@ -110,8 +110,8 @@ section.main div.text button {
 }
 
 section.about {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.about {
@@ -266,8 +266,8 @@ section.advantages div.advantage h4 {
 }
 
 section.material {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.material {
@@ -476,8 +476,8 @@ section.benefit div.list span {
 }
 
 section.wonders {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding-top: 112px;
   padding-bottom: 112px;
   background-color: #C6D6E7;
@@ -544,8 +544,8 @@ section.wonders svg path {
 }
 
 section.world {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.world {
@@ -576,8 +576,8 @@ section.world img {
 }
 
 section.cooperation {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.cooperation {
@@ -666,8 +666,8 @@ section.cooperation div.stages div.stage::before {
 
 section.consulting {
   background-color: #EFEFEF;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.consulting {
@@ -789,7 +789,7 @@ section.consulting div.images img {
 
 section.seo {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (max-width: 960px) {
   section.seo {

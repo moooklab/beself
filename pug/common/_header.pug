@@ -26,6 +26,7 @@ header
                         include ../../images/signin.svg
                     a.favourite(href="favourite.html")
                         include ../../images/favourite.svg
+                        span.total 4
                     a.cart(href="cart.html", onmouseenter="showCart(event)").onlydesktop
                         include ../../images/cart.svg
                         span.total 2
@@ -61,24 +62,24 @@ header
                     div.categories
                         h3 Популярные категории
                         div.list
-                            div.category
+                            a(href="category.html").category
                                 div.image
                                     img(src="images/collections/other/1.webp", alt="")
                                 div.title
                                     h4 motion colletion
-                                    img(src="/images/category_arrow2.svg", alt="")
-                            div.category
+                                    img(src="images/category_arrow2.svg", alt="")
+                            a(href="category.html").category
                                 div.image
                                     img(src="images/collections/other/2.webp", alt="")
                                 div.title
                                     h4 Soft Cover colletion
-                                    img(src="/images/category_arrow2.svg", alt="")
-                            div.category
+                                    img(src="images/category_arrow2.svg", alt="")
+                            a(href="category.html").category
                                 div.image
                                     img(src="images/collections/other/4.webp", alt="")
                                 div.title
                                     h4 Push-Up Motion
-                                    img(src="/images/category_arrow2.svg", alt="")
+                                    img(src="images/category_arrow2.svg", alt="")
 
         section.menu
             div.container
@@ -142,7 +143,7 @@ header
                         img(src="images/motion_collection.webp", alt="").preview
                         a.title(href="category.html") 
                             h4 motion colletion
-                            img(src="/images/category_arrow2.svg", alt="")
+                            img(src="images/category_arrow2.svg", alt="")
 
                     hr
 
@@ -150,6 +151,7 @@ header
                         li: a(href="shops.html") Магазины
                         li: a(href="about.html") О нас
                         li: a(href="payment.html") Оплата
+                        li: a(href="loyalty.html") Программа лояльности
                         li: a(href="cloth.html") Ткани BeSelf
                         li: a(href="return.html") Возврат и обмен
                         li: a(href="partners.html") Партнёры
