@@ -1266,6 +1266,7 @@ html, body {
           text-size-adjust: 100%;
   -webkit-appearance: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   overflow-x: clip;
   color: #4E5154;
 }
