@@ -24,6 +24,15 @@ section.products_slider
             div.swiper-navigation.onslider
                 display: flex
 
+        div.swiper.product_gallery 
+            +screen(m)
+                pointer-events: none
+            div.navigation-thumbs
+                +screen(m)
+                    display: none
+            div.swiper-pagination
+                display: none
+
     div.swiper-navigation
         user-select: none
         display: grid

@@ -225,6 +225,19 @@ section.products_slider div.swiper.products:hover div.swiper-navigation.onslider
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 960px) {
+  section.products_slider div.swiper.products div.swiper.product_gallery {
+    pointer-events: none;
+  }
+}
+@media (max-width: 960px) {
+  section.products_slider div.swiper.products div.swiper.product_gallery div.navigation-thumbs {
+    display: none;
+  }
+}
+section.products_slider div.swiper.products div.swiper.product_gallery div.swiper-pagination {
+  display: none;
+}
 section.products_slider div.swiper-navigation {
   -webkit-user-select: none;
      -moz-user-select: none;
