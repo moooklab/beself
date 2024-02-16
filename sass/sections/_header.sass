@@ -162,6 +162,10 @@ header
                         height: 14px
                         path
                             stroke-width: 1.5px
+                        
+                a.search
+                    div.cross
+                        display: none
 
                 a.cart, a.favourite
                     position: relative
@@ -216,6 +220,14 @@ header
             background-color: transparent
 
     &.search
+        div.bottom
+            div.container
+                div.controls
+                    a.search
+                        & > svg
+                            display: none
+                        div.cross
+                            display: block
         section.search
             grid-template-rows: 1fr
     

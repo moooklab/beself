@@ -472,6 +472,10 @@ section.motion_collection div.text {
 @media (max-width: 640px) {
   section.motion_collection div.text {
     padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: white;
   }
 }
 @media (max-width: 960px) {
@@ -479,8 +483,21 @@ section.motion_collection div.text {
     font-size: 24px;
   }
 }
+@media (max-width: 640px) {
+  section.motion_collection div.text h2 {
+    color: white;
+  }
+}
 section.motion_collection div.text a.link {
   margin-top: 24px;
+}
+@media (max-width: 640px) {
+  section.motion_collection div.text a.link::after {
+    background-color: white;
+  }
+  section.motion_collection div.text a.link:hover {
+    color: white;
+  }
 }
 
 section.soft_cover_collection {
@@ -769,11 +786,11 @@ section.active_collection div.description div.symbol svg path {
 section.about {
   overflow: hidden;
   background-color: #C6D6E7;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 @media (max-width: 960px) {
   section.about {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 section.about div.container {

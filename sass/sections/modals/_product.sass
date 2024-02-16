@@ -43,6 +43,57 @@
                 object-fit: cover
                 object-position: center top
 
+        div.swiper-navigation
+            position: absolute
+            top: 50%
+            left: 0
+            width: 100%
+            z-index: 1
+            user-select: none
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: 1fr
+            grid-gap: 8px
+            transform: translateY(-50%)
+            padding: 20px
+            +screen(s)
+                grid-gap: 5px
+            div.arrow
+                cursor: pointer
+                display: grid
+                align-items: center
+                justify-items: center
+                border: 1px solid #C6D6E7
+                width: 48px
+                height: 48px
+                border-radius: 999px
+                transition: all .2s
+                // background-color: white
+                +screen(s)
+                    width: 33px
+                    height: 33px
+                svg
+                    height: 13px
+                    width: 8px
+                    +screen(s)
+                        height: 7px
+                        width: 5px
+                    path
+                        fill: #4E5154
+                        stroke-width: 0.6px
+                        stroke: #4E5154
+                &:last-child
+                    justify-self: end
+                    svg
+                        transform: rotate(180deg)
+
+                &.swiper-button-disabled
+                    pointer-events: none
+                    opacity: .25
+
+                &:hover
+                    background-color: #C6D6E7
+
     div.swiper-pagination
         position: absolute
         bottom: 20px

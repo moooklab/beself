@@ -1267,7 +1267,6 @@ html, body {
   -webkit-appearance: none;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-x: clip;
   color: #4E5154;
 }
 
@@ -1537,6 +1536,9 @@ header div.bottom div.container div.controls svg {
     stroke-width: 1.5px;
   }
 }
+header div.bottom div.container div.controls a.search div.cross {
+  display: none;
+}
 header div.bottom div.container div.controls a.cart, header div.bottom div.container div.controls a.favourite {
   position: relative;
 }
@@ -1595,6 +1597,12 @@ header.transparent_light div.bottom div.container a.phone svg path, header.trans
 }
 header.transparent_dark div.bottom {
   background-color: transparent;
+}
+header.search div.bottom div.container div.controls a.search > svg {
+  display: none;
+}
+header.search div.bottom div.container div.controls a.search div.cross {
+  display: block;
 }
 header.search section.search {
   grid-template-rows: 1fr;
@@ -3849,6 +3857,80 @@ dialog::-webkit-scrollbar {
      object-fit: cover;
   -o-object-position: center top;
      object-position: center top;
+}
+[data-modal-name=product] div.swiper div.swiper-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 8px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 20px;
+}
+@media (max-width: 640px) {
+  [data-modal-name=product] div.swiper div.swiper-navigation {
+    grid-gap: 5px;
+  }
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow {
+  cursor: pointer;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 1px solid #C6D6E7;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media (max-width: 640px) {
+  [data-modal-name=product] div.swiper div.swiper-navigation div.arrow {
+    width: 33px;
+    height: 33px;
+  }
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow svg {
+  height: 13px;
+  width: 8px;
+}
+@media (max-width: 640px) {
+  [data-modal-name=product] div.swiper div.swiper-navigation div.arrow svg {
+    height: 7px;
+    width: 5px;
+  }
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow svg path {
+  fill: #4E5154;
+  stroke-width: 0.6px;
+  stroke: #4E5154;
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow:last-child {
+  justify-self: end;
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow:last-child svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+[data-modal-name=product] div.swiper div.swiper-navigation div.arrow:hover {
+  background-color: #C6D6E7;
 }
 [data-modal-name=product] div.swiper-pagination {
   position: absolute;

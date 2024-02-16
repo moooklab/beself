@@ -59,6 +59,80 @@ section.main div.slider {
     margin-left: -20px;
   }
 }
+section.main div.slider div.swiper-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 8px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 20px;
+}
+@media (max-width: 640px) {
+  section.main div.slider div.swiper-navigation {
+    grid-gap: 5px;
+  }
+}
+section.main div.slider div.swiper-navigation div.arrow {
+  cursor: pointer;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 1px solid #C6D6E7;
+  width: 57px;
+  height: 57px;
+  border-radius: 999px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media (max-width: 640px) {
+  section.main div.slider div.swiper-navigation div.arrow {
+    width: 33px;
+    height: 33px;
+  }
+}
+section.main div.slider div.swiper-navigation div.arrow svg {
+  height: 13px;
+  width: 8px;
+}
+@media (max-width: 640px) {
+  section.main div.slider div.swiper-navigation div.arrow svg {
+    height: 7px;
+    width: 5px;
+  }
+}
+section.main div.slider div.swiper-navigation div.arrow svg path {
+  fill: #4E5154;
+  stroke-width: 0.6px;
+  stroke: #4E5154;
+}
+section.main div.slider div.swiper-navigation div.arrow:last-child {
+  justify-self: end;
+}
+section.main div.slider div.swiper-navigation div.arrow:last-child svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section.main div.slider div.swiper-navigation div.arrow.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+section.main div.slider div.swiper-navigation div.arrow:hover {
+  background-color: #C6D6E7;
+}
 section.main div.slider div.swiper-pagination {
   bottom: 20px;
   top: unset;

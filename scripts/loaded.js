@@ -10,6 +10,10 @@ accordions.forEach( element => {
 new Swiper(popupProductGallery, {
     slidesPerView: 1,
     spaceBetween: 10,
+    navigation: {
+        prevEl: popupProductGallery?.querySelector('div.swiper-navigation > *:first-child'),
+        nextEl: popupProductGallery?.querySelector('div.swiper-navigation > *:last-child'),
+    },
     pagination: {
         el: popupProductGallery?.querySelector('div.swiper-pagination'),
         clickable: true

@@ -32,8 +32,19 @@ section.motion_collection
             padding: 40px 0
         +screen(s)
             padding: 20px 0
+            position: absolute
+            bottom: 0
+            left: 20px
+            color: white
         h2
             +screen(m)
                 font-size: 24px
+            +screen(s)
+                color: white
         a.link
             margin-top: 24px
+            +screen(s)
+                &::after
+                    background-color: white
+                &:hover
+                    color: white

@@ -110,6 +110,10 @@ new Swiper(productGalleryImages, {
         swiper: productGalleryThumbsSwiper,
         autoScrollOffset: .5
     },
+    navigation: {
+        prevEl: productGalleryImages?.querySelector('div.swiper-navigation > *:first-child'),
+        nextEl: productGalleryImages?.querySelector('div.swiper-navigation > *:last-child'),
+    },
     pagination: {
         el: productGalleryImages?.querySelector('div.swiper-pagination'),
         clickable: true
