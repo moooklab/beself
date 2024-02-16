@@ -9,8 +9,6 @@ header
 
     div.top
         position: relative
-        padding-top: 12px
-        padding-bottom: 12px
         background-color: #4E5154
         color: white
         z-index: 2
@@ -21,6 +19,8 @@ header
             grid-template-columns: max-content auto
             justify-content: center
             grid-gap: 10px
+            padding-top: 12px
+            padding-bottom: 12px
 
             svg
                 width: 27px
@@ -246,9 +246,6 @@ header
     &.cart
         section.cart
             grid-template-rows: 1fr
-            div.container
-                // border-top: 1px solid #E4E5E5
-                overflow: visible
 
     &.menu, &.search, &.cart
         div.top
@@ -276,14 +273,18 @@ section.search
     box-shadow: 0px 0px 0px 0px rgba(212, 212, 212, 0.10), 0px -4px 9px 0px rgba(212, 212, 212, 0.10), 0px -16px 16px 0px rgba(212, 212, 212, 0.09), 0px -36px 21px 0px rgba(212, 212, 212, 0.05), 0px -63px 25px 0px rgba(212, 212, 212, 0.01), 0px -99px 28px 0px rgba(212, 212, 212, 0.00)
     display: grid
     grid-template-rows: 0fr
-    transition: all .3s
+    transition: grid-template-rows .3s
+    max-height: var(--available-height)
     +screen(s)
         display: none
 
     div.container
         display: grid
         justify-items: center
-        overflow: hidden
+        overflow-x: hidden
+        overflow-y: scroll
+        &::-webkit-scrollbar
+            display: none
 
     div.search_wrap
         position: relative
@@ -402,7 +403,7 @@ section.search
                 align-items: center
                 grid-template-columns: minmax(auto, max-content) max-content
                 grid-gap: 10px
-    
+
 section.menu
     position: absolute
     top: 100%
@@ -411,24 +412,21 @@ section.menu
     width: 100%
     display: grid
     grid-template-rows: 0fr
-    transition: all .3s
+    transition: grid-template-rows .3s
+    max-height: var(--available-height)
 
     div.container
         display: grid
         justify-items: center
-        overflow: hidden
-        width: 100%
+        overflow-x: hidden
+        overflow-y: scroll
+        &::-webkit-scrollbar
+            display: none
 
     div.menu_wrap
         padding-top: 45px
         padding-bottom: 39px
         width: 100%
-        height: max-content
-        max-height: calc(100vh - 64px)
-        overflow-x: hidden
-        overflow-y: scroll
-        &::-webkit-scrollbar
-            display: none
         display: grid
         align-items: start
         grid-template-areas: 'Compilations Categories Collection' 'HR HR HR' 'Main . Socials'
@@ -438,13 +436,11 @@ section.menu
             grid-template-areas: 'Compilations Categories' 'Collection Collection' 'HR HR' 'Main Socials'
             grid-template-columns: 1fr 1fr
             grid-column-gap: 16px
-            max-height: calc(100vh - 61px)
         +screen(s)
             grid-template-columns: 1fr
             grid-template-areas: 'Search' 'Collection' 'Compilations' 'Categories' 'HR' 'Main' 'Socials'
             padding-top: 30px
             padding-bottom: 30px
-            max-height: calc(100vh - 51px)
 
     form.search
         grid-area: Search
@@ -618,7 +614,7 @@ section.menu
         color: #8091a3
         h4
             color: #8091a3
-        
+
 section.cart
     position: absolute
     top: 100%
@@ -628,12 +624,16 @@ section.cart
     grid-template-rows: 0fr
     transition: all .3s
     pointer-events: none
+    max-height: var(--available-height)
 
     div.container
         display: grid
         justify-items: end
-        overflow: hidden
         width: 100%
+        overflow-x: hidden
+        overflow-y: scroll
+        &::-webkit-scrollbar
+            display: none
 
     div.cart_wrap
         padding: 20px
@@ -744,10 +744,3 @@ section.cart
         font-weight: 600
         margin-top: 16px
         margin-bottom: 24px
-
-@media (max-height: 700px)
-    section.search div.search_wrap
-        padding-top: 40px
-        padding-bottom: 40px
-    section.search div.categories a.category div.image
-        aspect-ratio: 4 / 3

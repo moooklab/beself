@@ -267,4 +267,18 @@ let changeView = (element) => {
      
 }
 
+let setHeaderHeight = () => {
+    var header_height = header.querySelector('div.sticky').getBoundingClientRect().bottom
+    document.documentElement.style.setProperty('--available-height', (window.innerHeight - header_height) + "px")
+}
+
 changeView()
+setHeaderHeight()
+
+window.addEventListener('scroll', () => {
+    setHeaderHeight()
+})
+
+window.addEventListener('resize', () => {
+    setHeaderHeight()
+})
