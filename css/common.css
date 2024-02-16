@@ -2300,6 +2300,15 @@ section.cart span.total {
   margin-bottom: 24px;
 }
 
+@media (max-height: 700px) {
+  section.search div.search_wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  section.search div.categories a.category div.image {
+    aspect-ratio: 4/3;
+  }
+}
 footer {
   padding-top: 60px;
   padding-bottom: 60px;

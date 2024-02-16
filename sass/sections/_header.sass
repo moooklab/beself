@@ -402,7 +402,7 @@ section.search
                 align-items: center
                 grid-template-columns: minmax(auto, max-content) max-content
                 grid-gap: 10px
-
+    
 section.menu
     position: absolute
     top: 100%
@@ -738,10 +738,16 @@ section.cart
                             fill: #FF5E5E
                             stroke: #FF5E5E
 
-
     span.total
         display: block
         font-size: 20px
         font-weight: 600
         margin-top: 16px
         margin-bottom: 24px
+
+@media (max-height: 700px)
+    section.search div.search_wrap
+        padding-top: 40px
+        padding-bottom: 40px
+    section.search div.categories a.category div.image
+        aspect-ratio: 4 / 3
