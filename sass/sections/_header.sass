@@ -271,7 +271,6 @@ section.search
     position: absolute
     top: 100%
     left: 0
-    
     background-color: white
     width: 100%
     box-shadow: 0px 0px 0px 0px rgba(212, 212, 212, 0.10), 0px -4px 9px 0px rgba(212, 212, 212, 0.10), 0px -16px 16px 0px rgba(212, 212, 212, 0.09), 0px -36px 21px 0px rgba(212, 212, 212, 0.05), 0px -63px 25px 0px rgba(212, 212, 212, 0.01), 0px -99px 28px 0px rgba(212, 212, 212, 0.00)
@@ -425,11 +424,11 @@ section.menu
         padding-bottom: 39px
         width: 100%
         height: max-content
-        max-height: calc(100vh - 51px - 64px)
+        max-height: calc(100vh - 64px)
+        overflow-x: hidden
         overflow-y: scroll
         &::-webkit-scrollbar
             display: none
-
         display: grid
         align-items: start
         grid-template-areas: 'Compilations Categories Collection' 'HR HR HR' 'Main . Socials'
@@ -439,11 +438,13 @@ section.menu
             grid-template-areas: 'Compilations Categories' 'Collection Collection' 'HR HR' 'Main Socials'
             grid-template-columns: 1fr 1fr
             grid-column-gap: 16px
+            max-height: calc(100vh - 61px)
         +screen(s)
             grid-template-columns: 1fr
             grid-template-areas: 'Search' 'Collection' 'Compilations' 'Categories' 'HR' 'Main' 'Socials'
             padding-top: 30px
             padding-bottom: 30px
+            max-height: calc(100vh - 51px)
 
     form.search
         grid-area: Search

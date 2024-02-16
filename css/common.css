@@ -1267,6 +1267,7 @@ html, body {
   -webkit-appearance: none;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-x: clip;
   color: #4E5154;
 }
 
@@ -1841,7 +1842,8 @@ section.menu div.menu_wrap {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  max-height: calc(100vh - 51px - 64px);
+  max-height: calc(100vh - 64px);
+  overflow-x: hidden;
   overflow-y: scroll;
   display: grid;
   -webkit-box-align: start;
@@ -1859,6 +1861,7 @@ section.menu div.menu_wrap::-webkit-scrollbar {
     grid-template-areas: "Compilations Categories" "Collection Collection" "HR HR" "Main Socials";
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
+    max-height: calc(100vh - 61px);
   }
 }
 @media (max-width: 640px) {
@@ -1867,6 +1870,7 @@ section.menu div.menu_wrap::-webkit-scrollbar {
     grid-template-areas: "Search" "Collection" "Compilations" "Categories" "HR" "Main" "Socials";
     padding-top: 30px;
     padding-bottom: 30px;
+    max-height: calc(100vh - 51px);
   }
 }
 section.menu form.search {
@@ -2605,6 +2609,7 @@ dialog {
           align-items: center;
   justify-items: center;
   padding: 20px;
+  overflow-x: hidden;
 }
 dialog div.cross {
   cursor: pointer;
