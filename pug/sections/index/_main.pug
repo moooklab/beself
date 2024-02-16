@@ -1,7 +1,14 @@
 section.main
     div.swiper.main
         div.swiper-wrapper
-            - for( x = 1; x <= 6; x++ )
+            div.swiper-slide
+                div.image
+                    video(src="test.mp4", autoplay) 
+                div.container
+                    div.text
+                        h1 Новая коллекция Push-Up Motion
+                        a(href="category.html").button Смотреть коллекцию
+            - for( x = 1; x <= 5; x++ )
                 div.swiper-slide
                     div.image
                         img(src="images/index_main.webp", alt="")

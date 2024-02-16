@@ -94,12 +94,14 @@ const createDialog = (target, video = null) => {
         links.forEach(link => {
             link.addEventListener('click', event => {
                 dialog.remove()
+                prevDialog = ''
             })
         })
     
         dialog.addEventListener('click', element => {
             if(element.target === dialog) {
                 dialog.remove()
+                prevDialog = ''
             }
         })
     }
