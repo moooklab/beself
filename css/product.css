@@ -476,6 +476,11 @@ section.main div.sizes div.list {
     grid-gap: 10px;
   }
 }
+@media (max-width: 480px) {
+  section.main div.sizes div.list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 section.main div.sizes div.list label {
   cursor: pointer;
   position: relative;

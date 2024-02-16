@@ -4202,6 +4202,11 @@ dialog::-webkit-scrollbar {
     grid-gap: 10px;
   }
 }
+@media (max-width: 480px) {
+  [data-modal-name=product] div.sizes div.list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 [data-modal-name=product] div.sizes div.list label {
   cursor: pointer;
 }

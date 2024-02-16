@@ -59,6 +59,7 @@ const createDialog = (target, video = null) => {
     // Вставляем диалоговое окно в DOM и открываем его
     document.body.append(dialog)
     dialog.showModal()
+    dialog.scrollTop = 0
 
     // Релоадим необходимые срипты
     scripts = document.querySelectorAll('script[data-reload]')
